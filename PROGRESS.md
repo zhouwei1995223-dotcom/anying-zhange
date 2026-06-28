@@ -404,3 +404,16 @@ Fixed the hero growing after the first animated frame by setting Hero Sprite `si
   - press Preview and see the result.
 - Acceptance rule for future features: a feature is not complete if only Codex can change its important values through TypeScript. Important values must be exposed in the Inspector, a JSON config, or a simple editor tool.
 - Implementation rule: start with the simplest editable surface that works. Use Cocos Inspector fields first; build custom editor panels only when Inspector lists become too hard to manage.
+
+## 2026-06-29 Collaboration Rule
+
+- Before changing code for a reported issue, first give a clear technical judgment: likely cause, proposed fix, risk, and test scope.
+- The user knows the old game behavior well but is new to code, so implementation should follow discussion instead of silently guessing.
+- Default workflow: diagnose briefly, state the smallest safe test, then implement after the direction is accepted.
+
+## 2026-06-29 Monster 03 Frame Alignment Test
+
+- Rejected approach: changing the actor anchor to foot-bottom. It disturbed visual placement and related UI.
+- Current test approach: only `monster_03` uses an offset-aligned visual child node.
+- Logic node, collision, HP UI, pathfinding, and sorting stay on `AutoMonster`.
+- The visible sprite stays trimmed, but `MonsterVisual` is moved by the SpriteFrame offset so auto-trimmed frames line up against the original 60x60 canvas.

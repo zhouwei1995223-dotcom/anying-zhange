@@ -139,6 +139,7 @@ const MONSTER_FRAME_COUNTS: Record<string, { idle: number; walk: number; attack:
   monster_56: { idle: 10, walk: 10, attack: 10 },
   monster_57: { idle: 5, walk: 4, attack: 4 },
 };
+const OFFSET_ALIGNED_MONSTERS = new Set(['monster_03']);
 const STAND_OFFSETS = [
   [0, 0],
   [-ACTOR_COLLISION_RADIUS, 0],
@@ -151,6 +152,7 @@ type MonsterState = 'idle' | 'walk' | 'chase' | 'attack';
 
 type MonsterActor = {
   node: Node;
+  visualNode: Node;
   type: string;
   config: MapMonsterConfig;
   sprite: Sprite;
@@ -570,15 +572,18 @@ export class HeroIdlePlayer extends Component {
     monster.parent = this.node.parent;
     const pos = this.randomPassablePoint();
     monster.setPosition(pos.x, pos.y, 0);
-    const transform = monster.addComponent(UITransform);
-    const sprite = monster.addComponent(Sprite);
+    const visualNode = this.usesOffsetAlignedMonster(type) ? new Node('MonsterVisual') : monster;
+    if (visualNode !== monster) monster.addChild(visualNode);
+    const transform = visualNode.addComponent(UITransform);
+    const sprite = visualNode.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.TRIMMED;
-    this.applyFrame(sprite, transform, frame);
+    this.applyMonsterFrame(type, sprite, transform, frame, visualNode);
     const hpUi = this.createMonsterHpUi(monster);
     const config = this.monsterConfigByType(type);
     const maxHp = Math.max(1, Math.round(config.maxHp));
     const actor: MonsterActor = {
       node: monster,
+      visualNode,
       type,
       config,
       sprite,
@@ -830,7 +835,7 @@ export class HeroIdlePlayer extends Component {
   private setMonsterFrame(monster: MonsterActor, index: number) {
     const frame = this.monsterClips[monster.clip]?.[index];
     if (frame) {
-      this.applyFrame(monster.sprite, monster.transform, frame);
+      this.applyMonsterFrame(monster.type, monster.sprite, monster.transform, frame, monster.visualNode);
       this.layoutMonsterHp(monster);
     }
   }
@@ -1296,6 +1301,28 @@ export class HeroIdlePlayer extends Component {
     sprite.spriteFrame = frame;
     const rect = frame.getRect();
     if (rect) transform.setContentSize(rect.width, rect.height);
+  }
+
+  private applyMonsterFrame(type: string, sprite: Sprite, transform: UITransform, frame: SpriteFrame, visualNode: Node) {
+    this.applyFrame(sprite, transform, frame);
+    if (!this.usesOffsetAlignedMonster(type)) return;
+    const offset = this.spriteFrameOffset(frame);
+    visualNode.setPosition(offset.x, offset.y, 0);
+  }
+
+  private usesOffsetAlignedMonster(type: string) {
+    return OFFSET_ALIGNED_MONSTERS.has(type);
+  }
+
+  private spriteFrameOffset(frame: SpriteFrame) {
+    const data = frame as unknown as { offset?: { x?: number; y?: number }; getOffset?: () => { x?: number; y?: number } };
+    let offset = data.offset;
+    try {
+      offset = data.getOffset?.() ?? offset;
+    } catch {
+      // Some Cocos builds expose offset as a property only.
+    }
+    return { x: Number(offset?.x) || 0, y: Number(offset?.y) || 0 };
   }
 
   private trySetPosition(node: Node, x: number, y: number) {
