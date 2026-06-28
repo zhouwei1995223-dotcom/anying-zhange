@@ -1,0 +1,6 @@
+<app.island.data.Shortcuts>
+	<idArray>0,0,0,0,0,0,0,0,0,0,0,0,</idArray>
+	<flagArray>0,0,0,0,0,0,0,0,0,0,0,0,</flagArray>
+	<id>20002</id>
+	<name>µÄµÄ</name>
+</app.island.data.Shortcuts>

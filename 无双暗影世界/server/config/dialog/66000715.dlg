@@ -1,0 +1,179 @@
+<root>
+	<taskEntries>
+		<task id="20000061" doing="yxzz-doing" completed="yxzz-completed" />
+		<task id="10000008" completed="guide2-completed" onceDone="old" />
+		<task id="10000009" completed="lpsz-completed" onceDone="old" />
+		<task id="10000001" completed="guide-completed" onceDone="old" />
+		<task id="10003001" completed="youxia-completed" onceDone="old" />
+		<task id="10003011" completed="fashi-completed" onceDone="old" />
+		<task id="10003021" completed="zhanshi-completed" onceDone="old" />
+	</taskEntries>
+	<raceEntries 0="youxia" 1="fashi" 2="zhanshi" />
+	<old>
+		<text>努力奋斗吧，这个世界的未来是你们的！</text>
+		<color></color>
+		<options>
+			 <option text="我会的" command="" />
+		</options>
+	</old>
+	<start>
+		<text>似乎以前没见过啊，你是初到此地吗？</text>
+		<color></color>
+		<options>
+			<option text="是的，你的眼力真好" command="goto:next1" />
+		</options>
+	</start>
+	<guide-completed>
+		<text>去找仓库管理员吧,他在(28.28)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:28:30" />
+			<option text="离开" command="" />
+		</options>
+	</guide-completed>
+	<next1>
+		<text>那我就教你些基本的事情吧，用鼠标左键点击我们就可以和我们交流，这个似乎你已经知道了；用鼠标左键点击空的地方就可以向那个方向进行移动。</text>
+		<color></color>
+		<options>
+			<option text="哦，这样啊" command="goto:next2" />
+		</options>
+	</next1>
+	<next2>
+		<text>还有，用鼠标左键点击怪物就可以攻击他们了，你可以先用鼠标右键点击对他们进行锁定。好了，你先去找仓库管理员吧，他就在上边，就说是我让你去找他的。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，我现在就去" command="giveTask:10000001" />
+		</options>
+	</next2>
+	<guide2-completed>
+		<text>好了，现在你对这里的环境大致有了个了解，也知道如何在这个世界里生存了，那么现在你可以到外面的世界去看看，在你走之前我送你点东西吧？</text>
+		<color></color>
+		<options>
+			<option text="那好啊" command="completeTask:10000008" />
+			<option text="不需要" command="" />
+		</options>
+	</guide2-completed>
+	<youxia>
+		<text>你好，年轻的游侠，如果你有时间的话，我们可以聊聊，有奖品可以拿哦。</text>
+		<color></color>
+		<options>
+			<option text="请帮我介绍下游戏" command="goto:youxia1" />
+			<option text="我已了解游戏操作" command="goto:lpsz" />
+			<option text="离开" command="" />
+		</options>
+	</youxia>
+	<youxia1>
+		<text>那我就教你些基本的事情吧，用鼠标左键点击我们就可以和我们交流，这个似乎你已经知道了；用鼠标左键点击空的地方就可以向那个方向进行移动。</text>
+		<color></color>
+		<options>
+			<option text="哦，这样啊" command="goto:yxnext2" />
+		</options>
+	</youxia1>
+	<yxnext2>
+		<text>还有，用鼠标左键点击怪物就可以攻击他们了，你可以先用鼠标右键点击对他们进行锁定。好了，你先去找仓库管理员吧，他就在上边，就说是我让你去找他的。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，我现在就去" command="giveTask:10003001" />
+		</options>
+	</yxnext2>
+	<youxia-completed>
+		<text>去找仓库管理员吧,他在(28.28)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:28:30" />
+			<option text="离开" command="" />
+		</options>
+	</youxia-completed>
+	<fashi>
+		<text>你好，年轻的法师，如果你有时间的话，我们可以聊聊，有奖品可以拿哦。</text>
+		<color></color>
+		<options>
+			<option text="请帮我介绍下游戏" command="goto:fashi1" />
+			<option text="我已了解游戏操作" command="goto:lpsz" />
+			<option text="离开" command="" />
+		</options>
+	</fashi>
+	<fashi1>
+		<text>那我就教你些基本的事情吧，用鼠标左键点击我们就可以和我们交流，这个似乎你已经知道了；用鼠标左键点击空的地方就可以向那个方向进行移动。</text>
+		<color></color>
+		<options>
+			<option text="哦，这样啊" command="goto:fsnext2" />
+		</options>
+	</fashi1>
+	<fsnext2>
+		<text>还有，用鼠标左键点击怪物就可以攻击他们了，你可以先用鼠标右键点击对他们进行锁定。好了，你先去找仓库管理员吧，他就在上边，就说是我让你去找他的。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，我现在就去" command="giveTask:10003011" />
+		</options>
+	</fsnext2>
+	<fashi-completed>
+		<text>去找仓库管理员吧,他在(28.28)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:28:30" />
+			<option text="离开" command="" />
+		</options>
+	</fashi-completed>
+	<zhanshi>
+		<text>你好，年轻的战士，如果你有时间的话，我们可以聊聊，有奖品可以拿哦。</text>
+		<color></color>
+		<options>
+			<option text="请帮我介绍下游戏" command="goto:zhanshi1" />
+			<option text="我已了解游戏操作" command="goto:lpsz" />
+			<option text="离开" command="" />
+		</options>
+	</zhanshi>
+	<zhanshi1>
+		<text>那我就教你些基本的事情吧，用鼠标左键点击我们就可以和我们交流，这个似乎你已经知道了；用鼠标左键点击空的地方就可以向那个方向进行移动。</text>
+		<color></color>
+		<options>
+			<option text="哦，这样啊" command="goto:zsnext2" />
+		</options>
+	</zhanshi1>
+	<zsnext2>
+		<text>还有，用鼠标左键点击怪物就可以攻击他们了，你可以先用鼠标右键点击对他们进行锁定。好了，你先去找仓库管理员吧，他就在上边，就说是我让你去找他的。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，我现在就去" command="giveTask:10003021" />
+		</options>
+	</zsnext2>
+	<zhanshi-completed>
+		<text>去找仓库管理员吧,他在(28.28)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:28:30" />
+			<option text="离开" command="" />
+		</options>
+	</zhanshi-completed>
+	<lpsz>
+		<text>你这孩子，真是个急性子。从这我领到任务后，去找礼品使者拿礼品吧!</text>
+		<color></color>
+		<options>
+			<option text="领取任务" command="giveTask:10000009" />
+		</options>
+	</lpsz>
+	<lpsz-completed>
+		<text>上面那位穿着红衣服，带着红帽子，背着大包包的那位大叔就是“礼品使者”。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:30:33" />
+			<option text="我自已去" command="" />
+		</options>
+	</lpsz-completed>
+	<yxzz-doing>
+		<text>在找“艾特鲁里亚王子”吗？他去帮我们消灭那舍岛的多目怪了。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yxzz-doing>
+	<yxzz-completed>
+		<text>我是“普罗·克洛托”，你的任务已完成，不能常期停留在过去的时间里，要回“普罗之殿”领取任务奖励吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:24:21" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</yxzz-completed>
+</root>

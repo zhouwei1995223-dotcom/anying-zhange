@@ -1,0 +1,13 @@
+<root>
+   <start>
+		<text>要去其他城市吗？？我可以帮助你！</text>
+		<color></color>
+		<options>
+			 <option text="那亚村(价格:1000 怪物5-19级)" color="" bgColor="" command="travel:3:1000" />
+			 <option text="幻漠城(价格:1500 怪物45-47级)" color="" bgColor="" command="travel:7:1500" />
+			 <option text="贝伦城(价格:500 怪物21-35级)" color="" bgColor="" command="travel:8:500" />
+			 <option text="暗精镇(价格:2000 怪物55-69级)" color="" bgColor="" command="travel:19:2000" />
+			 <option text="夏基亚城(价格:2500 怪物67-83级)" color="" bgColor="" command="travel:23:2500" />
+		</options>
+   </start>
+</root>

@@ -1,0 +1,90 @@
+<root>
+	<taskEntries>
+		<task id="10001012" completed="zsjj-completed" />
+		<task id="10001013" completed="fsjj-completed" />
+		<task id="10001014" completed="yxjj-completed" />
+	</taskEntries>
+   <start>
+		<text>实力的强大与否和你的装备有着莫大的联系！想变强吗！</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="终极装备进阶任务·战士" color="" bgColor="" command="goto:zsstart" />
+			<option text="终极装备进阶任务·法师" color="" bgColor="" command="goto:fsstart" />
+			<option text="终极装备进阶任务·游侠" color="" bgColor="" command="goto:yxstart" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </start>
+   <zsstart>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="击杀无双·怪异剑士" command="goto:zsjj" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </zsstart>
+   <zsjj>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="终极装备进阶任务·战士" command="goto:giveTask:10001012" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </zsjj>
+   <zsjj-completed>
+		<text>去吧，毁灭这世间的污秽吧！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" color="" bgColor="" command="completeTask:10001012" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </zsjj-completed>
+   <fsstart>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="击杀无双·怪异剑士" command="goto:fsjj" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </fsstart>
+   <fsjj>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="终极装备进阶任务·法师" command="goto:giveTask:10001013" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </fsjj>
+   <fsjj-completed>
+		<text>去吧，毁灭这世间的污秽吧！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" color="" bgColor="" command="completeTask:10001013" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </fsjj-completed>
+   <yxstart>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="击杀无双·怪异剑士" command="goto:yxjj" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </yxstart>
+   <yxjj>
+		<text>进阶终极武器，需要把原本未进阶的终极武器强化到80才可能，这个任务可以将你的终极武器淬炼成“璀璨的精华”然后在我的商店里购买合成卷，收集其他材料才可合成进阶的终极武器！！！</text>
+		<color></color>
+		<options>
+			<option text="终极装备进阶任务·游侠" command="goto:giveTask:10001014" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </yxjj>
+   <yxjj-completed>
+		<text>去吧，毁灭这世间的污秽吧！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" color="" bgColor="" command="completeTask:10001014" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </yxjj-completed>
+</root>

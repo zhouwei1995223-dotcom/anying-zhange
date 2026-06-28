@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>前面就是鲁亚里沙漠，要去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:10:5:165" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

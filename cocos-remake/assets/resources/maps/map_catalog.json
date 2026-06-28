@@ -1,0 +1,13 @@
+{
+    "id":  3,
+    "width":  3000,
+    "height":  3000,
+    "tileWidth":  100,
+    "tileHeight":  100,
+    "objects":  729,
+    "hasBlock":  true,
+    "preview":  "maps/map_3_preview",
+    "occlusion":  "maps/map_3_occlusion",
+    "block":  "maps/map_3_block",
+    "thumbnail":  "MAP_CATALOG/map_003.jpg"
+}

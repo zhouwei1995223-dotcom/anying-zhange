@@ -1,0 +1,157 @@
+<root>
+	<taskEntries>
+		<task id="10000004" completed="js" onceDone="start" />
+		<task id="10003004" completed="js" onceDone="start" />
+		<task id="10003014" completed="js" onceDone="start" />
+		<task id="10003024" completed="js" onceDone="start" />
+		<task id="10000003" completed="guide-completed" onceDone="start" />
+		<task id="10003003" completed="yx-completed" onceDone="start" />
+		<task id="10003013" completed="fs-completed" onceDone="start" />
+		<task id="10003023" completed="zs-completed" onceDone="start" />
+	</taskEntries>
+   <start>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>下次再来看看吧！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <guide-completed>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:next" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+   </guide-completed>
+	<next>
+		<text>欢迎观临，我是武器商人，我这里专门卖各个职业的武器，一定要注意看好自己职业的专用武器再买哦</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:next1" />
+		</options>
+	</next>
+	<next1>
+		<text>刚才给你介绍了人物3个属性，还有一些副属性，打开属性面板就可以看到，物理攻击力、魔法攻击力、物理防御、魔法防御、攻击时间、命中力、躲避力，他们都是受那3个属性影响的</text>
+		<color></color>
+		<options>
+			<option text="原来这样" command="goto:next2" />
+		</options>
+	</next1>
+	<next2>
+		<text>除了那3个属性改变会影响这些副属性以外我和防具商人卖的装备也能帮你提升这些属性的。你去找奸商吧，他在下面的棚子旁边，虽然我不是很喜欢他，但是话还是要带到的，没事少和他打交道</text>
+		<color></color>
+		<options>
+			<option text="哦，谢谢，我会的" command="completeTask:10000003" />
+		</options>
+	</next2>
+
+	<yx-completed>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:yxnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</yx-completed>
+	<yxnext>
+		<text>欢迎观临，我是武器商人，我这里专门卖各个职业的武器，一定要注意看好自己职业的专用武器再买哦</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:yxnext1" />
+		</options>
+	</yxnext>
+	<yxnext1>
+		<text>刚才给你介绍了人物3个属性，还有一些副属性，打开属性面板就可以看到，物理攻击力、魔法攻击力、物理防御、魔法防御、攻击时间、命中力、躲避力，他们都是受那3个属性影响的</text>
+		<color></color>
+		<options>
+			<option text="原来这样" command="goto:yxnext2" />
+		</options>
+	</yxnext1>
+	<yxnext2>
+		<text>除了那3个属性改变会影响这些副属性以外我和防具商人卖的装备也能帮你提升这些属性的。你去找奸商吧，他在下面的棚子旁边，虽然我不是很喜欢他，但是话还是要带到的，没事少和他打交道。</text>
+		<color></color>
+		<options>
+			<option text="哦，谢谢，我会的" command="completeTask:10003003;giveTask:10003004" />
+		</options>
+	</yxnext2>
+	<fs-completed>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:fsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</fs-completed>
+	<fsnext>
+		<text>欢迎观临，我是武器商人，我这里专门卖各个职业的武器，一定要注意看好自己职业的专用武器再买哦</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:fsnext1" />
+		</options>
+	</fsnext>
+	<fsnext1>
+		<text>刚才给你介绍了人物3个属性，还有一些副属性，打开属性面板就可以看到，物理攻击力、魔法攻击力、物理防御、魔法防御、攻击时间、命中力、躲避力，他们都是受那3个属性影响的</text>
+		<color></color>
+		<options>
+			<option text="原来这样" command="goto:fsnext2" />
+		</options>
+	</fsnext1>
+	<fsnext2>
+		<text>除了那3个属性改变会影响这些副属性以外我和防具商人卖的装备也能帮你提升这些属性的。你去找奸商吧，他在下面的棚子旁边，虽然我不是很喜欢他，但是话还是要带到的，没事少和他打交道。</text>
+		<color></color>
+		<options>
+			<option text="哦，谢谢，我会的" command="completeTask:10003013;giveTask:10003014" />
+		</options>
+	</fsnext2>
+	<zs-completed>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:zsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</zs-completed>
+	<zsnext>
+		<text>欢迎观临，我是武器商人，我这里专门卖各个职业的武器，一定要注意看好自己职业的专用武器再买哦</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:zsnext1" />
+		</options>
+	</zsnext>
+	<zsnext1>
+		<text>刚才给你介绍了人物3个属性，还有一些副属性，打开属性面板就可以看到，物理攻击力、魔法攻击力、物理防御、魔法防御、攻击时间、命中力、躲避力，他们都是受那3个属性影响的</text>
+		<color></color>
+		<options>
+			<option text="原来这样" command="goto:zsnext2" />
+		</options>
+	</zsnext1>
+	<zsnext2>
+		<text>除了那3个属性改变会影响这些副属性以外我和防具商人卖的装备也能帮你提升这些属性的。你去找奸商吧，他在下面的棚子旁边，虽然我不是很喜欢他，但是话还是要带到的，没事少和他打交道。</text>
+		<color></color>
+		<options>
+			<option text="哦，谢谢，我会的" command="completeTask:10003023;giveTask:10003024" />
+		</options>
+	</zsnext2>
+	<js>
+		<text>找不到奸商吗？他在(41.44)坐标附近，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:39:44" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</js>
+</root>

@@ -1,0 +1,112 @@
+<root>
+	<taskEntries>
+		<task id="10003063" completed="yxc" onceDone="ov" />
+		<task id="10003064" completed="fsc" onceDone="ov" />
+		<task id="10003065" completed="zsc" onceDone="ov" />
+	</taskEntries>
+	<raceEntries 0="yx" 1="fs" 2="zs" />
+	<ov>
+		<text>其实游戏里还有很多有趣的事情可以挖掘，当然如果你有好建议的话，可以上我们的官方论坛上发表建议。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</ov>
+	<yx>
+		<text>60级以上的玩家可以找我领取60级的引导任务,会得到很多好东西哦，看我这有把极品+2的武器，想要吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要领取武器" command="goto:yx0" />
+			 <option text="离开" command="" />
+		</options>
+	</yx>
+	<yx0>
+		<text>注意：领取武器前，请查看下自已的背包是否已满。如果背包满的话，武器会掉在地上哦。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品圣殿长弓" command="giveTask:10003063" />
+			 <option text="我先查看下背包" command="" />
+		</options>
+	</yx0>
+	<fs>
+		<text>如果你等级在60级以上，可以找我领取60级的引导任务,会得到很多好东西哦，看我这有把极品+2的武器。</text>
+		<color></color>
+		<options>
+			 <option text="我要领取武器" command="goto:fs0" />
+			 <option text="离开" command="" />
+		</options>
+	</fs>
+	<fs0>
+		<text>注意：领取武器前，请查看下自已的背包是否已满。如果背包满的话，武器会掉在地上哦。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品烈焰杖" command="giveTask:10003064" />
+			 <option text="我先查看下背包" command="" />
+		</options>
+	</fs0>
+	<zs>
+		<text>如果你等级在60级以上，可以找我领取60级的引导任务,会得到很多好东西哦，看我这有把极品+2的武器。</text>
+		<color></color>
+		<options>
+			 <option text="我要领取武器" command="goto:zs0" />
+			 <option text="离开" command="" />
+		</options>
+	</zs>
+	<zs0>
+		<text>注意：领取武器前，请查看下自已的背包是否已满。如果背包满的话，武器会掉在地上哦。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品杀戮之剑" command="giveTask:10003065" />
+			 <option text="我先查看下背包" command="" />
+		</options>
+	</zs0>
+	<yxc>
+		<text>游戏里有很多有趣的功能，这个藏宝图给你，只要你找到其中的藏宝地点，就可以挖掘出很多的宝物哦!</text>
+		<color></color>
+		<options>
+			 <option text="我要领取藏宝图" command="goto:yxc0" />
+			 <option text="离开" command="" />
+		</options>
+	</yxc>
+	<yxc0>
+		<text>注意：领取藏宝图前，请查看下自已的背包是否已满。如果背包满的话，藏宝图会掉在地上。</text>
+		<color></color>
+		<options>
+			 <option text="领取礼品藏宝图" command="completeTask:10003063" />
+			 <option text="离开" command="" />
+		</options>
+	</yxc0>
+	<fsc>
+		<text>游戏里有很多有趣的功能，这个藏宝图给你，只要你找到其中的藏宝地点，就可以挖掘出很多的宝物哦!</text>
+		<color></color>
+		<options>
+			 <option text="我要领取藏宝图" command="goto:fsc0" />
+			 <option text="离开" command="" />
+		</options>
+	</fsc>
+	<fsc0>
+		<text>注意：领取藏宝图前，请查看下自已的背包是否已满。如果背包满的话，藏宝图会掉在地上。</text>
+		<color></color>
+		<options>
+			 <option text="领取礼品藏宝图" command="completeTask:10003064" />
+			 <option text="离开" command="" />
+		</options>
+	</fsc0>
+	<zsc>
+		<text>游戏里有很多有趣的功能，这个藏宝图给你，只要你找到其中的藏宝地点，就可以挖掘出很多的宝物哦!</text>
+		<color></color>
+		<options>
+			 <option text="我要领取藏宝图" command="goto:zsc0" />
+			 <option text="离开" command="" />
+		</options>
+	</zsc>
+	<zsc0>
+		<text>注意：领取藏宝图前，请查看下自已的背包是否已满。如果背包满的话，藏宝图会掉在地上。</text>
+		<color></color>
+		<options>
+			<option text="领取礼品藏宝图" command="completeTask:10003065" />
+			<option text="离开" command="" />
+		</options>
+	</zsc0>
+	
+</root>

@@ -1,0 +1,260 @@
+<root>
+	<taskEntries>
+		<task id="20000061" doing="yxzz-doing" completed="yxzz-completed" />
+		<task id="10000005" completed="zh" />
+		<task id="10003005" completed="zh" />
+		<task id="10003015" completed="zh" />
+		<task id="10003025" completed="zh" />
+		<task id="10000004" completed="guide-completed" />
+		<task id="10003004" completed="yx-completed" />
+		<task id="10003014" completed="fs-completed" />
+		<task id="10003024" completed="zs-completed" />
+		<task id="10000011" completed="skin-completed" />
+		<task id="10000012" completed="eyes-completed" />
+	</taskEntries>
+	<levelEntries>
+		<1>start</1>
+		<121>sj</121>
+	</levelEntries>
+   <start>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <sj>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="收集任务" command="goto:eyesstart" />
+			<option text="离开" command="" />
+		</options>
+   </sj>
+   <eyesstart>
+		<text>朋友，想赚钱吗？你可以在这我接一些收集物品的任务！</text>
+		<color></color>
+		<options>
+			<option text="老鼠皮" command="goto:skin" />
+			<option text="多目怪的眼睛" command="goto:eyes" />
+			<option text="返回上一层" command="goto:sj" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </eyesstart>
+   <eyes>
+		<text>看到那些多目怪了吗？据说它们的眼睛有神奇的魔力，肯定能卖个好价钱，去帮我弄点来。当然，不会亏待你的</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000012" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:eyesstart" />
+		</options>
+   </eyes>
+   <eyes-completed>
+		<text>哇哦~看看它们，多迷人。虽然我是奸商，但是我不会食言的，这是你的报酬</text>
+		<color></color>
+		<options>
+			 <option text="这实在太容易了，下次来点有挑战的" command="completeTask:10000012" />
+			 <option text="我只是回来买点东西" command="buy" />
+		</options>
+   </eyes-completed>
+   <skin>
+		<text>智慧老人委托我收集些老鼠皮，如果你愿意帮助我，我会给你一些奖励！</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10000011" />
+			<option text="拒绝任务" command="" />
+			<option text="返回上一层" command="goto:eyesstart" />
+		</options>
+	</skin>
+	<skin-completed>
+		<text>你帮我搜集的老鼠皮，你都弄齐了吧！</text>
+		<color>84F614</color>
+		<options>
+			<option text="是呀，我来领奖励" command="completeTask:10000011" />
+			<option text="齐了，可我不给你" command="" />
+		</options>
+	</skin-completed>
+	<help>
+		<text>想赚钱吗？你等级高些后！可以在我这接一些收集物品的任务。</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+	</help>
+	<guide-completed>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+			<option text="新手指导任务" command="goto:next" />
+		</options>
+	</guide-completed>
+	<next>
+		<text>你好我是奸商，其实我没你想象的那么坏，我只是个商人</text>
+		<color></color>
+		<options>
+			<option text="……你有什么事吗？" command="goto:next1" />
+		</options>
+	</next>
+	<next1>
+		<text>哦，差点把正事忘了，你知道怎么和其他人交流吗？</text>
+		<color></color>
+		<options>
+			<option text="……这个" command="goto:next2" />
+		</options>
+	</next1>
+	<next2>
+		<text>看吧，我告诉你吧，聊天输入框在界面的右下，点击回车或者用鼠标左键点击聊天输入框就可以输入你想说的话，聊天输入框上面有一个频道按钮，点击就可以对要说话的频道进行选择</text>
+		<color></color>
+		<options>
+			<option text="哦……这样啊" command="goto:next3" />
+		</options>
+	</next2>
+	<next3>
+		<text>还有在右边的聊天显示框上有一排按钮，那是各个聊天频道，点击就可以对聊天显示框的频道进行切换了。好了，你去智慧老人那吧，他在下面房子的右边，听他啰嗦可不是件容易的事情，抽空就赶快跑</text>
+		<color></color>
+		<options>
+			<option text="知道了……我这就去" command="completeTask:10000004" />
+		</options>
+	</next3>
+	<yx-completed>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:yxnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</yx-completed>
+	<yxnext>
+		<text>你好我是奸商，其实我没你想象的那么坏，我只是个商人</text>
+		<color></color>
+		<options>
+			<option text="……你有什么事吗？" command="goto:yxnext1" />
+		</options>
+	</yxnext>
+	<yxnext1>
+		<text>哦，差点把正事忘了，你知道怎么和其他人交流吗？</text>
+		<color></color>
+		<options>
+			<option text="……这个" command="goto:yxnext2" />
+		</options>
+	</yxnext1>
+	<yxnext2>
+		<text>看吧，我告诉你吧，聊天输入框在界面的右下，点击回车或者用鼠标左键点击聊天输入框就可以输入你想说的话，聊天输入框上面有一个频道按钮，点击就可以对要说话的频道进行选择</text>
+		<color></color>
+		<options>
+			<option text="哦……这样啊" command="goto:yxnext3" />
+		</options>
+	</yxnext2>
+	<yxnext3>
+		<text>还有在右边的聊天显示框上有一排按钮，那是各个聊天频道，点击就可以对聊天显示框的频道进行切换了。好了，你去智慧老人那吧，他在下面房子的右边，听他啰嗦可不是件容易的事情，抽空就赶快跑</text>
+		<color></color>
+		<options>
+			<option text="知道了……我这就去" command="completeTask:10003004" />
+		</options>
+	</yxnext3>
+	<fs-completed>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:fsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</fs-completed>
+	<fsnext>
+		<text>你好我是奸商，其实我没你想象的那么坏，我只是个商人</text>
+		<color></color>
+		<options>
+			<option text="……你有什么事吗？" command="goto:fsnext1" />
+		</options>
+	</fsnext>
+	<fsnext1>
+		<text>哦，差点把正事忘了，你知道怎么和其他人交流吗？</text>
+		<color></color>
+		<options>
+			<option text="……这个" command="goto:fsnext2" />
+		</options>
+	</fsnext1>
+	<fsnext2>
+		<text>看吧，我告诉你吧，聊天输入框在界面的右下，点击回车或者用鼠标左键点击聊天输入框就可以输入你想说的话，聊天输入框上面有一个频道按钮，点击就可以对要说话的频道进行选择</text>
+		<color></color>
+		<options>
+			<option text="哦……这样啊" command="goto:fsnext3" />
+		</options>
+	</fsnext2>
+	<fsnext3>
+		<text>还有在右边的聊天显示框上有一排按钮，那是各个聊天频道，点击就可以对聊天显示框的频道进行切换了。好了，你去智慧老人那吧，他在下面房子的右边，听他啰嗦可不是件容易的事情，抽空就赶快跑</text>
+		<color></color>
+		<options>
+			<option text="知道了……我这就去" command="completeTask:10003014" />
+		</options>
+	</fsnext3>
+	<zs-completed>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:zsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</zs-completed>
+	<zsnext>
+		<text>你好我是奸商，其实我没你想象的那么坏，我只是个商人</text>
+		<color></color>
+		<options>
+			<option text="……你有什么事吗？" command="goto:zsnext1" />
+		</options>
+	</zsnext>
+	<zsnext1>
+		<text>哦，差点把正事忘了，你知道怎么和其他人交流吗？</text>
+		<color></color>
+		<options>
+			<option text="……这个" command="goto:zsnext2" />
+		</options>
+	</zsnext1>
+	<zsnext2>
+		<text>看吧，我告诉你吧，聊天输入框在界面的右下，点击回车或者用鼠标左键点击聊天输入框就可以输入你想说的话，聊天输入框上面有一个频道按钮，点击就可以对要说话的频道进行选择</text>
+		<color></color>
+		<options>
+			<option text="哦……这样啊" command="goto:zsnext3" />
+		</options>
+	</zsnext2>
+	<zsnext3>
+		<text>还有在右边的聊天显示框上有一排按钮，那是各个聊天频道，点击就可以对聊天显示框的频道进行切换了。好了，你去智慧老人那吧，他在下面房子的右边，听他啰嗦可不是件容易的事情，抽空就赶快跑</text>
+		<color></color>
+		<options>
+			<option text="知道了……我这就去" command="completeTask:10003024" />
+		</options>
+	</zsnext3>
+	<zh>
+		<text>下面穿绿衣服的老人就是他了，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:33:52" />
+			<option text="买入" command="buy" />
+			<option text="收集任务" command="goto:eyesstart" />
+			<option text="离开" command="" />
+		</options>
+	</zh>
+	<yxzz-doing>
+		<text>在找“艾特鲁里亚王子”吗？他去帮我们消灭那舍岛的多目怪了。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yxzz-doing>
+	<yxzz-completed>
+		<text>我是“普罗·克洛托”，你的任务已完成，不能常期停留在过去的时间里，要回“普罗之殿”领取任务奖励吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:24:21" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</yxzz-completed>
+</root>

@@ -1,0 +1,19 @@
+<root>
+	<taskEntries>
+		<task id="10002001" completed="xiaog-completed" />
+	</taskEntries>
+   <start>
+		<text>汪~~汪~~~~汪~汪~汪~！</text>
+		<color></color>
+		<options>
+             <option text="好可爱的小狗！" command="" />
+		</options>
+   </start>
+   <xiaog-completed>
+		<text>汪~~汪~~~~汪~汪~汪~！</text>
+		<color></color>
+		<options>
+             <option text="找到你了" command="completeTask:10002001" />
+		</options>
+   </xiaog-completed>
+</root>

@@ -1,0 +1,11 @@
+<root>
+   <start>
+		<text>我这里有免费传送同地图几个方向的功能，要试试吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要出城" command="transport:3:81:87" />
+			 <option text="我要进城" command="transport:3:70:83" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+</root>

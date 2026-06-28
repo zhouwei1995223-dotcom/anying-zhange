@@ -1,0 +1,17 @@
+<root>
+   <start>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" color="" bgColor="" command="buy" />
+             <option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>记住我的品牌哦！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>   
+</root>

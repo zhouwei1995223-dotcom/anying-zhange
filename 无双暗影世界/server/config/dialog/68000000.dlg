@@ -1,0 +1,26 @@
+<root>
+	<start>
+		<text>无双·大秘境是收费场景，票价为50000个金币，要进去吗？\n一共分为50层\n1-6层为60级，7-12层为70级，13-18层为80级，19-24层为90级，25-30层为100级，31-36层为110级，37-42层为120级，43-50层为130级\n1-6层，7-12层。。。（以此类推）层数越高爆率越高，经验越高，金币奖励越高。\n建议组队进入！！！</text>
+		<color></color>
+		<options>
+			 <option text="去无双·大秘境 1层（怪物等级： 60级，价格  5w）" command="createDuplicate:5001:50000" />
+			 <option text="去无双·大秘境 7层（怪物等级： 70级，价格 50w）" command="createDuplicate:5007:500000" />
+			 <option text="去无双·大秘境13层（怪物等级： 80级，价格100w）" command="createDuplicate:5013:1000000" />
+			 <option text="去无双·大秘境19层（怪物等级： 90级，价格200w）" command="createDuplicate:5019:2000000" />
+			 <option text="去无双·大秘境25层（怪物等级：100级，价格300w）" command="createDuplicate:5025:3000000" />
+			 <option text="下一页" command="goto:dmj" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<dmj>
+		<text>无双·大秘境是收费场景，票价为50000个金币，要进去吗？\n一共分为50层\n1-6层为60级，7-12层为70级，13-18层为80级，19-24层为90级，25-30层为100级，31-36层为110级，37-42层为120级，43-50层为130级</text>
+		<color></color>
+		<options>
+			 <option text="去无双·大秘境31层（怪物等级：110级，价格 400w）" command="createDuplicate:5031:4000000" />
+			 <option text="去无双·大秘境37层（怪物等级：120级，价格 500w）" command="createDuplicate:5037:5000000" />
+			 <option text="去无双·大秘境43层（怪物等级：130级，价格1000w）" command="createDuplicate:5043:10000000" />
+			 <option text="上一页" command="goto:start" />
+			 <option text="离开" command="" />
+		</options>
+	</dmj>
+</root>

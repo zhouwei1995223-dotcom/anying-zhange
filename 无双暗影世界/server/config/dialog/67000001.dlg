@@ -1,0 +1,91 @@
+<root>
+	<taskEntries>
+		<task id="20000028" completed="start1" />
+	</taskEntries>
+	<levelEntries>
+		<48>start0</48>
+		<1200>start</1200>
+	</levelEntries>
+   <start0>
+		<text>你怎么会出现在这？你现在来到这的话可就出不去咯，只有48级以上才能出去。</text>
+		<color></color>
+		<options>
+			 <option text="出不去啦" command="" />
+		</options>
+   </start0>
+   <start>
+		<text>你可以在我这得到一些本次任务和这里的一些信息。</text>
+		<color></color>
+		<options>
+			 <option text="关于任务" command="goto:rw" />
+			 <option text="关于战斗" command="goto:zd" />
+			 <option text="Boss位置" command="goto:wz" />
+			 <option text="我要出去" command="transport:7:35:67" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start>
+   <start1>
+		<text>看来你已经完成任务了，需要出去吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要出去" command="transport:7:35:67" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start1>
+   <rw>
+		<text>这里有三个BOSS，当你消灭掉一定数量的怪物后，他们才会陆续出现，邪恶之心在最后一个出现！</text>
+		<color></color>
+		<options>
+			 <option text="关于BOSS资料？" command="goto:rw0" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </rw>
+   <rw0>
+		<text>三个BOSS按顺序出现的排名，分别是欺骗之心、诱惑之心和邪恶之心。</text>
+		<color></color>
+		<options>
+			 <option text="什么顺序？" command="goto:rw1" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </rw0>
+   <rw1>
+		<text>当你消灭掉20个怪物时，会出现第一个BOSS，其它两个BOSS出现要杀多少个怪才出现，就需要你去尝试咯！</text>
+		<color></color>
+		<options>
+			 <option text="干掉BOSS有什么奖励吗？" command="goto:rw2" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </rw1>
+   <rw2>
+		<text>嘿嘿，这也给你想到了，本次任务的BOSS有可能掉一些好装备哦！</text>
+		<color></color>
+		<options>
+			 <option text="哇啊！我这就去" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </rw2>
+   <zd>
+		<text>虚幻之卫兵为近身物理攻击系，虚幻之魔物球为远程魔法攻击系，虚幻之邪恶为远程物理攻击系！</text>
+		<color></color>
+		<options>
+			 <option text="要杀什么怪，BOSS才会出现？" command="goto:zd0" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zd>
+   <zd0>
+		<text>这个杀什么怪BOSS才会出现的限制，可以按你的职业杀怪，到一定数量后BOSS就会出现！</text>
+		<color></color>
+		<options>
+			 <option text="哦，我知道了，我马上就去！" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zd0>
+   <wz>
+		<text>BOSS在74，109坐标附近出现。但只有你消灭一定数量的怪物后，BOSS才会出现。</text>
+		<color></color>
+		<options>
+			 <option text="我去看看" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </wz>
+</root>

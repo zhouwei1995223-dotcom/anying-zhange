@@ -1,0 +1,24 @@
+<root>
+   <start>
+		<text>你好，我是转生解说员。0转等级达到60级可进行1转。\n1转等级达到70级可进行2转。\n2转等级达到80级可进行3转。\n3转等级达到90级可进行4转。\n4转等级达到100级可进行5转。\n5转等级达到110级可进行6转。\n6转等级达到120级可进行7转。\n7转等级达到130级可进行2转。</text>
+		<color></color>
+		<options>
+			<option text="转生解说" command="goto:zsjs" />
+			<option text="离开" command="" />
+		</options>
+   </start>
+	<zsjs>
+		<text>转生后你会获得一些可以自由分配的属性点数，但是你的等级会降为30级。</text>
+		<color></color>
+		<options>
+			 <option text="关于转生穿装备" command="goto:zsjs1" />
+		</options>
+	</zsjs>
+	<zsjs1>
+		<text>转生不仅有属性点数的奖励，还可以从转生时所穿的装备上吸取一些属性，吸取的属性会变为人物的永久属性，这些永久属性是按装备属性的比率来吸取,只是转生时所穿的装备会消失。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</zsjs1>
+   </root>

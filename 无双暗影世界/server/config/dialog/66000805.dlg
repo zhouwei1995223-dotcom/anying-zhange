@@ -1,0 +1,28 @@
+<root>
+	<taskEntries>
+		<task id="10003043" completed="jn-completed" onceDone="start" />
+	</taskEntries>
+   <start>
+		<text>转生技能很强大，但技能书需要通过杀死怪物和BOSS掉落获得。</text>
+		<color></color>
+		<options>
+			 <option text="这个我知道" command="" />
+		</options>
+   </start>
+   <jn-completed>
+		<text>转生技能可是比以前的技能强大很多哦！要学习转生技能需要对应的转生前技能到达特定等级再点击技能书才能学习，技能书通过杀死怪物和BOSS掉落获得，前面讲的宠物技能也是可以放到快捷键使用！</text>
+		<color></color>
+		<options>
+			 <option text="那个...奖励..." command="goto:zs" />
+			 <option text="离开" command="" />
+		</options>
+   </jn-completed>
+   <zs>
+		<text>转生后的介绍到这就结束了，这是给你的奖励，希望你继续加油呀!</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10003043" />
+			 <option text="离开" command="" />
+		</options>
+   </zs>
+</root>

@@ -1,0 +1,37 @@
+<root>
+	<taskEntries>
+		<task id="10003047" completed="xn-complete" />
+		<task id="10003049" completed="zhlr" onceDone="start"/>
+		<task id="10003048" completed="js" onceDone="start"/>		
+		<task id="10003047" onceDone="start"/>		
+	</taskEntries>
+	<start>
+		<text>每个城的修女除了供应药品之外，还经常发布一些杀怪的任务，有空的话就常来看看。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<xn-complete>
+		<text>我们修女除了供应药品之外，还负责组织队伍来消灭一些怪物，以保证城市的安全，有空的话可以来看看。对了，这是你的礼品，接下去的任务跟奸商谈谈吧。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003047" />
+			<option text="离开" command="" />
+		</options>
+	</xn-complete>
+	<js>
+		<text>你现在可以找旁边的奸商聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</js>
+	<zhlr>
+		<text>你现在可以找旁边的智慧老人聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</zhlr>
+</root>

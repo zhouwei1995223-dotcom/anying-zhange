@@ -1,0 +1,6 @@
+<app.island.data.Shortcuts>
+	<idArray>95020401,-1,0,0,0,0,0,0,0,0,1613000007,0,</idArray>
+	<flagArray>2,0,0,0,0,0,0,0,0,0,1,0,</flagArray>
+	<id>20001</id>
+	<name>无双暗影世界</name>
+</app.island.data.Shortcuts>

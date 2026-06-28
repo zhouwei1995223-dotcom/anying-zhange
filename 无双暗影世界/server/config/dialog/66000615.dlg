@@ -1,0 +1,20 @@
+<root>
+	<deathEntries>
+		<gg>180</gg>
+	</deathEntries>
+	<start>
+		<text>你们的任务是消灭兽族主力，并找出和消灭兽王“施瓦新格”。</text>
+		<color></color>
+		<options>
+			<option text="关闭" command="" />
+		</options>
+	</start>
+	<gg>
+		<text>“施瓦新格”已逃到“阿塞林地”，你们是否要过去追捕？</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="createDuplicate:3029" />
+			<option text="关闭" command="" />
+		</options>
+	</gg>
+</root>

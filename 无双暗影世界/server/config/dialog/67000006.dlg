@@ -1,0 +1,11 @@
+<root>
+   <start>
+		<text>我这里有免费出城和回城的功能，要试试吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要“出”城" command="transport:19:106:118" />
+			 <option text="我要“回”城" command="transport:19:105:75" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start>
+</root>

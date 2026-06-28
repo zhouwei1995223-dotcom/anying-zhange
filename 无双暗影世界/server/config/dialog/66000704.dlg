@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+                         <option text="暂时还不需要" command="" />
+		</options>
+   </start>
+</root>

@@ -1,0 +1,19 @@
+<root>
+	<deathEntries>
+		<gg>10</gg>
+	</deathEntries>
+   <start>
+		<text>附近还有10只多目怪，如果你消灭了它们，这里的村民将会十分的感谢你!</text>
+		<color></color>
+		<options>
+			 <option text="我这就去把它们消灭" command="" />
+		</options>
+	</start>
+	<gg>
+		<text>不知名的勇士，和我一起战斗吧，我将使用“巨龙力量”协助你，希望这次能把“梅迪乌斯”干掉。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</gg>
+</root>

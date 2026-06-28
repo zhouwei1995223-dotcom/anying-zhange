@@ -1,0 +1,2 @@
+名字	命令文本	执行类型	年	月	日	时	分	秒	星期几
+name	cmdText	type	year	month	day	hour	minute	second	date

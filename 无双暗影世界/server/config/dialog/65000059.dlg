@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要去终极武器锻造屋吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:1000:0:0" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

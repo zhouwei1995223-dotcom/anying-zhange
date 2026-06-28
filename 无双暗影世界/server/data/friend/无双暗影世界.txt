@@ -1,0 +1,8 @@
+<app.island.data.FriendList>
+	<friends></friends>
+	<enemies></enemies>
+	<blacks></blacks>
+	<students></students>
+	<id>20001</id>
+	<name>无双暗影世界</name>
+</app.island.data.FriendList>

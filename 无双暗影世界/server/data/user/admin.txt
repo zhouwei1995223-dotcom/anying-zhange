@@ -1,0 +1,14 @@
+<app.island.entity.User>
+	<password>741852963</password>
+	<adOwner></adOwner>
+	<heroIds>20001,20007,20008,</heroIds>
+	<heroNames>无双暗影世界,了看京汉股份,滴滴滴,</heroNames>
+	<loginCount>127</loginCount>
+	<treasure>74907</treasure>
+	<earnedTreasure>2000</earnedTreasure>
+	<payedTreasure>260677147</payedTreasure>
+	<consumedTreasure>3106817</consumedTreasure>
+	<lastLoginIP>127.0.0.1</lastLoginIP>
+	<id>20001</id>
+	<name>admin</name>
+</app.island.entity.User>

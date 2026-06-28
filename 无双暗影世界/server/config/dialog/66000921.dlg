@@ -1,0 +1,48 @@
+<root>
+	<taskEntries>
+		<task id="10003050" completed="ku-completed" onceDone="ov" />
+	</taskEntries>
+	<levelEntries>
+		<40>start</40>
+		<12000>brlp</12000>
+	</levelEntries>
+	<start>
+		<text>见到你很高兴，不过我现在很忙，等你40级以上再来找我吧。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<ov>
+		<text>等你到60级以上时，还可以去暗精镇找“礼品使者”试试。</text>
+		<color></color>
+		<options>
+			<option text="我要去“安静的舞台”" command="createDuplicate:3028" />
+			<option text="离开" command="" />
+		</options>
+	</ov>
+	<brlp>
+		<text>哎，你来的真不巧，礼品都分光了。这样吧，你可以在我这接个任务，然后去找“酷洛队长”，他会给你一些礼品。</text>
+		<color></color>
+		<options>
+			<option text="为什么找他" command="goto:kul" />
+			<option text="离开" command="" />
+		</options>
+	</brlp>
+	<kul>
+		<text>以前我帮助过他，现在他已经成为皇家剧团的队长，所以他一直想还我这个人情。据说他手里有不少宝贝，怎么样有兴趣吗？</text>
+		<color></color>
+		<options>
+			<option text="好，接受任务" command="giveTask:10003050" />
+			<option text="离开" command="" />
+		</options>
+	</kul>
+	<ku-completed>
+		<text>现在是工作时间，“酷洛队长”应该在舞台那边管理他的手下，我可以把你传送过去，要去吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="createDuplicate:3028" />
+			 <option text="离开" command="" />
+		</options>
+	</ku-completed>
+</root>

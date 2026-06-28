@@ -1,0 +1,8 @@
+<app.island.data.FriendList>
+	<friends></friends>
+	<enemies></enemies>
+	<blacks></blacks>
+	<students></students>
+	<id>20007</id>
+	<name>了看京汉股份</name>
+</app.island.data.FriendList>

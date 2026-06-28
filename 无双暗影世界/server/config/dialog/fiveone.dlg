@@ -1,0 +1,45 @@
+<root>
+   <start>
+		<text>你好，GM！我给玩家发放的奖品是由你来设置的。你的摆摊商店里里的物品，会被我取出来，作为奖品。在5.1期间凡60级以上的玩家都可以在我这里选取其中的一个作为奖品。玩家每次点我的时候，我会从里面随机选择一个物品，给他选择，他每次可能会看到不同的物品，直到他选择自己最喜欢的。</text>
+		<color></color>
+		<options>
+			 <option text="设置奖品" command="setup" />
+		</options>
+   </start>
+   <before51>
+		<text>你好，亲爱的$heroName！我是五一礼品大使，在五一期间（1日到5日），凡60级以上的玩家都可以在我这里来领取神秘的礼物，不过，一个帐号只能领取一次。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </before51>
+   <after51>
+		<text>你好，亲爱的$heroName！我是五一礼品大使，在五一期间（1日到5日），凡60级以上的玩家都可以在我这里来领取神秘的礼物，不过，现在活动已经结束了。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </after51>
+   <noLevel>
+		<text>你好，亲爱的$heroName！我是五一礼品大使，在五一期间（1日到5日），凡60级以上的玩家都可以在我这里来领取神秘的礼物，你的等级还不够，赶紧去升级吧。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </noLevel>
+   <got>
+		<text>你好，亲爱的$heroName！你已经领取过礼品了，祝你节日快乐！</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </got>
+   <gift>
+		<text>你好，亲爱的$heroName！我送给你[$goods]，你要吗？</text>
+		<color></color>
+		<options>
+			 <option text="很好，我就要这个" command="get" />
+			 <option text="不，我不想要这个" command="" />
+		</options>
+   </gift>
+</root>

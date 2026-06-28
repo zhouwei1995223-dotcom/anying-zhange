@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="打开我的仓库" command="store" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+</root>

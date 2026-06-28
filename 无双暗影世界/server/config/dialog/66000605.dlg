@@ -1,0 +1,57 @@
+<root>
+	<taskEntries>
+		<task id="10000032" doing="crazy-doing" completed="crazy-completed" />
+	</taskEntries>
+	<levelEntries>
+		<81>start</81>
+		<121>crazystart</121>
+	</levelEntries>
+   <start>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <crazystart>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+			<option text="神秘的爆炸球" color="" bgColor="" command="goto:crazy" />
+		</options>
+   </crazystart>
+   <help>
+		<text>记住我的品牌哦！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+   <crazy>
+		<text>你说那些爆炸球怎么能聚集那么多的能量呢？它们明明那么小，这里面一定有学位，去帮我收集一些它们的碎片，我要好好研究一下</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000032" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </crazy>
+   <crazy-doing>
+		<text>还愣着干嘛，赶快去吧</text>
+		<color></color>
+		<options>
+			 <option text="哦，恩" color="" bgColor="" command="" />
+			 <option text="买东西" color="" bgColor="" command="buy" />
+		</options>
+   </crazy-doing>
+   <crazy-completed>
+		<text>收集到了吗？</text>
+		<color></color>
+		<options>
+			 <option text="那，在这里，给你" color="" bgColor="" command="completeTask:10000032" />
+			 <option text="买东西" color="" bgColor="" command="buy" />
+		</options>
+   </crazy-completed>
+</root>

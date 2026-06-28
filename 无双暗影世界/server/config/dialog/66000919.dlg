@@ -1,0 +1,43 @@
+<root>
+	<taskEntries>
+		<task id="10003051" completed="sz" onceDone="ov" />
+		<task id="10003052" completed="sz" onceDone="ov" />
+		<task id="10003053" completed="sz" onceDone="ov" />
+		<task id="10003054" completed="sz" onceDone="ov" />
+		<task id="10003055" completed="sz" onceDone="ov" />
+		<task id="10003056" completed="sz" onceDone="ov" />
+		<task id="10003057" completed="sz" onceDone="ov" />
+		<task id="10003058" completed="sz" onceDone="ov" />
+		<task id="10003059" completed="sz" onceDone="ov" />
+	</taskEntries>
+	<start>
+		<text>你可以找我领个任务，会得到一个在线挂机宝石，还可以找队长领取我身上所穿的这种服装。但是请注意：在我这领到任务后，从我队友哪里就接不到送时装的任务了。</text>
+		<color></color>
+		<options>
+			<option text="我就喜欢你身上的这种服装" command="goto:ylf" />
+			<option text="让我再想想看" command="" />
+		</options>
+	</start>
+	<ylf>
+		<text>我的服装叫“暗黑审判者”，英雄穿上它维护世界和平的重任就靠你了。(注：该任务只限男士领取)</text>
+		<color></color>
+		<options>
+			<option text="领取任务" command="giveTask:10003059" />
+			<option text="离开" command="" />
+		</options>
+	</ylf>
+	<ov>
+		<text>你已经做过送时装的任务了，如果没事的话，请不要打扰我们排练。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</ov>
+	<sz>
+		<text>你现在可以找我们的队长领取时装了。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</sz>
+</root>

@@ -1,0 +1,55 @@
+<root>
+	<taskEntries>
+		<task id="20000001" doing="yzky-doing" completed="yzky-completed" onceDone="start" />
+	</taskEntries>
+	<levelEntries>
+		<12>start</12>
+		<1210>yzkystart</1210>
+	</levelEntries>
+	<start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+		</options>
+	</start>
+	<yzkystart>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买东西" command="buy" />
+			 <option text="勇者考验(主线)" command="goto:yzky" />
+		</options>
+	</yzkystart>
+	<yzky>
+		<text>勇士，最近我们的村子受到多目怪的攻击，我们正在招募一些勇士来消灭这种怪物，你有没有兴趣参加？</text>
+		<color></color>
+		<options>
+			 <option text="我想参加" command="goto:next" />
+			 <option text="拒绝任务" command="" />
+		</options>
+	</yzky>
+	<next>
+		<text>如果你带回12个多目怪的眼睛，以证明你消灭了这些怪物，我们会给你丰厚的奖励。</text>
+		<color></color>
+		<options>
+			 <option text="好，我接受任务" command="giveTask:20000001" />
+			 <option text="我来买书" command="buy" />
+		</options>
+	</next>
+	<yzky-doing>
+		<text>勇士，把多目怪的眼睛带回来了吗？？</text>
+		<color></color>
+		<options>
+			 <option text="好，我这就去" command="" />
+			 <option text="买东西" command="buy" />
+		</options>
+	</yzky-doing>
+	<yzky-completed>
+		<text>勇士,感谢你帮助我们消灭了这些怪物，这是你的奖励！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000001" />
+		</options>
+	</yzky-completed>
+</root>

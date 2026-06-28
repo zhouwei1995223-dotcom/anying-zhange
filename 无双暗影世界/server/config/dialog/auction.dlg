@@ -1,0 +1,58 @@
+<root>
+	<start>
+		<text>我所拍卖的物品取自你的个人摆摊商店里的第一个物品，请你将物品放在第一个位置，并设置好价格金币价格，注意是金币价格哦！你所设置的金币价格就是拍卖的起点价格，每次涨价为初始价格的5%。</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="开始拍卖" command="start" />
+			 <option text="没什么事" command="" />
+		</options>
+	</start>
+	<noAuction>
+		<text>你好啊，亲爱的$heroName！我是拍卖员，现在暂时没有什么物品在拍卖，过些时候再来找我吧。</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="看看拍卖指导" command="goto:help" />
+			 <option text="好的下次再来" command="" />
+		</options>
+	</noAuction>
+	<noGoods>
+		<text>你的个人商店第一个位置没有物品，叫我怎么搞嘛！</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="不好意思啊 " command="" />
+		</options>
+	</noGoods>
+	<help>
+		<text>拍卖的过程是这样的：当开始拍卖后，大家在我这里出价，所出价格的金币将从玩家身上扣除，如果别人出了更高的价格，该玩家可以再次出价，这个时候只会扣除上次出价高出的部分。拍卖开始后，每次出价的时间限制是2分钟，如果2分钟内没有人出更高的价格，则拍卖结束，出最高价格者将获得所拍卖的物品，其他出价的玩家依次在我这里领回自己的金币。</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="我大概知道了" command="" />
+		</options>
+	</help>
+	<auction>
+		<text>我现在正在拍卖[$goodsName]，当前价格是[$price金币]，你有兴趣参与竞价吗？</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="我出$price1金币" command="price:$price1" />
+			 <option text="我出$price2金币" command="price:$price2" />
+			 <option text="我出$price3金币" command="price:$price3" />
+			 <option text="我出$price4金币" command="price:$price4" />
+			 <option text="我出$price5金币" command="price:$price5" />
+			 <option text="我不想出价" command="" />
+		</options>
+	</auction>
+	<lastBuyer>
+		<text>你好啊，亲爱的$heroName！还没有人给出比你更高的价格呢，看来你很可能会是最后的胜利者哦！</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="我真高兴" command="" />
+		</options>
+	</lastBuyer>
+	<getMoney>
+		<text>你好啊，亲爱的$heroName！拍卖结束了，有人比你出更高的价格，你失去了购买的机会。</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="我要取回我的钱钱" command="getMoney" />
+		</options>
+	</getMoney>
+</root>

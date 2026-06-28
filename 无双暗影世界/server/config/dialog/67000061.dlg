@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要回到幻漠城吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到幻漠城" command="transport:7:45:45" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+</root>

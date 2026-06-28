@@ -1,0 +1,263 @@
+<root>
+	<taskEntries>
+		<task id="20000053" completed="yxpj-completed" />
+		<task id="20000054" completed="yxpx-completed" />
+		<task id="20000055" completed="yxts-completed" />
+		<task id="20000040" completed="fsfp-completed" />
+		<task id="20000041" completed="fsx-completed" />
+		<task id="20000042" completed="zfm-completed" />
+		<task id="20000043" completed="zskj-completed" />
+		<task id="20000044" completed="zszx-completed" />
+		<task id="20000045" completed="zstk-completed" />
+		<task id="20000046" completed="slzd-completed" />
+		<task id="20000058" completed="cy96-completed" />
+		<task id="20000059" completed="sg96-completed" />
+		<task id="20000060" completed="xx96-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<ZB>1333050100</ZB>
+		<zx>1333050102</zx>
+	</goodsEntries>	
+	<start>
+		<text>72级主线任务可以找夏基亚城的“智慧老人”领取，等你加入远征军后，就可以找“皇家指挥官”参加远征军的行动。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<ZB>
+		<text>你好，看来你远征军里的英雄人物，你可以用你手里的战斗勋章来换取一些72级的极品装备，要换吗？</text>
+		<color></color>
+		<options>
+			<option text="游侠装备" command="goto:YX" />
+			<option text="法师装备" command="goto:FS" />
+			<option text="战士装备" command="goto:ZS" />
+			<option text="离开" command="" />
+		</options>
+	</ZB>
+	<zx>
+		<text>首先替夏基亚城的市民感谢你，你可以用手里的英雄勋章来换取96级的极品装备，要换吗？</text>
+		<color></color>
+		<options>
+			<option text="换取极品穿云弓+5" command="giveTask:20000058" />
+			<option text="换取极品圣光之杖+5" command="giveTask:20000059" />
+			<option text="换取极品血腥之剑+5" command="giveTask:20000060" />
+			<option text="离开" command="" />
+		</options>
+	</zx>
+	<YX>
+		<text>这些都是72级的极品游侠装备，你随意选吧！</text>
+		<color></color>
+		<options>
+			<option text="极品天鹰皮甲" command="goto:yxpj" />
+			<option text="极品天鹰皮靴" command="goto:yxpx" />
+			<option text="极品天鹰头饰" command="goto:yxts" />
+			<option text="离开" command="" />
+		</options>
+	</YX>
+	<FS>
+		<text>这些都是72级的极品法师装备，你随意选吧！</text>
+		<color></color>
+		<options>
+			<option text="极品祝福法袍" command="goto:fsfp" />
+			<option text="极品祝福鞋" command="goto:fsx" />
+			<option text="极品祝福帽" command="goto:zfm" />
+			<option text="离开" command="" />
+		</options>
+	</FS>
+	<ZS>
+		<text>这些都是72级的极品战士装备，你随意选吧！</text>
+		<color></color>
+		<options>
+			<option text="极品荣誉铠甲" command="goto:zskj" />
+			<option text="极品荣誉之靴" command="goto:zszx" />
+			<option text="极品荣誉头盔" command="goto:zstk" />
+			<option text="极品胜利之盾" command="goto:slzd" />
+			<option text="离开" command="" />
+		</options>
+	</ZS>
+	<yxpj>
+		<text>你要换取的装备是“极品天鹰皮甲”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000053" />
+			<option text="离开" command="" />
+		</options>
+	</yxpj>
+	<yxpj-completed>
+		<text>“极品天鹰皮甲”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000053" />
+			<option text="离开" command="" />
+		</options>
+	</yxpj-completed>
+	<yxpx>
+		<text>你要换取的装备是“极品天鹰皮靴”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000054" />
+			<option text="离开" command="" />
+		</options>
+	</yxpx>
+	<yxpx-completed>
+		<text>“极品天鹰皮靴”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000054" />
+			<option text="离开" command="" />
+		</options>
+	</yxpx-completed>
+	<yxts>
+		<text>你要换取的装备是“极品天鹰头饰”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000055" />
+			<option text="离开" command="" />
+		</options>
+	</yxts>
+	<yxts-completed>
+		<text>“极品天鹰皮饰”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000055" />
+			<option text="离开" command="" />
+		</options>
+	</yxts-completed>
+	<fsfp>
+		<text>你要换取的装备是“极品祝福法袍”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000040" />
+			<option text="离开" command="" />
+		</options>
+	</fsfp>
+	<fsfp-completed>
+		<text>“极品祝福法袍”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000040" />
+			<option text="离开" command="" />
+		</options>
+	</fsfp-completed>
+	<fsx>
+		<text>你要换取的装备是“极品祝福鞋”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000041" />
+			<option text="离开" command="" />
+		</options>
+	</fsx>
+	<fsx-completed>
+		<text>“极品祝福法鞋”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000041" />
+			<option text="离开" command="" />
+		</options>
+	</fsx-completed>
+	<zfm>
+		<text>你要换取的装备是“极品祝福帽”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000042" />
+			<option text="离开" command="" />
+		</options>
+	</zfm>
+	<zfm-completed>
+		<text>“极品祝福法帽”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000042" />
+			<option text="离开" command="" />
+		</options>
+	</zfm-completed>
+	<zskj>
+		<text>你要换取的装备是“极品荣誉铠甲”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000043" />
+			<option text="离开" command="" />
+		</options>
+	</zskj>
+	<zskj-completed>
+		<text>“极品荣誉铠甲”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000043" />
+			<option text="离开" command="" />
+		</options>
+	</zskj-completed>
+	<zszx>
+		<text>你要换取的装备是“极品荣誉之靴”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000044" />
+			<option text="离开" command="" />
+		</options>
+	</zszx>
+	<zszx-completed>
+		<text>“极品荣誉之靴”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000044" />
+			<option text="离开" command="" />
+		</options>
+	</zszx-completed>
+	<zstk>
+		<text>你要换取的装备是“极品荣誉头盔”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000045" />
+			<option text="离开" command="" />
+		</options>
+	</zstk>
+	<zstk-completed>
+		<text>“极品荣誉之盔”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000045" />
+			<option text="离开" command="" />
+		</options>
+	</zstk-completed>
+	<slzd>
+		<text>你要换取的装备是“极品胜利之盾”，在你领到装备后，我们会回收战斗勋章！还有换取装备之前，请先写个“装备领取证明”，然后就可以领取装备。</text>
+		<color></color>
+		<options>
+			<option text="提交证明" command="giveTask:20000046" />
+			<option text="离开" command="" />
+		</options>
+	</slzd>
+	<slzd-completed>
+		<text>“极品胜利之盾”已送到，你是否要马上换取。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000046" />
+			<option text="离开" command="" />
+		</options>
+	</slzd-completed>
+	<cy96-completed>
+		<text>你是否要马上领取“极品穿云弓+5”。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000058" />
+			<option text="离开" command="" />
+		</options>
+	</cy96-completed>
+	<sg96-completed>
+		<text>你是否要马上领取“极品圣光之杖+5”。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000059" />
+			<option text="离开" command="" />
+		</options>
+	</sg96-completed>
+	<xx96-completed>
+		<text>你是否要马上领取“极品血腥之剑+5”。</text>
+		<color></color>
+		<options>
+			<option text="领取装备" command="completeTask:20000060" />
+			<option text="离开" command="" />
+		</options>
+	</xx96-completed>
+</root>

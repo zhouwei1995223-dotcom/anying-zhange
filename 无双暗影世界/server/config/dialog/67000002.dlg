@@ -1,0 +1,39 @@
+<root>
+	<taskEntries>
+              <task id="10002001" doing="xiaog-doing" />
+			  <task id="10002002" completed="dama-completed" />
+	</taskEntries>
+	<levelEntries>
+            <12>xiaog</12>
+            <2000>start</2000>		
+	</levelEntries>
+   <start>
+		<text>你已经很强大了，可以去那亚村逛逛，那里更适合你！</text>
+		<color></color>
+		<options>
+			 <option text="我去看看" command="" />
+		</options>
+   </start>
+   <xiaog>
+		<text>我的小狗太调皮了，喜欢跑到这来玩捉迷藏，听说这里最近有怪物出现，你能帮我把小狗找回来吗？</text>
+		<color></color>
+		<options>
+             <option text="接受任务" command="giveTask:10002001" />
+             <option text="拒绝任务" command="" />
+		</options>
+   </xiaog>
+   <xiaog-doing>
+		<text>我的小狗很会玩捉迷藏，每次只出现一小会儿就会跑到其它地方去了。</text>
+		<color></color>
+		<options>
+             <option text="我知道了" command="" />
+		</options>
+   </xiaog-doing>
+   <dama-completed>
+		<text>谢谢你帮我找回小狗，这是你的奖励！</text>
+		<color></color>
+		<options>
+             <option text="领取奖励" command="completeTask:10002002" />
+		</options>
+   </dama-completed>
+</root>

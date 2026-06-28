@@ -1,0 +1,3 @@
+X坐标	Y坐标	怪物数据编号	怪物掉落编号	怪物行为编号	分组编号	是否队长
+x	y	monsterID	plunderID	behaviorID	groupID	isLeader
+23	23	63010300	73005530	80010000	0	0

@@ -1,0 +1,324 @@
+<root>
+	<taskEntries>
+		<task id="10002003" doing="zhentu-doing" />
+		<task id="10002004" doing="caicai-completed" />
+		<task id="10002006" doing="xiwang-doing" />
+		<task id="10002007" doing="xunyun-doing" />
+		<task id="10002008" doing="shenmi-doing" />
+		<task id="10002009" doing="mzsl-doing" />
+		<task id="10002010" doing="txz-doing" />
+		<task id="10002011" doing="smsr-doing" />
+	</taskEntries>
+	<levelEntries>
+        <2000>start</2000>
+	</levelEntries>
+   <start>
+		<text>看见你们朝气勃勃，真让人怀念年轻的时候。对了，你有什么愿望吗？也许我能帮到你！</text>
+		<color></color>
+		<options>
+             <option text="我要经验" command="goto:jinyan" />
+			 <option text="我要金钱" command="goto:jinbi" />
+			 <option text="我要装备" command="goto:zhuanb" />
+			 <option text="任务说明" command="goto:soumin" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+   <soumin>
+		<text>完成一个每日任务之后，要隔24小时才能重接该任务。但此期间可以领取其它的每日任务。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </soumin>
+   <jinyan>
+		<text>成长是一件非常有趣事情，不是吗？</text>
+		<color></color>
+		<options>
+             <option text="勇者的征途" command="goto:zhentu" />
+			 <option text="智者的考验" command="goto:zhizhe" />
+			 <option text="贵族练功场" command="goto:renmen" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </jinyan>
+   <jinbi>
+		<text>在这个世界上，有一些有趣的石头,你喜欢那个？</text>
+		<color></color>
+		<options>
+             <option text="希望之石" command="goto:xiwang" />
+			 <option text="幸运之石" command="goto:xunyun" />
+			 <option text="神秘之石" command="goto:shenmi" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </jinbi>
+   <zhuanb>
+		<text>该任务正在紧张测试中！</text>
+		<color></color>
+		<options>
+             <option text="迷之森林" command="goto:zhuanb" />
+			 <option text="探险者" command="goto:zhuanb" />
+			 <option text="神秘商人" command="goto:zhuanb" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zhuanb>
+   <zhuanb-1>
+		<text>关于装备，我到是知道一些有趣的事情，你可以去试试！</text>
+		<color></color>
+		<options>
+             <option text="迷之森林" command="goto:mzsl" />
+			 <option text="探险者" command="goto:txz" />
+			 <option text="神秘商人" command="goto:smsr" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zhuanb-1>
+   <zhentu>
+		<text>勇者的征途，充满了杀戮与痛苦。若有一颗光明之心，则可以给世界带来和平与希望。</text>
+		<color></color>
+		<options>
+             <option text="我可以吗？" command="goto:zhentu0" />
+			 <option text="离开" command="" />
+		</options>
+   </zhentu>
+   <zhentu0>
+		<text>当然可以，我可以看见你身上闪烁太阳般的光辉，要为正义而战吗？</text>
+		<color></color>
+		<options>
+             <option text="领取任务" command="giveTask:10002003" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zhentu0>
+   <zhentu-doing>
+		<text>奥尔罗德是现任的皇家士卫长，他在贝伦城出现说明出事情了，你去找他看看吧！</text>
+		<color></color>
+		<options>
+             <option text="告诉我他的具体位置" command="goto:zhentu-next" />
+			 <option text="离开" command="" />
+		</options>
+   </zhentu-doing>
+   <zhentu-next>
+		<text>他在贝伦城的(75,106)坐标附近。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </zhentu-next>
+   <zhizhe>
+		<text>我的朋友肉肉国王，最近想出一个好玩的游戏，你要不要试试？</text>
+		<color></color>
+		<options>
+             <option text="什么游戏？" command="goto:zhizhe-next0" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </zhizhe>
+   <zhizhe-next0>
+		<text>这是个迷宫的游戏，只要你能走通，他有很好的宝贝送你哦！</text>
+		<color></color>
+		<options>
+             <option text="怎么才能去玩？" command="goto:zhizhe-next" />
+			 <option text="离开" command="" />
+		</options>
+   </zhizhe-next0>
+   <zhizhe-next>
+		<text>在我这领到任务后，再找我对话，我可以把你传送到迷宫里面。对了，只有24级以上的玩家才可领取任务。</text>
+		<color></color>
+		<options>
+             <option text="领取任务" command="giveTask:10002004" />
+		</options>
+   </zhizhe-next>
+   <caicai-completed>
+		<text>要去肉肉迷宫吗？</text>
+		<color></color>
+		<options>
+             <option text="传进肉肉迷宫" command="createDuplicate:3003" />
+			 <option text="离开" command="" />
+		</options>
+   </caicai-completed>
+   <renmen>
+		<text>最近“贵族练功场”对外开放了，“布里奇特”是练功场的管理员，你可以找他了解一些信息。</text>
+		<color></color>
+		<options>
+             <option text="关于布里奇特" command="goto:renmen-doing" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </renmen>
+   <renmen-doing>
+		<text>布里奇特是个有趣的人，你可以在贝伦城（31，67）坐标，找到他。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+   </renmen-doing>
+   <xiwang>
+		<text>希望之石代表了挑战，看来你适合找艾比盖，他在贝尔森林（71，66）坐标！</text>
+		<color></color>
+		<options>
+             <option text="领取任务" command="giveTask:10002006" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </xiwang>
+   <xiwang-doing>
+		<text>艾比盖是个出名的商人，但是我知道他的魔法知识非常深厚，因为他是夏洛特大法师的后代。</text>
+		<color></color>
+		<options>
+             <option text="关于艾比盖" command="goto:xiwang-next" />
+			 <option text="离开" command="" />
+		</options>
+   </xiwang-doing>
+   <xiwang-next>
+		<text>你可以在贝尔森林（71，66）坐标找到艾比盖。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </xiwang-next>
+   <xunyun>
+		<text>幸运之石代表了运气，看来你适合去找伯特卡罗，他是个冒险者！</text>
+		<color></color>
+		<options>
+             <option text="领取任务" command="giveTask:10002007" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </xunyun>
+   <xunyun-doing>
+		<text>伯特卡罗是个富有的人，他喜欢冒险和收藏。</text>
+		<color></color>
+		<options>
+             <option text ="关于伯特卡罗" command="goto:xunyun-next" />
+			 <option text="离开" command="" />
+		</options> 
+   </xunyun-doing>
+   <xunyun-next>
+		<text>伯特卡罗是个闲不住的人，但是你可以在贝伦城（31，67）找到他。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </xunyun-next>
+   <shenmi>
+		<text>神秘之石代表了探索，看来你适合去找菲雷德，他是冒险公会的会长！</text>
+		<color></color>
+		<options>
+             <option text="领取任务" command="giveTask:10002008" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </shenmi>
+   <shenmi-doing>
+		<text>冒险公会在贝伦城有个分会，你可以在那里找到菲雷德。</text>
+		<color></color>
+		<options>
+             <option text ="关于菲雷德" command="goto:shenmi-next" />
+			 <option text="离开" command="" />
+		</options> 
+   </shenmi-doing>
+   <shenmi-next>
+		<text>菲雷德是冒险界的传奇人物，你可以在贝伦城（105，97）坐标找到他。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </shenmi-next>
+    <mzsl>
+		<text>迷之森林有着太多的疑问，但那里藏着大量宝藏，被冒险者称为冒险天堂。</text>
+		<color></color>
+		<options>
+             <option text="关于怪物" command="goto:mzsl-next0" />
+			 <option text="离开" command="" />			 
+		</options>
+   </mzsl>
+   <mzsl-next0>
+		<text>迷之森林里面的怪物很强悍，听说还有人见过一些BOSS级的怪物，你可要想好了哦！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002009"/>
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options> 
+   </mzsl-next0>
+   <mzsl-doing>
+		<text>你可以去找酒鬼，他上次从迷之森林带回一件宝物，卖了很多钱，现在应该在喝酒！</text>
+		<color></color>
+		<options>
+             <option text ="哪里才能找到酒鬼" command="goto:mzsl-next" />
+			 <option text="离开" command="" />
+		</options> 
+   </mzsl-doing>
+   <mzsl-next>
+		<text>他就在那亚村，不过他每次喝酒就会醉的不醒人事，不清楚他现在醉倒在什么地方了。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </mzsl-next>
+   <txz>
+		<text>探险者各地都有，如果你想加入他们，你就要去找柏塔·艾丽斯</text>
+		<color></color>
+		<options>
+             <option text="接受任务" command="giveTask:10002010" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </txz>
+   <txz-doing>
+		<text>柏塔·艾丽斯是个出名的剑士，她的剑术就像她的父母一样高超,她现在探险者公会工作。</text>
+		<color></color>
+		<options>
+             <option text ="哪里才能的找到她？" command="goto:txz-next" />
+			 <option text="离开" command="" />
+		</options> 
+   </txz-doing>
+   <txz-next>
+		<text>她就在那亚村的探险者公会附近坐标（127，90）。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </txz-next>
+   <smsr>
+		<text>获取装备有个捷径，就是找神秘商人，只要你满足他们的要求，你就会得到奖励。</text>
+		<color></color>
+		<options>
+             <option text="接受任务" command="giveTask:10002011" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </smsr>
+   <smsr-doing>
+		<text>神秘商人喜欢收集一些奇奇怪怪的东西，不过他有很多好的装备，所以还是有很多人愿意去帮他。</text>
+		<color></color>
+		<options>
+             <option text ="关于神秘商人" command="goto:smsr-next" />
+			 <option text="离开" command="" />
+		</options> 
+   </smsr-doing>
+   <smsr-next>
+		<text>神秘商人住在梵奇城的（24，36）坐标附近，你可以在哪里找到他。</text>
+		<color></color>
+		<options>
+             <option text="我这就去找他" command="" />
+			 <option text="离开" command="" />
+		</options>
+   </smsr-next>
+</root>

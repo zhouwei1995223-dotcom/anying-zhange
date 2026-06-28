@@ -1,0 +1,3 @@
+编号	名字	坐标X	坐标Y	图像	对话	商店	脚本
+id	name	x	y	image	dialog	shop	script
+65000155	传送使者	78	67	6	65000155	0	0

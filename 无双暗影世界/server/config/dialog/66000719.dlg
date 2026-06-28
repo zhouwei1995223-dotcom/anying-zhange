@@ -1,0 +1,20 @@
+<root>
+	<taskEntries>
+		<task id="20000061" completed="yxzz-completed" />
+	</taskEntries>
+   <start>
+		<text>未来的英雄，今天将成为历史的转折点，希望你能把握住这次机会，我会以神的力量将你“神化”，你将拥有强大的力量。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<yxzz-completed>
+		<text>你的任务已完成，不能常期停留在过去的时间里，要回“普罗之殿”领取任务奖励吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:24:21" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</yxzz-completed>
+</root>

@@ -1,0 +1,13 @@
+<root>
+	<start>
+		<text>本次竞技场为公会开放，不限进入等级，你可以选择进入竞技场的位置。</text>
+		<color></color>
+		<options>
+			 <option text="左上位置" command="transport:112:19:30" />
+			 <option text="右上位置" command="transport:112:115:33" />
+			 <option text="左下位置" command="transport:112:18:154" />
+			 <option text="右下位置" command="transport:112:114:153" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

@@ -1,0 +1,3 @@
+# halo equipment list: itemId effectNumber name
+# effectNumber reads client/pak/effect.zip image/effect/<number>.img
+1713059900 1 ¹§Ï²·¢²Æ

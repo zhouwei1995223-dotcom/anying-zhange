@@ -1,0 +1,129 @@
+<root>
+	<taskEntries>
+		<task id="10002008" completed="shenmi-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<cd>1333012900</cd>
+	</goodsEntries>
+	<start>
+		<text>我是“菲雷德”，你找我有事吗？</text>
+		<color></color>
+		<options>
+			<option text="看错人了，离开" command="" />
+		</options>
+   </start>
+   <shenmi-completed>
+		<text>非常欢迎你加入我们这一行，这是神秘之石，它是冒险公会成员的标志。</text>
+		<color></color>
+		<options>
+			<option text="领取神秘之石" command="completeTask:10002008" />
+			<option text="离开" command="" />
+		</options>
+   </shenmi-completed>
+   <cd>
+		<text>做为冒险公会的一员，公会成员你要熟悉一下，你也可以在他们哪里接到一些任务。</text>
+		<color></color>
+		<options>
+			<option text="“阿西娜”(建议：0级以上)" command="goto:aql" />
+			<option text="“卡拉奇”(建议：12级以上)" command="goto:klq" />
+			<option text="“谢里尔”(建议：24级以上)" command="goto:xlq" />
+			<option text="“克莱儿”(建议：36级以上)" command="goto:klr" />
+			<option text="“奥德丽”(建议：48级以上)" command="goto:adl" />
+			<option text="查看下一层" command="goto:cd1" />
+			<option text="离开" command="" />
+		</options>
+   </cd>
+   <cd1>
+		<text>做为冒险公会的一员，公会成员你要熟悉一下，你也可以在他们哪里接到一些任务。</text>
+		<color></color>
+		<options>
+			<option text="“艾琳”(建议：60级以上)" command="goto:ailin" />
+			<option text="“盖尔”(建议：72级以上)" command="goto:gair" />
+			<option text="“胡尔达”(建议：84级以上)" command="goto:hrd" />
+			<option text="“多明尼卡”(建议：96级以上)" command="goto:dmnk" />
+			<option text="“多洛雷斯”(限制：108级以上)" command="goto:dlls" />
+			<option text="返回上一层" command="goto:cd" />
+			<option text="离开" command="" />
+		</options>
+   </cd1>
+   <aql>
+		<text>“阿西娜”是冒险公会的新人指导员，同时他是一位修女，你可以在那亚村(97,58)坐标附近找到他。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="离开" command="" />
+		</options>
+   </aql>
+   <klq>
+		<text>“卡拉奇”加入冒险公会也有一阵子，你可以找他交流一下，他最近在贝尔森林(74,45)坐标附近活动。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="离开" command="" />
+		</options>
+   </klq>
+   <xlq>
+		<text>“谢里尔”曾来信说需要支援，你可以去贝诺尼森林(30,52)坐标附近找他。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="好得" command="" />
+		</options>
+   </xlq>
+   <klr>
+		<text>让“克莱儿”指点一下你吧，他是冒险公会的老成员了，你可以去代肯沙漠(72,102)坐标附近找他。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="找他应该可以学到一些东西" command="" />
+		</options>
+   </klr>
+   <adl>
+		<text>“奥德丽”在迷林岛(90,83)坐标附近，那里有很多的疯狂剑士，我有些担心她，你去找她看看有什么需要帮忙。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="我帮你去看看" command="" />
+		</options>
+   </adl>
+   <ailin>
+		<text>“艾琳”在暗精镇(71,123)坐标附近,她去消灭剧毒跳蚤有一阵子了，最近我们都没有得到她的回复，你去找她一下。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd1" />
+			 <option text="我去找她了解一下" command="" />
+		</options>
+   </ailin>
+   <gair>
+		<text>“盖尔”是一位剑术非常优秀的冒险者，你可以去夏基亚城(80,102)坐标附近找他。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd1" />
+			 <option text="我这就去见识下这位前辈" command="" />
+		</options>
+   </gair>
+   <hrd>
+		<text>听说“胡尔达”最近接到消灭深渊恶魔的任务，依他的实力可能会有危险，你可以去夏亚地道(54,73)坐标附近帮助他。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd1" />
+			 <option text="看来有活干了" command="" />
+		</options>
+   </hrd>
+   <dmnk>
+		<text>“多明尼卡”和“多洛雷斯”是我们冒险界的传送人物，你可以先去塔魔尼地宫二层(42,61)坐标附近找“多明尼卡”谈谈。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd1" />
+			 <option text="我这就去" command="" />
+		</options>
+   </dmnk>
+   <dlls>
+		<text>若是你有足满的实力，你可以去塔魔尼地宫五层(59,80)坐标附近找“多洛雷斯”，听说他最近需要一个助手。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:cd1" />
+			 <option text="我去试试看" command="" />
+		</options>
+   </dlls>
+</root>

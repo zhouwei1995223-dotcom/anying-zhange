@@ -1,0 +1,18 @@
+<root>
+   <start>
+		<text>欢迎你！我是善良的奖品大使，每个小时我都会发放一次奖品给幸运的玩家，你想参加吗，只要参加就有机会得到丰厚的奖品哦！</text>
+		<color></color>
+		<options>
+			 <option text="详细规则是什么？" command="" />
+			 <option text="我马上就要参加" command="" />
+			 <option text="我没有兴趣参加" command="" />
+		</options>
+   </start>
+   <none>
+		<text>很抱歉，暂时没有为你提供的物品</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </none>
+</root>

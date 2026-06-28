@@ -1,0 +1,78 @@
+<root>
+	<taskEntries>
+		<task id="10001003" completed="ym-completed" />
+		<task id="10001004" completed="kz-completed" />
+	</taskEntries>
+	<levelEntries>
+		<14>start</14>
+		<1210>sj</1210>
+	</levelEntries>
+   <start>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>想赚钱吗？你等级高些后！可以在我这接一些收集物品的任务。</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+   <sj>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="收集任务" color="" bgColor="" command="goto:ymstart" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </sj>
+   <ymstart>
+		<text>朋友，想赚钱吗？你可以在这我接一些收集物品的任务！</text>
+		<color></color>
+		<options>
+			<option text="野蛮人的战利品(限制:14级以上)" command="goto:ym" />
+			<option text="狂剑士的头盔(限制:18级以上)" command="goto:kz" />
+			<option text="返回上一层" color="" bgColor="" command="goto:sj" />
+			<option text="离开" color="" bgColor="" command="" />
+			</options>
+   </ymstart>
+   <ym>
+		<text>如果你能帮我收集9个野蛮人的战利品，我会给你报酬得！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10001003" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:ymstart" />
+		</options>
+   </ym>
+   <ym-completed>
+		<text>虽然我是奸商，但是我不会食言的，这是你的报酬</text>
+		<color></color>
+		<options>
+			 <option text="这实在太容易了，下次来点有挑战的" color="" bgColor="" command="completeTask:10001003" />
+			 <option text="我只是回来买点东西" color="" bgColor="" command="buy" />
+		</options>
+   </ym-completed>
+   <kz>
+		<text>我正在调查剑士发狂的原因，如果你能帮我收集9个狂剑士的头盔，我会给你报酬得！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10001004" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:ymstart" />
+		</options>
+   </kz>
+   <kz-completed>
+		<text>虽然我是奸商，但是我不会食言的，这是你的报酬</text>
+		<color></color>
+		<options>
+			 <option text="这实在太容易了，下次来点有挑战的" color="" bgColor="" command="completeTask:10001004" />
+			 <option text="我只是回来买点东西" color="" bgColor="" command="buy" />
+		</options>
+   </kz-completed>
+</root>

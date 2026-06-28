@@ -1,0 +1,20 @@
+<root>
+	<deathEntries>
+		<zs>8</zs>
+	</deathEntries>
+	<start>
+		<text>如果你想见我族的王，就要打败那些海蓝骷髅战士，这算是转生前的考验。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<zs>
+		<text>即然你通过了考验，就有资格参见我族的王。不过我要提醒一下，如果红名进去的话，会被攻击。</text>
+		<color></color>
+		<options>
+			 <option text="传送到王者之殿" command="createDuplicate:4008" />
+			 <option text="离开" command="" />
+		</options>
+	</zs>
+</root>

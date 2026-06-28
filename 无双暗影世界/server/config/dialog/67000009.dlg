@@ -1,0 +1,281 @@
+<root>
+	<taskEntries>
+		<task id="10002013" doing="fkjs-doing" completed="fkjs-completed" />
+		<task id="10002015" doing="emq-doing" completed="emq-completed" />
+		<task id="10002017" doing="ldh-doing" completed="ldh-completed" />
+		<task id="10002019" doing="ymb-doing" completed="ymb-completed" />
+		<task id="10002021" doing="jyb-doing" completed="jyb-completed" />
+		<task id="10002023" doing="zcb-doing" completed="zcb-completed" />
+		<task id="10002025" doing="tzb-doing" completed="tzb-completed" />
+		<task id="10002003" completed="zhentu-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<cd>1333012600</cd>
+	</goodsEntries>
+	<start>
+		<text>我是皇家士卫长·奥尔罗德，现在有公务在身，请勿打扰。</text>
+		<color></color>
+		<options>
+			<option text="打扰了，我这就离开。" command="" />
+		</options>
+	</start>
+	<zhentu-completed>
+		<text>我是皇家士卫长·奥尔罗德，现在有公务在身，请勿打扰。</text>
+		<color></color>
+		<options>
+			<option text="我想加入你们" command="goto:next" />
+		</options>
+	</zhentu-completed>
+	<next>
+		<text>这个徽章给你，当你有实力的时候,带着这个徽章，就可以随时找我领取任务。</text>
+		<color></color>
+		<options>
+			<option text="领取“勇者徽章”" command="completeTask:10002003" />
+		</options>
+	</next>
+	<cd>
+		<text>欢迎你的加入，从现在开始你可以在我这选择不同的等级的任务！</text>
+		<color></color>
+		<options>
+			<option text="疯狂的剑士(限制：48级以上)" command="goto:fkjs" />
+			<option text="奇怪的生物(限制：60级以上)" command="goto:emq" />
+			<option text="痴呆的士兵(限制：72级以上)" command="goto:ldh" />
+			<option text="王宫的动乱(限制：84级以上)" command="goto:ymb" />
+			<option text="显示下一页任务" command="goto:cd1" />
+			<option text="离开" command="" />
+		</options>
+	</cd>
+	<cd1>
+		<text>我们非常欢迎你加入，从现在开始你可以在我这选择不同的等级的任务！</text>
+		<color></color>
+		<options>
+			<option text="反叛的王臣(限制：96级以上)" command="goto:jyb" />
+			<option text="阻击(限制：108级以上)" command="goto:zcb" />
+			<option text="暗袭(限制：115级以上)" command="goto:tzb" />
+			<option text="返回上一层" command="goto:cd" />
+			<option text="离开" command="" />
+		</options>
+	</cd1>
+	<fkjs>
+		<text>疯狂剑士不断的向暗精镇南部聚集，你的任务就是在他们引起骚乱之前，把他们消灭。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002013" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </fkjs>
+   <fkjs-doing>
+		<text>疯狂剑士在暗精镇南部，你要小心，他们剑术高超且没有理智。</text>
+		<color></color>
+		<options>
+			<option text="谢谢你的提醒，离开。" command="" />
+		</options>
+   </fkjs-doing>
+   <fkjs-completed>
+		<text>这么快就把疯狂剑士消灭了，看来你实力不错，我这有更高奖励的任务，需要更有实力的人来完成，你要努力哦。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002013" />
+		</options>
+   </fkjs-completed>
+   <emq>
+		<text>驻扎在荒芜之地的士兵被一群恶魔球攻击了，我们正找人去支援，你要不要去？</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002015" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </emq>
+   <emq-doing>
+		<text>我可以把你传送进荒芜之地，你现在要去吗？</text>
+		<color></color>
+		<options>
+			<option text="我要进去" command="createDuplicate:3010" />
+			<option text="离开" command="" />
+		</options>
+   </emq-doing>
+   <emq-completed>
+		<text>看来你把恶魔球干掉了，实力不错，但还要继续加油。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002015" />
+		</options>
+   </emq-completed>
+   <ldh>
+		<text>最近有士兵莫明其妙中了毒，我们调查是一种狼毒花的毒素造成得，现正找人去消灭这种植物。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002017" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </ldh>
+   <ldh-doing>
+		<text>狼毒花是一种有毒的食人花，现在还不清楚它们为什么会在“地下通道”活动，但附近的一些水源已被污染了。</text>
+		<color></color>
+		<options>
+			<option text="我要怎么才能去“地下通道”" command="goto:ldh-next" />
+			<option text="离开" command="" />
+		</options>
+   </ldh-doing>
+   <ldh-next>
+		<text>我可以把你传送到“地下通道”，你要去的话可以来找我。</text>
+		<color></color>
+		<options>
+			<option text="传送到“地下通道”" command="createDuplicate:3011" />
+			<option text="离开" command="" />
+		</options>
+   </ldh-next>
+   <ldh-completed>
+		<text>办事效力满利落得嘛，这么快就把狼毒花消灭了，这是你的奖励。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002017" />
+		</options>
+   </ldh-completed>
+   <ymb>
+		<text>最近野蛮国派了一些野蛮兵过来，那些野蛮兵真得很难缠，你有没兴趣和他们较量一下。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002019" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </ymb>
+   <ymb-doing>
+		<text>据命运女神的指引，谢里尔王子找到埃达公主，并娶她为妻，埃达公主是我见过最美丽的女子。</text>
+		<color></color>
+		<options>
+			<option text="这件事我也听说过" command="goto:ymb-next" />
+			<option text="离开" command="" />
+		</options>
+   </ymb-doing>
+   <ymb-next>
+		<text>埃达公主除了美貌让人惊叹，更令人惊讶的是，她竟是野蛮王的女儿。</text>
+		<color></color>
+		<options>
+			<option text="真的很难想象，那个绿色......" command="goto:ymb-next1" />
+			<option text="离开" command="" />
+		</options>
+   </ymb-next>
+   <ymb-next1>
+		<text>最近野蛮国出现的一些混乱，有一批野蛮兵要把埃达公主接回国，但这种骗局，皇家不方便出面拒绝。</text>
+		<color></color>
+		<options>
+			<option text="我有什么能帮得上忙得？" command="goto:ymb-next2" />
+			<option text="离开" command="" />
+		</options>
+   </ymb-next1>
+   <ymb-next2>
+		<text>野蛮族崇拜武力，如果你给他们点颜色，他们就会乖乖回去了。我可以把你传送到皇城外郊，野蛮兵就在哪里。</text>
+		<color></color>
+		<options>
+			<option text="那我去试试(传送到皇城外郊)" command="createDuplicate:3012" />
+			<option text="离开" command="" />
+		</options>
+   </ymb-next2>
+   <ymb-completed>
+		<text>感谢你帮我们打败了野蛮兵，这是你的报酬！</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002019" />
+		</options>
+   </ymb-completed>
+   <jyb>
+		<text>最近有一些叛国的士兵在“沙漠边境”活动，国王已下令歼灭他们，你想不想参加！</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002021" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </jyb>
+   <jyb-doing>
+		<text>最近有一些精英兵在“沙漠边境”聚集，但是国王并没有派遣他们的指令，明显他们已经背叛国家。</text>
+		<color></color>
+		<options>
+			<option text="有什么我能效劳的吗？" command="goto:jyb-next" />
+			<option text="离开" command="" />
+		</options>
+   </jyb-doing>
+   <jyb-next>
+		<text>你可以帮我们把精英头领消灭，我可以把你传送到“沙漠边境”，要去吗？</text>
+		<color></color>
+		<options>
+			<option text="传送到“沙漠边境”" command="createDuplicate:3013" />
+			<option text="离开" command="" />
+		</options>
+   </jyb-next>
+   <jyb-completed>
+		<text>这是你应有的报酬，欢迎你下次再来，我们的奖励总是很丰厚得。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002021" />
+		</options>
+   </jyb-completed>
+   <zcb>
+		<text>“奥尔亚瑟”窥视国王宝座已久，现在已向王国开战，这场战斗会很激烈，你有没参加的勇气？</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002023" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+   </zcb>
+   <zcb-doing>
+		<text>做为皇家的大贵族之一“奥尔亚瑟”拥有大量的士地，现在他竟然向国王开战，真是个混蛋。</text>
+		<color></color>
+		<options>
+			<option text="有什么我能效劳的吗？" command="goto:zcb-next" />
+			<option text="离开" command="" />
+		</options>
+   </zcb-doing>
+   <zcb-next>
+		<text>我们在腾蛇岛发现了“弗朗西斯”，他一位优秀的侦察兵头领，可惜他只听令于“奥尔亚瑟”，所以我们必须要消灭他。</text>
+		<color></color>
+		<options>
+			<option text="传送到“腾蛇岛”" command="createDuplicate:3014" />
+			<option text="离开" command="" />
+		</options>
+   </zcb-next>
+   <zcb-completed>
+		<text>这是你应有的报酬，欢迎你下次再来，我们的奖励总是很丰厚得。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002023" />
+		</options>
+   </zcb-completed>
+   <tzb>
+		<text>据我们的间谍报告，最近“奥尔亚瑟”的行为非常怪异，他可能受到了恶魔之子的诱惑。</text>
+		<color></color>
+		<options>
+			<option text="我能做什么？" command="goto:tzb-next" />
+			<option text="离开" command="" />
+		</options>
+   </tzb>
+   <tzb-next>
+		<text>我们会安排你进他们的军营，把奥尔亚瑟打败，并消灭恶魔之子，这就是你的任务。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002025" />
+			<option text="离开" command="" />
+		</options>
+   </tzb-next>
+   <tzb-doing>
+		<text>我们已经安排好了，你现在可以从我这传进他们的军营，你现在要出发吗？</text>
+		<color></color>
+		<options>
+			<option text="传送到“亚瑟军营”" command="createDuplicate:3015" />
+			<option text="离开" command="" />
+		</options>
+   </tzb-doing>
+   <tzb-completed>
+		<text>这是你应有的报酬，欢迎你下次再来，我们的奖励总是很丰厚得。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10002025" />
+		</options>
+   </tzb-completed>
+</root>

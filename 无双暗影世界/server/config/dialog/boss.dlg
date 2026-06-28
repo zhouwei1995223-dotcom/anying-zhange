@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>想挑战BOSS获得高级装备吗？请您支付50000个金币吧！祝您好运！</text>
+		<color></color>
+		<options>
+			 <option text="去BOSS战场" command="travel:110:50000" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

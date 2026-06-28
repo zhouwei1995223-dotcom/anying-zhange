@@ -1,0 +1,17 @@
+<root>
+   <start>
+		<text>我这里回收的比例是物品价格的110%哦，打开回收商店就可以卖给我了</text>
+		<color></color>
+		<options>
+			<option text="打开回收商店" color="" bgColor="" command="buy" />
+			<option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>记住我的品牌哦！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+</root>

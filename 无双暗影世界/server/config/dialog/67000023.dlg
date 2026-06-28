@@ -1,0 +1,97 @@
+<root>
+	<taskEntries>
+		<task id="10002031" completed="guanyu-completed" />
+		<task id="10002026" completed="saguai-completed" />
+		<task id="10002027" completed="zgl-completed" />
+		<task id="10002028" completed="zhaoyun-completed" />
+		<task id="10002029" completed="huanz-completed" />
+		<task id="10002030" completed="zhfei-completed" />		
+		<task id="10002004" completed="start0" />
+	</taskEntries>
+	<start>
+		<text>我是肉肉国王，你找我有事吗？</text>
+		<color></color>
+		<options>
+			<option text="我要出去" command="transport:3:52:61" />
+			<option text="离开" command="" />
+		</options>
+   </start>
+   <start0>
+		<text>肯定是首相那家伙故意放水！你才能到这，想要双倍经验宝石，你还要和我玩一个游戏！</text>
+		<color></color>
+		<options>
+			<option text="那我陪你玩玩" command="goto:start-next" />
+			<option text="离开" command="" />
+		</options>
+   </start0>
+   <start-next>
+		<text>说清楚一下，猜对了，你才能得到双倍经验宝石；猜不对，我就会把你送出去。</text>
+		<color></color>
+		<options>
+			<option text="想玩什么游戏你说" command="goto:caicai-completed" />
+			<option text="让我想想" command="" />
+			<option text="离开" command="" />
+		</options>
+   </start-next>
+   <caicai-completed>
+		<text>这个题目很难，我想了很久的哦，你要有心里准备！这个题目就是“1+1=多少”？</text>
+		<color></color>
+		<options>
+			<option text="1+1=1" command="transport:3:52:61" />
+			<option text="1+1=2" command="goto:caicai0" />
+			<option text="1+1=11" command="transport:3:52:61" />
+			<option text="1+1=77" command="transport:3:52:61" />
+			<option text="让我想想" command="" />
+		</options>
+   </caicai-completed>
+   <caicai0>
+		<text>这么难的题目都给你猜对了，这双倍经验宝石就送你了。</text>
+		<color></color>
+		<options>
+			<option text="领取双倍经验宝石" command="completeTask:10002004" />
+			<option text="离开" command="" />
+		</options>
+   </caicai0>
+   <saguai-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002026" />
+		</options>
+   </saguai-completed>
+   <zgl-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002027" />
+		</options>
+   </zgl-completed>
+   <zhaoyun-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002028" />
+		</options>
+   </zhaoyun-completed>
+   <huanz-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002029" />
+		</options>
+   </huanz-completed>
+   <zhfei-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002030" />
+		</options>
+   </zhfei-completed>
+   <guanyu-completed>
+		<text>怎么会有人过了这个迷宫，是不是有人放水呀！哈哈！</text>
+		<color></color>
+		<options>
+			<option text="我是凭自已实力过来得" command="completeTask:10002031" />
+		</options>
+   </guanyu-completed>
+</root>

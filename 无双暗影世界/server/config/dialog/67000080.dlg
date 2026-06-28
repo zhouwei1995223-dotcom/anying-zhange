@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002062" doing="dlls-doing" completed="dlls-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<dlls>1333012900</dlls>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“多洛雷斯”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<dlls>
+		<text>我正在找一样东西，你帮我消灭这里的135只“怨灵”，我可以给你很高的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002062" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</dlls>
+	<dlls-doing>
+		<text>那些“怨灵”攻击和防御都不弱。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </dlls-doing>
+   <dlls-completed>
+		<text>这是给你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002062" />
+		</options>
+    </dlls-completed>
+</root>

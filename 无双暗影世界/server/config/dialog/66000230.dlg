@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>来来来，我负责开箱子的工作，有箱子和钥匙以后就找我吧！</text>
+		<color></color>
+		<options>
+			 <option text="我要开箱子" command="openBox" />
+			 <option text="走错了" command="" />
+		</options>
+	</start>
+</root>

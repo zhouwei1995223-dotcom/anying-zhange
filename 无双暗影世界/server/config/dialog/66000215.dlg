@@ -1,0 +1,17 @@
+<root>
+   <start>
+		<text>这里专门出售宝石，嘿嘿，要来两颗吗？</text>
+		<color></color>
+		<options>
+			 <option text="我就是来看宝石的" color="" bgColor="" command="buy" />
+             <option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>下次记得再来哦</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+</root>

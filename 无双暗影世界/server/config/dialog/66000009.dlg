@@ -1,0 +1,24 @@
+<root>
+	<levelEntries>
+		<10>start</10>
+		<1800>jjc</1800>
+	</levelEntries>
+	<start>
+		<text>10级以上才可以进入混战竞技场。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<jjc>
+		<text>10级以上才可以进入混战竞技场，你可以选择进入竞技场的位置。</text>
+		<color></color>
+		<options>
+			 <option text="左上位置" command="transport:111:19:30" />
+			 <option text="右上位置" command="transport:111:115:33" />
+			 <option text="左下位置" command="transport:111:18:154" />
+			 <option text="右下位置" command="transport:111:114:153" />
+			 <option text="离开" command="" />
+		</options>
+	</jjc>
+</root>

@@ -1,0 +1,43 @@
+<root>
+	<taskEntries>
+		<task id="10003032" completed="dz" onceDone="cs" />
+		<task id="10003030" onceDone="cs" />
+		<task id="10003031" onceDone="cs" />
+	</taskEntries>
+	<start>
+		<text>要在这个混乱的黑暗世界里生存，离不开强健的体魄和优良的装备。</text>
+		<color></color>
+		<options>
+             <option text="这还用你说" command="" />
+		</options>
+	</start>
+    <dz>
+		<text>强健的体魄需要长时间慢慢锻炼出来，而优良的装备却相对容易得到。</text>
+		<color></color>
+		<options>
+			<option text="你难道有什么秘诀？" command="goto:dz1" />
+		</options>
+	</dz>
+	<dz1>
+		<text>有两种方式可以提升装备的属性：一是冲等，用一个天晶石和装备进行融合，可以提升装备属性；二是合成，用一个地异石将5至10个同类型装备合成为一个更高等级的装备，由于装备等级提高，相对属性也会增加。</text>
+		<color></color>
+		<options>
+			<option text="在哪里冲等和合成？" command="goto:dz2" />
+		</options>
+	</dz1>
+	<dz2>
+		<text>冲等和合成都需要找“锻造匠师”进行，而且是有收手续费的哦，我们的收费标准是10000游戏金币。</text>
+		<color></color>
+		<options>
+			<option text="我知道了，领取礼物" command="completeTask:10003032" />
+			<option text="离开" command="" />
+		</options>
+	</dz2>
+	<cs>
+		<text>一般的大村或城镇都有一个锻造匠师，有空的话可以找他们了解一下相关信息!</text>
+		<color></color>
+		<options>
+			 <option text="我会得" command="" />
+		</options>
+	</cs>
+</root>

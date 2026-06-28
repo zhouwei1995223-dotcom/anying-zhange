@@ -1,0 +1,143 @@
+<root>
+	<taskEntries>
+		<task id="10000002" completed="fg" onceDone="start" />
+		<task id="10003002" completed="fg" onceDone="start" />
+		<task id="10003012" completed="fg" onceDone="start" />
+		<task id="10003022" completed="fg" onceDone="start" />
+		<task id="10000001" completed="guide-completed" onceDone="start" />
+		<task id="10003001" completed="yx-completed" onceDone="start" />
+		<task id="10003011" completed="fs-completed" onceDone="start" />
+		<task id="10003021" completed="zs-completed" onceDone="start" />
+	</taskEntries>
+	<start>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="打开我的仓库" command="store" />
+		</options>
+	</start>
+	<guide-completed>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="新手指导任务" command="goto:next" />
+			 <option text="打开我的仓库" command="store" />
+		</options>
+	</guide-completed>
+	<next>
+		<text>哦，你就是新手指导员说的那个人吧。我这里是仓库，暂时用不着的东西可以寄存在我这里</text>
+		<color></color>
+		<options>
+			<option text="那怎么存呢？" command="goto:next1" />
+		</options>
+	</next>
+	<next1>
+		<text>不要着急嘛，点击背包按钮打开背包，把东西移动过来就可以了，移动方法就是用鼠标左键点击一下物品，然后吧鼠标移动到要放下的地方，再点击一下鼠标左键就可以了，顺便告诉你点击鼠标右键是使用物品</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，那么……" command="goto:next2" />
+		</options>
+	</next1>
+	<next2>
+		<text>别急着走啊，还没说完呢……防具商人找你有事情，快去吧，他在(42.33)坐标附近。</text>
+		<color></color>
+		<options>
+			<option text="哦，我这就去" command="completeTask:10000001;giveTask:10000002" />
+		</options>
+	</next2>
+	<yx-completed>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="新手指导任务" command="goto:yx1" />
+			 <option text="打开我的仓库" command="store" />
+		</options>
+	</yx-completed>
+	<yx1>
+		<text>哦，你就是新手指导员说的那个人吧。我这里是仓库，暂时用不着的东西可以寄存在我这里</text>
+		<color></color>
+		<options>
+			<option text="那怎么存呢？" command="goto:yx2" />
+		</options>
+	</yx1>
+	<yx2>
+		<text>不要着急嘛，点击背包按钮打开背包按钮，把东西移动过来就可以了，移动方法就是用鼠标左键点击一下物品，然后吧鼠标移动到要放下的地方，再点击一下鼠标左键就可以了，顺便告诉你点击鼠标右键是使用物品。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，那么……" command="goto:yx3" />
+		</options>
+	</yx2>
+	<yx3>
+		<text>别急着走啊，还没说完呢……防具商人找你有事情，快去吧，他在(42.33)坐标附近。</text>
+		<color></color>
+		<options>
+			<option text="哦，我这就去" command="completeTask:10003001;giveTask:10003002" />
+		</options>
+	</yx3>
+	<fs-completed>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="新手指导任务" command="goto:fs1" />
+			 <option text="打开我的仓库" command="store" />
+		</options>
+	</fs-completed>
+	<fs1>
+		<text>哦，你就是新手指导员说的那个人吧。我这里是仓库，暂时用不着的东西可以寄存在我这里</text>
+		<color></color>
+		<options>
+			<option text="那怎么存呢？" command="goto:fs2" />
+		</options>
+	</fs1>
+	<fs2>
+		<text>不要着急嘛，点击背包按钮打开背包按钮，把东西移动过来就可以了，移动方法就是用鼠标左键点击一下物品，然后吧鼠标移动到要放下的地方，再点击一下鼠标左键就可以了，顺便告诉你点击鼠标右键是使用物品。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，那么……" command="goto:fs3" />
+		</options>
+	</fs2>
+	<fs3>
+		<text>别急着走啊，还没说完呢……防具商人找你有事情，快去吧，他在(42.33)坐标附近。</text>
+		<color></color>
+		<options>
+			<option text="哦，我这就去" command="completeTask:10003011;giveTask:10003012" />
+		</options>
+	</fs3>
+    <zs-completed>
+		<text>我是仓库管理员，你有什么需要我服务的吗？</text>
+		<color></color>
+		<options>
+			 <option text="新手指导任务" command="goto:zs1" />
+			 <option text="打开我的仓库" command="store" />
+		</options>
+	</zs-completed>
+	<zs1>
+		<text>哦，你就是新手指导员说的那个人吧。我这里是仓库，暂时用不着的东西可以寄存在我这里</text>
+		<color></color>
+		<options>
+			<option text="那怎么存呢？" command="goto:zs2" />
+		</options>
+	</zs1>
+	<zs2>
+		<text>不要着急嘛，点击背包按钮打开背包按钮，把东西移动过来就可以了，移动方法就是用鼠标左键点击一下物品，然后吧鼠标移动到要放下的地方，再点击一下鼠标左键就可以了，顺便告诉你点击鼠标右键是使用物品。</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢你，那么……" command="goto:zs3" />
+		</options>
+	</zs2>
+	<zs3>
+		<text>别急着走啊，还没说完呢……防具商人找你有事情，快去吧，他在(42.33)坐标附近。</text>
+		<color></color>
+		<options>
+			<option text="哦，我这就去" command="completeTask:10003021;giveTask:10003022" />
+		</options>
+	</zs3>
+	<fg>
+		<text>找不到防具商人吗？他在(42.33)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:42:33" />
+			<option text="离开" command="" />
+		</options>
+	</fg>
+</root>

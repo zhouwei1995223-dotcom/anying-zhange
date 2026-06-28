@@ -1,0 +1,22 @@
+<app.island.data.Depot>
+	<money>150000</money>
+	<goodsList>
+		<0>1333000000</0>
+	</goodsList>
+	<fashion></fashion>
+	<weapon></weapon>
+	<armor></armor>
+	<helmet></helmet>
+	<boots></boots>
+	<shield></shield>
+	<leftEarbob></leftEarbob>
+	<rightEarbob></rightEarbob>
+	<necklace></necklace>
+	<leftRing></leftRing>
+	<rightRing></rightRing>
+	<shopGoods></shopGoods>
+	<shopCapacity>16</shopCapacity>
+	<title></title>
+	<id>20010</id>
+	<name>cccc</name>
+</app.island.data.Depot>

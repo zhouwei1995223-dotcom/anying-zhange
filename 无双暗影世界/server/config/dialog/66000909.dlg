@@ -1,0 +1,20 @@
+<root>
+	<taskEntries>
+		<task id="10003049" completed="xn-complete" onceDone="start"/>
+	</taskEntries>
+	<start>
+		<text>平时我们只出售一些技能书，但是只要你条件符合，就可以从我们这领取到相应的主线任务，所以你要留心哦!</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<xn-complete>
+		<text>我们出售各职业的技能书，同时可以找我或修女进行主线任务，任务的奖励很不错哦。这是你的礼品拿去吧，记得40级时去贝伦城找礼品使者，有40级的礼品可以领哦。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003049" />
+			<option text="离开" command="" />
+		</options>
+	</xn-complete>
+</root>

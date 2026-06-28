@@ -1,0 +1,171 @@
+<root>
+   <taskEntries>
+		<task id="10000031" completed="brian-completed" />
+		<task id="10000033" completed="meat-completed" />
+		<task id="10000035" completed="syem-completed" />
+		<task id="10000040" completed="bzq-completed" />
+		<task id="10000041" completed="lhys-completed" />
+		<task id="20000057" doing="zxrw-doing" completed="zxrw-completed" onceDone="zcd" />
+   </taskEntries>
+   <levelEntries>
+		<70>start</70>
+		<96>zcd</96>
+		<1900>zx</1900>
+   </levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+             <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <zx>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:caidan" />
+			 <option text="主线任务" command="goto:zxrw" />
+			 <option text="离开" command="" />
+		</options>
+   </zx>
+   <zcd>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:caidan" />
+			 <option text="离开" command="" />
+		</options>
+   </zcd>
+   <caidan>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>
+		     <option text="以正义之名（限制：70级以上）" command="goto:brian" />
+			 <option text="跳跃的爆炸球（限制：74级以上）" command="goto:bzq" />
+			 <option text="尊贵者（限制：78级以上）" command="goto:meat" />
+			 <option text="神奇的烈火元素（限制：82级以上）" command="goto:lhys" />
+			 <option text="来自于地穴（限制：86级以上）" command="goto:syem" />			 
+			 <option text="返回上一层" command="goto:zcd" />
+			 <option text="离开" command="" />
+		</options>
+	</caidan>
+   <brian>
+		<text>邪恶巨人经常以踩死我们为乐趣，这种事情不能再容忍了，我们必须做出回应，这个任务就交给你了</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000031" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+	</brian>
+	<brian-completed>
+		<text>一看它们就知道它们心怀不轨</text>
+		<color></color>
+		<options>
+			 <option text="恩，是的" command="completeTask:10000031" />
+			 <option text="买药" command="buy" />
+		</options>
+	</brian-completed>
+    <meat>
+		<text>那些木乃伊领主以前是尊贵的，但是它们死后却经常侵犯我们，所以我们也不能再听之任之了，去让它们长眠吧</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000033" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+	</meat>
+	<meat-completed>
+		<text>希望它们能真正的长眠</text>
+		<color></color>
+		<options>
+			 <option text="这次是真的长眠了" command="completeTask:10000033" />
+			 <option text="买药" command="buy" />
+		</options>
+	</meat-completed>
+    <bzq>
+		<text>夏基亚城附近一种叫爆炸球的危险生物，只要你靠近就会被攻击，请你帮助我们消灭这怪物。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000040" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+	</bzq>
+	<bzq-completed>
+		<text>感谢你英雄！你的荣誉会像太阳一样发光，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000040" />
+			 <option text="买药" command="buy" />
+		</options>
+	</bzq-completed>
+	<lhys>
+		<text>从暗精镇的人，听说有一种叫烈火元素的怪物，最近在夏亚地道出现了，全身都是烈火，请你消灭它。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000041" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+	</lhys>
+	<lhys-completed>
+		<text>感谢你英雄！你的荣誉会像太阳一样发光，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000041" />
+			 <option text="买药" command="buy" />
+		</options>
+	</lhys-completed>
+	<syem>
+		<text>夏基亚城原是个繁荣的城市，至从一些怪物霸占附近区域，很多人都搬走了，请你帮助我们消灭深渊恶魔，它占据了夏亚地道。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000035" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+	</syem>
+	<syem-completed>
+		<text>感谢你英雄！你的荣誉会像太阳一样发光，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000035" />
+			 <option text="买药" command="buy" />
+		</options>
+	</syem-completed>
+	<zxrw>
+		<text>您来的正好，有些事要麻烦你。最近常有人失踪，从一位目击者得到的资料：在夏基亚城地下的避难所，不知什么原因活动着一些地底吞噬者，这些怪物通过吞噬生物来繁殖，还会使用魔法迷惑敌人，城里的士兵都不是他们的对手，请您帮助我们，如果你愿意，我们会派城里最好的医师沿途帮助你。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000057" />
+			 <option text="离开" command="" />
+		</options>
+	</zxrw>
+	<zxrw-doing>
+		<text>要去避难所吗？放心，这位医师是军队里训练出来得!</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="createDuplicate:3040" />
+			 <option text="离开" command="" />
+		</options>
+	</zxrw-doing>
+	<zxrw-completed>
+		<text>我替全城的居民感谢您，这是我们的一点心意！带着这个“英雄勋章”，可以找NPC“科威特”，换取一件96级的极品武器，愿神保佑您！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000057" />
+			 <option text="买药" command="buy" />
+		</options>
+	</zxrw-completed>
+</root>

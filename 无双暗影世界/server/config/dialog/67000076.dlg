@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002058" doing="ailin-doing" completed="ailin-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<ailin>1333012900</ailin>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“艾琳”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<ailin>
+		<text>你就是总部派过来支援我的吗？“剧毒跳蚤”数量太多了，帮我消灭115只，我可以把报酬分你一半。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002058" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</ailin>
+	<ailin-doing>
+		<text>你要小心那些“剧毒跳蚤”。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </ailin-doing>
+   <ailin-completed>
+		<text>这是你应得的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002058" />
+		</options>
+    </ailin-completed>
+</root>

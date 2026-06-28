@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>要回“血精森林”吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" command="transport:20:41:88" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

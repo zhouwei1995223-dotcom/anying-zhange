@@ -1,0 +1,47 @@
+<root>
+	<taskEntries>
+		<task id="10001011" completed="xd-completed" />
+	</taskEntries>
+	<levelEntries>
+		<60>start</60>
+		<1210>sj</1210>
+	</levelEntries>
+   <start>
+		<text>有事吗？</text>
+		<color></color>
+		<options>
+			<option text="没事" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>等你60级之后就可以来找我领取转生任务了</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+   <sj>
+		<text>转生可以让你更加强大，现在要接取转生任务吗</text>
+		<color></color>
+		<options>
+			<option text="转生任务" color="" bgColor="" command="goto:xd" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </sj>
+   <xd>
+		<text>转生需要物品“血精的印记”我这里有血精印记的合成卷，但是需要用1000w金币来换取，你要吗？\n身上金币足够的时候，可以去找奸商看看</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10001011" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </xd>
+   <xd-completed>
+		<text>嘿嘿！这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" color="" bgColor="" command="completeTask:10001011" />
+		</options>
+   </xd-completed>
+</root>

@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002053" doing="admg-doing" completed="admg-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<admg>1333012900</admg>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“阿西娜”，我是一位冒险者，同时也是一位药剂师。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<admg>
+		<text>看来你是新加入的冒险者，这样吧，我需要一些“多目怪的眼睛”来制做一些药材，你帮我收集些。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002053" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</admg>
+	<admg-doing>
+		<text>你要小心哦，多目怪可不会乖乖的把眼睛交给你。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </admg-doing>
+   <admg-completed>
+		<text>看来你收集到足够的眼睛了，这些金币，算是见面礼。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002053" />
+		</options>
+    </admg-completed>
+</root>

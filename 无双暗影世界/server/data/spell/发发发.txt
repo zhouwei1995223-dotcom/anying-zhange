@@ -1,0 +1,5 @@
+<app.island.data.SpellList>
+	<spells></spells>
+	<id>20004</id>
+	<name>·¢·¢·¢</name>
+</app.island.data.SpellList>

@@ -1,0 +1,29 @@
+<root>
+	<taskEntries>
+		<task id="20000061" completed="yxzz-completed" />
+	</taskEntries>
+   <start>
+		<text>你好，我是传送使者，负责各个地图间的传送，如果你要去其它地图，可以来找我。对了，8级时，你可以去那亚村试试？</text>
+		<color></color>
+		<options>
+			 <option text="传送到新迪岛(新手村)" command="transport:3061:28:35" />
+			 <option text="传送到那亚村(怪物：5-19级)" command="goto:start2" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+	<start2>
+		<text>到那亚村的路线，最近有怪物偷袭，暂停传送。</text>
+		<color></color>
+		<options>
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+	</start2>
+	<yxzz-completed>
+		<text>我是“普罗·克洛托”，你的任务已完成，不能常期停留在过去的时间里，要回“普罗之殿”领取任务奖励吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:24:21" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</yxzz-completed>
+</root>

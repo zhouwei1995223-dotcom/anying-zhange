@@ -1,0 +1,31 @@
+<app.island.data.Depot>
+	<money>105173</money>
+	<goodsList>
+		<0>1900061000,1766595421</0>
+		<2>1160050108</2>
+		<3>1160050101</3>
+		<4>1160050107</4>
+		<5>1160050105</5>
+		<6>1160050104</6>
+		<7>1160050103</7>
+		<8>1160050102</8>
+		<9>1160050110</9>
+		<10>1160050100</10>
+		<24>1160050109</24>
+	</goodsList>
+	<fashion></fashion>
+	<weapon></weapon>
+	<armor></armor>
+	<helmet>1160050106</helmet>
+	<boots></boots>
+	<shield></shield>
+	<leftEarbob>1743050500</leftEarbob>
+	<rightEarbob>1743050500</rightEarbob>
+	<necklace>1753050500</necklace>
+	<leftRing>1763050500</leftRing>
+	<rightRing>1763050500</rightRing>
+	<shopGoods></shopGoods>
+	<shopCapacity>16</shopCapacity>
+	<id>20003</id>
+	<name>dddd</name>
+</app.island.data.Depot>

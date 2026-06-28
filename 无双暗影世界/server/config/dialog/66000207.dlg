@@ -1,0 +1,37 @@
+<root>
+   <start>
+		<text>欢迎你！要在这个混乱的黑暗世界里生存，离不开强健的体魄和优良的装备。有什么需要我为你服务的吗？</text>
+		<color>BFB511</color>
+		<options>
+			<option text="帮助信息" command="goto:help" />
+			<option text="装备冲等" command="upgrade" />
+			<option text="装备合成" command="compound" />
+			<option text="关闭" command="" />
+		</options>
+   </start>
+   <help>
+		<text>你想了解哪方面的内容？</text>
+		<color>BFB511</color>
+		<options>
+			 <option text="怎样冲等" command="goto:upgrade" />
+			 <option text="怎样合成" command="goto:compound" />
+			 <option text="关闭" command="" />
+		</options>
+	</help>
+   <upgrade>
+		<text>冲等是把一件装备跟升级宝石进行融合，从而来得到一件更高属性的新装备。冲等需要消耗10000游戏金币。为了提高冲等的成功率，你可以使用一颗祝福宝石；冲等失败的话，装备跟宝石都会销毁的，你可以加一颗祈祷宝石来避免被销毁。但是祝福宝石跟祈祷宝石不能同时放入冲等。</text>
+		<color>BFB511</color>
+		<options>
+			 <option text="返回" command="goto:start" />
+			 <option text="关闭" command="" />
+		</options>
+	</upgrade>
+   <compound>
+		<text>合成是把5到10件相同等级的装备跟一颗合成宝石融合，从而得到一件更高阶段新装备。合成需要消耗10000游戏金币。为了提高合成的成功率，你可以使用一颗灵魂宝石；如果合成失败，装备跟宝石都会销毁，你可以加一颗起源宝石来避免被销毁。但是灵魂宝石跟起源宝石不能同时放入合成。合成后装备的品质有可能是参与合成的任意一个装备的品质，当参与合成的装备不足10件的时候，不足的件数均会被判断为白色品质的装备。</text>
+		<color>BFB511</color>
+		<options>
+			 <option text="返回" command="goto:start" />
+			 <option text="关闭" command="" />
+		</options>
+	</compound>
+</root>

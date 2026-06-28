@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002059" doing="gair-doing" completed="gair-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<gair>1333012900</gair>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“盖尔”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<gair>
+		<text>我这有件麻烦的事，你有没有兴趣，帮我消灭120个卫兵，我会给你一些报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002059" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</gair>
+	<gair-doing>
+		<text>你要小心那些“卫兵”，他们是经过专门训练得。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </gair-doing>
+   <gair-completed>
+		<text>这是你应得的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002059" />
+		</options>
+    </gair-completed>
+</root>

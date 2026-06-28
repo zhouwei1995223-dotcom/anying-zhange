@@ -1,0 +1,108 @@
+<root>
+	<taskEntries>
+		<task id="20000037" doing="puluo-doing" completed="puluo-completed" />
+		<task id="20000038" doing="yl-doing" completed="yl-completed" />
+		<task id="20000039" doing="xing-doing" completed="xing-completed" onceDone="start"/>
+	</taskEntries>
+	<levelEntries>
+		<84>start</84>
+		<1210>84zx</1210>
+	</levelEntries>
+	<start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="关闭" command="" />
+		</options>
+	</start>
+	<84zx>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="84级主线任务" command="goto:puluo" />
+			 <option text="关闭" command="" />
+		</options>
+	</84zx>
+	<puluo>
+		<text>英雄“普罗·克洛托”是命运女神“克洛托”之子，是拥有永恒生命的克洛国之王。在参加一次众神的聚会上，他不小心把酒洒到噩梦女神“赫卡忒”的身上，弄脏了她神圣的礼服，而遭到噩梦的诅咒。</text>
+		<color></color>
+		<options>
+			 <option text="诅咒会怎么样？" command="goto:puluo1" />
+		</options>
+	</puluo>
+	<puluo1>
+		<text>在聚会回来的路上，“普罗·克洛托”在飞车上睡着，掉到血精森林，从高空掉下并没有对“普罗·克洛托”造成伤害，也没能让他醒来，最后被食人族所捕获，他的心被食人族长剖出，身体被煮食。</text>
+		<color></color>
+		<options>
+			 <option text="食人族我怎么没见过？" command="goto:puluo2" />
+		</options>
+	</puluo1>
+	<puluo2>
+		<text>因为“普罗·克洛托”拥有永恒生命，他的骸骨变成骷髅，愤怒的追杀那些煮食他的食人族，他的灵魂变为幽灵，追寻着他的心脏，几年间食人族几乎全部灭绝。</text>
+		<color></color>
+		<options>
+			 <option text="我该做什么？" command="goto:puluo3" />
+		</options>
+	</puluo2>
+	<puluo3>
+		<text>克洛国的祭祀，请求我们将“普罗·克洛托”复活。但他们需要一个强大的人来打败“普罗·克洛托”的骸骨和他的灵魂，并找回他的心脏。你要明白他的生命是永恒得，所以第一步就是要打败“普罗·克洛托”的骸骨。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000037" />
+			 <option text="关闭" command="" />
+		</options>
+	</puluo3>
+	<puluo-doing>
+		<text>克洛国的祭祀早在血精森林等你了，只要你打败“普罗·克洛托”的骸骨，他们就可以安全的把骸骨收集起来，这个任务你可以找一些朋友帮忙。还有“普罗·克洛托”的骸骨在坐标（131，63）附近出没。</text>
+		<color></color>
+		<options>
+			 <option text="买书" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</puluo-doing>
+	<puluo-completed>
+		<text>看来你完成了任务，这是你的奖励，接下去你要打败“普罗·克洛托”的灵魂。“普罗·克洛托”的灵魂游荡在血精森林（131，63）坐标附近。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000037" />
+			 <option text="买书" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</puluo-completed>
+	<yl-doing>
+		<text>“普罗·克洛托”的灵魂游荡在血精森林（131，63）坐标附近，你要小心他的魔法攻击。</text>
+		<color></color>
+		<options>
+			<option text="买书" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</yl-doing>
+	<yl-completed>
+		<text>看来你完成了任务，这是你的奖励。现在只差“普罗·克洛托的心脏”，可能跟血精森林里的“怪异食人花”有关，“怪异食人花”在（32，132）坐标附近，你好好调查下。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000038" />
+			 <option text="买书" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</yl-completed>
+	<xing-doing>
+		<text>现在只差“普罗·克洛托的心脏”，可能跟血精森林里的“怪异食人花”有关，“怪异食人花”在（32，132）坐标附近，你好好调查下。</text>
+		<color></color>
+		<options>
+			<option text="买书" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</xing-doing>
+	<xing-completed>
+		<text>这是你的奖励，我想你以后会遇见“普罗·克洛托”得。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000039" />
+			 <option text="买书" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</xing-completed>
+</root>

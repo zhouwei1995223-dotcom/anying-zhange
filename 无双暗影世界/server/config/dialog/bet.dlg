@@ -1,0 +1,50 @@
+<root>
+	<start>
+		<text>在这个世界里，我们需要时常制造娱乐内容，否则生活真是太单调了！你有没有兴趣跟我玩点小游戏呀？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="看看嘛" command="goto:next" />
+			<option text="运气商店" color="" bgColor="" command="buy" />
+			<option text="真无聊" command="" />
+		</options>
+	</start>
+	<next>
+		<text>我身上有很一些金币（数量保密），都是从其他人那里赢来的，你出100金币来买运气，如果你运气好，你会得到我全部金币的一部分，反之就一个都没有。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="我赌一把" command="goto:bet" />
+			<option text="我没兴趣" command="" />
+		</options>
+	</next>
+	<bet>
+		<text>确定要买吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="要买" command="bet" />
+			<option text="走了" command="" />
+		</options>
+	</bet>
+	<nomoney>
+		<text>你这么穷，我不跟你玩，你先去挣点钱再来找我吧！</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="我去挣" command="" />
+		</options>
+	</nomoney>
+	<success>
+		<text>恭喜，你买中了，你得到我身上一部分的钱！</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="继续买" command="goto:bet" />
+			<option text="不玩了" command="" />
+		</options>
+	</success>
+	<failed>
+		<text>哦噢，你运气不好，一毛钱也没得到！</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="继续买" command="goto:bet" />
+			<option text="不玩了" command="" />
+		</options>
+	</failed>
+</root>

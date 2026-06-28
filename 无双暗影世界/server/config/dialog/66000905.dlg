@@ -1,0 +1,108 @@
+<root>
+	<taskEntries>
+		<task id="10003044" doing="fb" completed="ysn-complete" />
+		<task id="10003045" doing="fb" completed="fsn-complete" />
+		<task id="10003046" doing="fb" completed="zsn-complete" />
+		<task id="10003047" completed="fb" />
+		<task id="10003048" completed="fb" />
+		<task id="10003049" completed="fb" />
+		<task id="10003044" onceDone="start"/>
+		<task id="10003045" onceDone="start"/>
+		<task id="10003046" onceDone="start"/>
+	</taskEntries>
+	<raceEntries 0="ylp" 1="flp" 2="zlp" />
+	<start>
+		<text>很高兴见到你，但我现在很忙，你找我有事吗？</text>
+		<color></color>
+		<options>
+			 <option text="只是路过" command="" />
+		</options>
+	</start>
+	<ylp>
+		<text>看来你是来领取礼物得，不过你要先经过我的考验才行。</text>
+		<color></color>
+		<options>
+			 <option text="什么考验" command="goto:yky" />
+			 <option text="离开" command="" />
+		</options>
+	</ylp>
+	<yky>
+		<text>很简单，把我们的“试炼指导员”打败，你就可以领取到奖励。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10003044" />
+			 <option text="离开" command="" />
+		</options>
+	</yky>
+	<ysn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003044" />
+			<option text="离开" command="" />
+		</options>
+	</ysn-complete>
+	<fb>
+		<text>要进试炼之地吗？试炼指导员就在里面。你若是准备好了，我可以把你传送进去。</text>
+		<color></color>
+		<options>
+			<option text="传送进去" command="createDuplicate:3027" />
+			<option text="离开" command="" />
+		</options>
+	</fb>
+	<rw>
+		<text>你已经在我这领过奖励了，接下去就看你自已的努力了。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</rw>
+	<flp>
+		<text>看来你是来领取礼物得，不过你要先经过我的考验才行。</text>
+		<color></color>
+		<options>
+			 <option text="什么考验" command="goto:fky" />
+			 <option text="离开" command="" />
+		</options>
+	</flp>
+	<fky>
+		<text>很简单，把我们的“试炼指导员”打败，你就可以领取到奖励。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10003045" />
+			 <option text="离开" command="" />
+		</options>
+	</fky>
+	<fsn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003045" />
+			<option text="离开" command="" />
+		</options>
+	</fsn-complete>
+	<zlp>
+		<text>看来你是来领取礼物得，不过你要先经过我的考验才行。</text>
+		<color></color>
+		<options>
+			 <option text="什么考验" command="goto:zky" />
+			 <option text="离开" command="" />
+		</options>
+	</zlp>
+	<zky>
+		<text>很简单，把我们的“试炼指导员”打败，你就可以领取到奖励。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10003046" />
+			 <option text="离开" command="" />
+		</options>
+	</zky>
+	<zsn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003046" />
+			<option text="离开" command="" />
+		</options>
+	</zsn-complete>
+</root>

@@ -1,0 +1,54 @@
+<root>
+	<taskEntries>
+		<task id="20000080" completed="start" />
+		<task id="20000081" completed="zshen-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<mzc>1333011804</mzc>
+	</goodsEntries>	
+	<start>
+		<text>流浪的旅人呀，这不是你该来的地方。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<zshen-completed>
+		<text>我可以感觉到你心中的波动和你那强大的力量，你并不应该出现在这里？</text>
+		<color></color>
+		<options>
+			 <option text="你身上散发的古老气息,等等!我并没有敌意。" command="goto:zshen-next" />
+			 <option text="离开" command="" />
+		</options>
+	</zshen-completed>
+	<zshen-next>
+		<text>我是血精灵“汉纳”,我族的力量是神圣得，我可以看清你心中所想，你正在寻找“迷之城”和“转生”的力量。</text>
+		<color></color>
+		<options>
+			 <option text="真是奇怪的力量" command="goto:zshen-next0" />
+		</options>
+	</zshen-next>
+	<zshen-next0>
+		<text>据我族王的指示和你现在拥有的实力，你有进入迷之城资格。</text>
+		<color></color>
+		<options>
+			 <option text="怎样才能进入迷之城" command="goto:zshen-next1" />
+		</options>
+	</zshen-next0>
+	<zshen-next1>
+		<text>这种石头叫“月光石”，上面附有我族特有气息，它也是进入“迷之城的通行证”，你拿去吧。</text>
+		<color></color>
+		<options>
+			 <option text="领取“月光石”" command="completeTask:20000081" />
+			 <option text="离开" command="" />
+		</options>
+	</zshen-next1>
+	<mzc>
+		<text>想进迷之城吗？</text>
+		<color></color>
+		<options>
+			 <option text="进入“迷之城”" command="transport:4001:21:24" />
+			 <option text="离开" command="" />
+		</options>
+	</mzc>
+</root>

@@ -1,0 +1,4 @@
+编号	名字	坐标X	坐标Y	图像	对话	商店	脚本
+id	name	x	y	image	dialog	shop	script
+0	BOSS战场挑战者	25	27	30	boss	0	
+0	终极武器锻造师	21	27	13	66000307	90000702	

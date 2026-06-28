@@ -1,0 +1,57 @@
+<root>
+	<taskEntries>
+		<task id="10000034" doing="tiaozhan-doing" completed="tiaozhan-completed" />
+	</taskEntries>
+	<levelEntries>
+		<89>start</89>
+		<121>tiaozhanstart</121>
+	</levelEntries>
+   <start>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" color="" bgColor="" command="buy" />
+             <option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <tiaozhanstart>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" color="" bgColor="" command="buy" />
+             <option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+             <option text="火灵" color="" bgColor="" command="goto:tiaozhan" />
+		</options>
+   </tiaozhanstart>
+   <help>
+		<text>下次再来看看吧！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+   <tiaozhan>
+		<text>你见过火灵吗？它们是那么的闪耀，每个人都会为之倾倒的，你能帮我弄7个来吗？我会给你报酬的</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000034" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </tiaozhan>
+   <tiaozhan-doing>
+		<text>拿到火灵没？</text>
+		<color></color>
+		<options>
+			 <option text="我还没去" color="" bgColor="" command="" />
+			 <option text="买东西" color="" bgColor="" command="buy" />
+		</options>
+   </tiaozhan-doing>
+   <tiaozhan-completed>
+		<text>它们真迷人，这个是说好的报酬</text>
+		<color></color>
+		<options>
+			 <option text="它们确实很好看" color="" bgColor="" command="completeTask:10000034" />
+			 <option text="买东西" color="" bgColor="" command="buy" />
+		</options>
+   </tiaozhan-completed>
+</root>

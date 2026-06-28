@@ -1,0 +1,5 @@
+@echo off
+title 暗影世界登入器
+rem jview game.GameFrame
+java.exe -cp jgnet.zip;client.zip;. -Xmx256M -XX:+ForceTimeHighResolution game.GameFrame height=560
+pause

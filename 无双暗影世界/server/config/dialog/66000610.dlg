@@ -1,0 +1,144 @@
+<root>
+	<taskEntries>
+		<task id="20000034" doing="swxg-doing" completed="swxg-completed"/>
+		<task id="20000036" doing="sba-doing" completed="sba-completed"/>
+		<task id="20000035" doing="yzj-doing" completed="yzj-completed" onceDone="over" />
+		<task id="20000034" doing="over" completed="over" onceDone="over" />
+		<task id="20000033" onceDone="cd" />	
+	</taskEntries>
+	<start>
+		<text>72级主线任务需要找夏基亚城的“智慧老人”领取，等你加入远征军后，就可以找我参加远征军的行动。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<cd>
+		<text>现在有两个任务，你只能选择其中一种任务进行，请选择！</text>
+		<color></color>
+		<options>
+			<option text="单人路线" command="goto:danr" />
+			<option text="多人路线" command="goto:duor" />
+			<option text="让我考虑下" command="" />
+		</options>
+	</cd>
+	<danr>
+		<text>你可以在我这接到“单人路线”的远征军行动，有兴趣吗？</text>
+		<color></color>
+		<options>
+			<option text="介绍下任务" command="goto:drrw" />
+			<option text="让我考虑下" command="" />
+		</options>
+	</danr>
+	<drrw>
+		<text>由于“奥尔亚瑟”的叛乱，导致边镜上出现了许多问题。一个称为“掠夺者”的兽族部落突然在阿塞边镜上掘起，同时控制了这片区域。</text>
+		<color></color>
+		<options>
+			<option text="关于兽族" command="goto:souz" />
+			<option text="离开" command="" />
+		</options>
+	</drrw>
+	<souz>
+		<text>兽族是一个非常凶残的种族，他们的作战能力、生存能力、繁殖能力都很强，所以国王对此事非常看重。</text>
+		<color></color>
+		<options>
+			<option text="我的任务是什么" command="goto:swxg" />
+			<option text="离开" command="" />
+		</options>
+	</souz>
+	<swxg>
+		<text>我们的主力部队已成功的把兽王“施瓦新格”和他的部队，分离在“阿塞林地”和“阿塞边镜”这两个地方，我们接到的任务就是把“施瓦新格”消灭在“阿塞林地”。</text>
+		<color></color>
+		<options>
+			<option text="我想参加" command="goto:sba" />
+			<option text="让我再想想" command="" />
+		</options>
+	</swxg>
+	<sba>
+		<text>此次任务关系重大，只有通过选拔的军人，才能参加这个任务，你要参加此次的军事选拔吗？</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:20000036" />
+			<option text="让我再想想" command="" />
+		</options>
+	</sba>
+	<sba-doing>
+		<text>要参加军事选拔吗？我现在可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="createDuplicate:3031" />
+			<option text="关闭" command="" />
+		</options>
+	</sba-doing>
+	<sba-completed>
+		<text>即然你通过了选拔，这些钱就送给你，要去“阿塞林地”的话再来找我。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000036" />
+			 <option text="关闭" command="" />
+		</options>
+	</sba-completed>
+	<swxg-doing>
+		<text>去“阿塞林地”的道路已被封锁，但我可以送你过去，你要去“阿塞林地”吗？</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="createDuplicate:3029" />
+			<option text="关闭" command="" />
+		</options>
+	</swxg-doing>
+	<swxg-completed>
+		<text>这是此次任务的奖励，还有你可以拿着这个战斗勋章，找后勤部的“科威特”换取72级的装备。</text>
+		<color></color>
+		<options>
+			 <option text="完成任务" command="completeTask:20000034" />
+			 <option text="关闭" command="" />
+		</options>
+	</swxg-completed>
+	<duor>
+		<text>你可以在我这接到“多人路线”的远征军行动，最多可以12人同时进行，有兴趣吗？</text>
+		<color></color>
+		<options>
+			<option text="能否介绍下任务" command="goto:as" />
+			<option text="让我考虑下" command="" />
+		</options>
+	</duor>
+	<as>
+		<text>阿塞边镜上有一个称为“掠夺者”的兽族部落突然掘起，并控制了这片区域，他们的头领叫“施瓦新格”。兽族几百年间都没出现过头领，所以皇家对此事非常重视。</text>
+		<color></color>
+		<options>
+			<option text="我们的任务是什么？" command="goto:yzj" />
+			<option text="离开" command="" />
+		</options>
+	</as>
+	<yzj>
+		<text>我们接到的命令是对“阿塞边镜”发动正面进攻，消灭“施瓦新格”和他的部队，你们要参加吗？</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:20000035" />
+			<option text="让我再想想" command="" />
+		</options>
+	</yzj>
+	<yzj-doing>
+		<text>去“阿塞边镜”的道路已被封锁，但我可以送你过去，你要去“阿塞边镜”吗？</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="createDuplicate:3030" />
+			<option text="关闭" command="" />
+		</options>
+	</yzj-doing>
+	<yzj-completed>
+		<text>这是此次任务的奖励，你可以拿着这个战斗勋章，找后勤部的“科威特”换取72级的极品装备。“科威特”在夏基亚城的（127，28）坐标。</text>
+		<color></color>
+		<options>
+			 <option text="完成任务" command="completeTask:20000035" />
+			 <option text="关闭" command="" />
+		</options>
+	</yzj-completed>
+	<over>
+		<text>很高兴见到你，不过我现在没有任务分配给你。</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+	</over>
+</root>

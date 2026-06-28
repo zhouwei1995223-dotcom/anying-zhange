@@ -1,0 +1,135 @@
+<root>
+   <taskEntries>
+        <task id="10000026" completed="panbian-completed" />
+		<task id="10000027" completed="firesoul-completed" />
+		<task id="10000028" completed="bigstone-completed" />
+		<task id="10000029" completed="firestone-completed" />
+		<task id="10000030" completed="crazybone-completed" />
+   </taskEntries>
+   <levelEntries>
+		<50>start</50>
+		<1210>brw</1210>
+   </levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+             <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:panbianstart" />
+			 <option text="离开" command="" />
+		</options>
+   </brw>
+   <panbianstart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>
+			 <option text="善战的野蛮人（限制：50级以上）" command="goto:panbian" />
+			 <option text="恶作剧的代价（限制：54级以上）" command="goto:firesoul" />
+			 <option text="潜在的危机（限制：58级以上）" command="goto:bigstone" />
+			 <option text="令人生畏的力量（限制：62级以上）" command="goto:firestone" />
+			 <option text="护卫者（限制：66级以上）" command="goto:crazybone" />
+			 <option text="返回上一层" command="goto:brw" />
+			 <option text="离开" command="" />
+		</options>
+	</panbianstart>
+	<panbian>
+		<text>我发现最近有一批很能打的野蛮人，他们经常骚扰这里，去杀死那些狂暴野蛮人，让他们知道我们不好欺负</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000026" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:panbianstart" />
+		</options>
+	</panbian>
+	<panbian-completed>
+		<text>这下就算它们再厉害也不敢骚扰这里了</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000026" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+	</panbian-completed>
+   <firesoul>
+		<text>那些南瓜怪人整天就知道搞恶作剧，现在又不是万圣节，必须要让它们知道我们很生气</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000027" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:panbianstart" />
+		</options>
+   </firesoul>
+   <firesoul-completed>
+		<text>你已经教训它们了呀，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000027" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </firesoul-completed>
+   <bigstone>
+		<text>门口的那些跳蚤好像是有毒的，前两天有人被咬了一口，结果死了，这件事情你最好去调查一下，我们也好做应对准备</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000028" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:panbianstart" />
+		</options>
+   </bigstone>
+   <bigstone-completed>
+		<text>看来它们是真的有毒啊，我们需要早做准备了，不能再让人中毒身亡了,这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000028" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </bigstone-completed>
+   <firestone>
+		<text>那些远古树精真的有很强大的力量，但是这种力量令人害怕，现在是杀死它们保全我们自己的时候了</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000029" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:panbianstart" />
+		</options>
+   </firestone>
+   <firestone-completed>
+		<text>这下我们也能安心的生活了，没有它们其他树精不足为惧</text>
+		<color></color>
+		<options>
+			 <option text="其实它们也没威胁到我们啊" command="completeTask:10000029" />
+			 <option text="买药" command="buy" />
+		</options>
+   </firestone-completed>
+   <crazybone>
+		<text>其实那些卫兵都是以前领主们的贴身侍卫，但是现在领主被废除了，他们也没工作了，所以现在经常做些强盗似的勾当，既然他们是强盗我们必须去消灭他们，你愿意去吗？</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000030" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:panbianstart" />
+		</options>
+   </crazybone>
+   <crazybone-completed>
+		<text>谢谢你，这样民众们出行也安全了很多</text>
+		<color></color>
+		<options>
+			 <option text="这个没什么的" command="completeTask:10000030" />
+			 <option text="买药" command="buy" />
+		</options>
+   </crazybone-completed>
+</root>

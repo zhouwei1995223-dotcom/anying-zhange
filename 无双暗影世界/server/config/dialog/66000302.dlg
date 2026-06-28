@@ -1,0 +1,257 @@
+<root>
+	<taskEntries>
+		<task id="10000043" completed="js-completed" />
+		<task id="10000044" completed="xem-completed" />
+		<task id="10000038" completed="kl-completed" />
+		<task id="10000039" completed="mny-completed" />
+		<task id="20000028" doing="xier-doing" completed="xier-completed" onceDone="brw" />
+		<task id="20000023" doing="tmjr-doing" completed="tmjr-completed" />
+		<task id="20000024" doing="jians" completed="jians-completed" />
+		<task id="20000025" doing="xiaoem" completed="xiaoem-completed" />
+		<task id="20000026" doing="kulou" completed="kulou-completed" />
+		<task id="20000027" doing="munaiy" completed="munaiy-completed" onceDone="xier"/>
+	</taskEntries>
+	<levelEntries>
+		<42>start</42>
+		<48>brw</48>
+		<1210>zhuxian</1210>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+             <option text="暂时还不需要" command="" />
+		</options>
+   </start>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:jinshustart" />
+			 <option text="离开" command="" />
+		</options>
+   </brw>
+   <jinshustart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>
+			 <option text="活动的尸体（限制：42级以上）" command="goto:js" />
+			 <option text="小恶魔（限制：46级以上）" command="goto:xem" />
+			 <option text="骷髅（限制：50级以上）" command="goto:kl" />
+			 <option text="木乃伊（限制：54级以上）" command="goto:mny" />
+			 <option text="返回上一层" command="goto:brw" />
+			 <option text="离开" command="" />
+		</options>
+   </jinshustart>
+   <js>
+		<text>在幻漠地宫里出现了很多活动的尸体，好可怕，请你帮助我们消灭110个僵尸，我会给你报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000043" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:jinshustart" />
+		</options>
+   </js>
+   <js-completed>
+		<text>这下我们安心多了,这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000043" />
+			 <option text="买药" command="buy" />
+		</options>
+   </js-completed>
+   <xem>
+		<text>在幻漠地宫和幻漠迷道出现了一些小恶魔，那是一些盗墓贼被诅咒的被成得，请你帮助我们消灭它。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000044" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:jinshustart" />
+		</options>
+   </xem>
+   <xem-completed>
+		<text>这下死去的人应该可以安心了。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000044" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xem-completed>
+   <kl>
+		<text>在幻漠地宫二层，出现了很多骷髅兵，那就是盗墓贼的下场，如果你帮我们消灭这些骷髅，你会得到很高的经验和金币。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000038" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:jinshustart" />
+		</options>
+   </kl>
+   <kl-completed>
+		<text>金字塔是神圣者的安息之地，侵犯它的下场是不可饶恕得。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000038" />
+			 <option text="买药" command="buy" />
+		</options>
+   </kl-completed>
+   <mny>
+		<text>在幻漠地宫二层，木乃伊是金字塔的守护者，但他们已被黑暗的力量控制了，请你帮助我们消灭他！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000039" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:jinshustart" />
+		</options>
+   </mny>
+   <mny-completed>
+		<text>这下他们可以安息了。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000039" />
+			 <option text="买药" command="buy" />
+		</options>
+   </mny-completed>
+   <zhuxian>
+		<text>“幻漠城”现在危机重重，建议你马上离开，要不然你会有危险，</text>
+		<color></color>
+		<options>
+			 <option text="有什么危险，说说看！也许我能帮助你们。" command="goto:zhuxian1" />
+			 <option text="离开" command="" />
+		</options>
+   </zhuxian>
+   <zhuxian1>
+		<text>有股强大的力量，正在吞食着这里，出现了很多的怪物，如果你能帮我们消灭这些怪物，我们会非常感谢你得。</text>
+		<color></color>
+		<options>
+			 <option text="我想我有这个能力帮助你们" command="goto:tmjr" />
+		</options>
+   </zhuxian1>
+   <tmjr>
+		<text>“幻漠城”在“特姆海岸”的出口，被几个巨人占据了。如果你帮我们消灭它们，我们会非常感谢你得。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000023" />
+			 <option text="拒绝任务" command="" />
+		</options>
+   </tmjr>
+   <tmjr-doing>
+		<text>“幻漠城”在“特姆海岸”的出口,可以找到那些巨人</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="" />
+			 <option text="买药" command="buy" />
+		</options>
+   </tmjr-doing>
+   <tmjr-completed>
+		<text>真了不起，这么快就把那些巨人消灭了。在你领取奖励的时候，我会给你一个新任务，要注意看哦！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000023" />
+			 <option text="买药" command="buy" />
+		</options>
+   </tmjr-completed>
+   <jians>
+		<text>我们领主进行清剿“幻漠迷道”的两个“狂剑士头领”。有一些僵尸守卫着其中一个“狂剑士头领”,把僵尸消灭，我们会给你报酬。</text>
+		<color></color>
+		<options>
+			 <option text="有BOSS杀呀，我这就去！" command="" />
+			 <option text="买药" command="buy" />
+		</options>
+   </jians>
+   <jians-completed>
+		<text>你的行动还真迅速，这是你的报酬，还有下一个任务！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000024" />
+			 <option text="买药" command="buy" />
+		</options>
+   </jians-completed>
+   <xiaoem>
+		<text>据我们得到的最新消息，另一个“狂剑士头领”，被一群小恶魔守护着,把小恶魔消灭，我们会给你报酬。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去把小恶魔消灭！" command="" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xiaoem>
+   <xiaoem-completed>
+		<text>我想我们可以很快的把“狂剑士头领”消灭，这是你的报酬，还有下一个任务！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000025" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xiaoem-completed>
+   <kulou>
+		<text>我们领主正在清剿占据“幻漠地宫二层”的“南瓜怪头领”,但地宫里有一些骷髅守卫，如果你把骷髅消灭，我们会给你报酬。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去把那些骷髅干掉" command="" />
+			 <option text="买药" command="buy" />
+		</options>
+   </kulou>
+   <kulou-completed>
+		<text>谢谢你的帮助，这是你的报酬，还有下一个任务！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000026" />
+			 <option text="买药" command="buy" />
+		</options>
+   </kulou-completed>
+   <munaiy>
+		<text>有一些木乃伊在守护着“南瓜怪头领”,把木乃伊消灭，领主就能顺利的消灭“南瓜怪头领”了。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="" />
+			 <option text="买药" command="buy" />
+		</options>
+   </munaiy>
+   <munaiy-completed>
+		<text>这是你的报酬，我有不好预感，过一阵子有可怕的事情发生！希望还能再见到你！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000027" />
+			 <option text="买药" command="buy" />
+		</options>
+   </munaiy-completed>
+   <xier>
+		<text>很高兴再看到你，我发现了一件可怕的事，那些“狂剑士头领”和“南瓜怪头领”虽然被消灭，但是每过一阵子他们还是会出现！</text>
+		<color></color>
+		<options>
+			 <option text="有这样的事？" command="goto:xier0" />
+		</options>
+   </xier>
+   <xier0>
+		<text>我发现这些事和我们的领主有关，领主的心灵被一股强大的邪恶力量控制了，那些怪物就是他复活得，请你帮助我们消灭它。</text>
+		<color></color>
+		<options>
+			 <option text="让我把你们的领主干掉？" command="goto:xier1" />
+		</options>
+   </xier0>
+   <xier1>
+		<text>不是，我有通往心灵世界的魔法，如果你愿意帮助我们，我可以把你送进领主的心灵世界！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000028" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xier1>
+   <xier-doing>
+		<text>要去心灵世界吗？进入心灵世界后，记得把隐藏在领主心中的邪恶之心消灭掉！</text>
+		<color></color>
+		<options>
+			 <option text="我要进去" command="createDuplicate:3002" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xier-doing>
+   <xier-completed>
+		<text>你像太阳一样给我们带来光明，“光明者”我们将以这个名字记住你，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000028" />
+			 <option text="买药" command="buy" />
+		</options>
+   </xier-completed>
+</root>

@@ -1,0 +1,354 @@
+<root>
+	<levelEntries>
+        <24>start</24>
+		<36>36j</36>
+		<48>48j</48>
+		<60>60j</60>
+		<72>72j</72>
+		<84>84j</84>
+		<96>96j</96>
+		<108>108j</108>
+		<2400>gz</2400>
+	</levelEntries>
+	<start>
+		<text>这是贵族练功场，根据领主所下达的命令，对等级为24级以上的玩家开放。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<36j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:36j-1" />
+			<option text="高级练功场" command="goto:36j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</36j>
+	<36j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="goto:36j-1" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="goto:36j-1" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="goto:36j-1" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:36j" />
+		</options>
+	</36j-1>
+	<36j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="goto:36j-2" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="goto:36j-2" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:36j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:36j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:36j" />
+		</options>
+	</36j-2>
+	<48j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:48j-1" />
+			<option text="高级练功场" command="goto:48j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</48j>
+	<48j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="goto:48j-1" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="goto:48j-1" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:48j" />
+		</options>
+	</48j-1>
+	<48j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="goto:48j-2" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="goto:48j-2" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:48j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:48j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:48j" />
+		</options>
+	</48j-2>
+	<60j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:60j-1" />
+			<option text="高级练功场" command="goto:60j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</60j>
+	<60j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="goto:60j-1" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:60j" />
+		</options>
+	</60j-1>
+	<60j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="goto:60j-2" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="goto:60j-2" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:60j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:60j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:60j" />
+		</options>
+	</60j-2>
+	<72j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:72j-1" />
+			<option text="高级练功场" command="goto:72j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</72j>
+	<72j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="createDuplicate:3019:72000" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:72j" />
+		</options>
+	</72j-1>
+	<72j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="goto:72j-2" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="goto:72j-2" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:72j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:72j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:72j" />
+		</options>
+	</72j-2>
+	<84j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:84j-1" />
+			<option text="高级练功场" command="goto:84j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</84j>
+	<84j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="createDuplicate:3019:72000" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:84j" />
+		</options>
+	</84j-1>
+	<84j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="createDuplicate:3020:85600" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="goto:84j-2" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:84j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:84j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:84j" />
+		</options>
+	</84j-2>
+	<96j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:96j-1" />
+			<option text="高级练功场" command="goto:96j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</96j>
+	<96j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="createDuplicate:3019:72000" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:96j" />
+		</options>
+	</96j-1>
+	<96j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="createDuplicate:3020:85600" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="createDuplicate:3021:102400" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="goto:96j-2" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:96j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:96j" />
+		</options>
+	</96j-2>
+	<108j>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:108j-1" />
+			<option text="高级练功场" command="goto:108j-2" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</108j>
+	<108j-1>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="createDuplicate:3019:72000" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:108j" />
+		</options>
+	</108j-1>
+	<108j-2>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。如果等级不够，则不能进入练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="createDuplicate:3020:85600" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="createDuplicate:3021:102400" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="createDuplicate:3022:114400" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="goto:108j-2" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:108j" />
+		</options>
+	</108j-2>
+	<gz>
+		<text>我是练功场管理员“布里奇特”，从我这可以进入练功场，并可以了解一些相关信息。</text>
+		<color></color>
+		<options>
+			<option text="低级练功场" command="goto:dj" />
+			<option text="高级练功场" command="goto:gj" />
+			<option text="练功场资料" command="goto:zl" />
+			<option text="其它信息" command="goto:qt" />
+			<option text="离开" command="" />
+		</options>
+	</gz>
+	<dj>
+		<text>“低级练功场”是为24级至60级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入1号练功场(价格：29200，怪物：27级)" command="createDuplicate:3016:29200" />
+			<option text="进入2号练功场(价格：43600，怪物：41级)" command="createDuplicate:3017:43600" />
+			<option text="进入3号练功场(价格：58000，怪物：53级)" command="createDuplicate:3018:58000" />
+			<option text="进入4号练功场(价格：72000，怪物：65级)" command="createDuplicate:3019:72000" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:gz" />
+		</options>
+	</dj>
+	<gj>
+		<text>“高级练功场”是为72级至108级左右玩家设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="进入5号练功场(价格：85600，怪物：77级)" command="createDuplicate:3020:85600" />
+			<option text="进入6号练功场(价格：102400，怪物：89级)" command="createDuplicate:3021:102400" />
+			<option text="进入7号练功场(价格：114400，怪物：101级)" command="createDuplicate:3022:114400" />
+			<option text="进入8号练功场(价格：128800，怪物：113级)" command="createDuplicate:3023:128800" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:gz" />
+		</options>
+	</gj>
+	<zl>
+		<text>你想了解一些什么信息？？</text>
+		<color></color>
+		<options>
+			<option text="关于练功场" command="goto:lgc" />
+			<option text="练功场信息" command="goto:baori" />
+			<option text="离开" command="" />
+		</options>
+	</zl>
+	<lgc>
+		<text>练功场是由高级贵族们共同组建，主要为提高国民的战斗实力而设立的收费练级场景。</text>
+		<color></color>
+		<options>
+			<option text="低级和高级练功场的区别" command="goto:lgcdiji" />
+			<option text="练功场的怪物与组队" command="goto:buguai" />
+			<option text="离开" command="" />
+		</options>
+	</lgc>
+	<buguai>
+		<text>每个练功场里有两种怪物，分别为近身物理和远程魔法怪物，同时练功场最多支持3人组队练级。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+	</buguai>
+	<lgcdiji>
+		<text>“低级练功场”由1号至4号练功场组成，为24、36、48、60级的玩家，所设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="那高级练功场呢？" command="goto:lgcgj" />
+			<option text="离开" command="" />
+		</options>
+	</lgcdiji>
+	<lgcgj>
+		<text>“高级练功场”由5号至8号练功场组成，为72、84、96、108级的玩家，所设立的练功场。</text>
+		<color></color>
+		<options>
+			<option text="我明白了" command="" />
+		</options>
+	</lgcgj>
+	<baori>
+		<text>练功场跟其它地方相比，刷怪也比野外快，同时经验和物品暴率都为野外地图高1.1倍,但金钱掉落较少。</text>
+		<color></color>
+		<options>
+			<option text="我明白了" command="" />
+		</options>
+	</baori>
+	<qt>
+		<text>除了贵族练功场，还有付费玩家专用的副本练功场，副本中要比收费的练功场怪物的刷新更快，同时杀怪所得到的经验，金钱和物品比野外高1.3倍，同时每个副本中都有一个BOSS。</text>
+		<color></color>
+		<options>
+			<option text="我明白了" command="" />
+		</options>
+	</qt>
+</root>

@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>你们的任务是消灭兽族主力，并找出和消灭兽王“施瓦新格”。对了，要回夏基亚城的话，可以来找我。</text>
+		<color></color>
+		<options>
+			 <option text="马上回去" command="transport:23:131:46" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

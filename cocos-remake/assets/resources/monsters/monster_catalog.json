@@ -1,0 +1,466 @@
+[
+    {
+        "id":  0,
+        "key":  "monster_00",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  1,
+        "key":  "monster_01",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  2,
+        "key":  "monster_02",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  3,
+        "key":  "monster_03",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  4,
+        "key":  "monster_04",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  5,
+        "key":  "monster_05",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  6,
+        "key":  "monster_06",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  7,
+        "key":  "monster_07",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  8,
+        "key":  "monster_08",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  9,
+        "key":  "monster_09",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  10,
+        "key":  "monster_10",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  11,
+        "key":  "monster_11",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  12,
+        "key":  "monster_12",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  13,
+        "key":  "monster_13",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  14,
+        "key":  "monster_14",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  15,
+        "key":  "monster_15",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  16,
+        "key":  "monster_16",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  17,
+        "key":  "monster_17",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  18,
+        "key":  "monster_18",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  19,
+        "key":  "monster_19",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  20,
+        "key":  "monster_20",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  21,
+        "key":  "monster_21",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  22,
+        "key":  "monster_22",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  23,
+        "key":  "monster_23",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  24,
+        "key":  "monster_24",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  25,
+        "key":  "monster_25",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  26,
+        "key":  "monster_26",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  27,
+        "key":  "monster_27",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  28,
+        "key":  "monster_28",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  29,
+        "key":  "monster_29",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  30,
+        "key":  "monster_30",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  31,
+        "key":  "monster_31",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  32,
+        "key":  "monster_32",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  33,
+        "key":  "monster_33",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  34,
+        "key":  "monster_34",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  35,
+        "key":  "monster_35",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  36,
+        "key":  "monster_36",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  37,
+        "key":  "monster_37",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  38,
+        "key":  "monster_38",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  39,
+        "key":  "monster_39",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  40,
+        "key":  "monster_40",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  41,
+        "key":  "monster_41",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  42,
+        "key":  "monster_42",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  43,
+        "key":  "monster_43",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  44,
+        "key":  "monster_44",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  45,
+        "key":  "monster_45",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  46,
+        "key":  "monster_46",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  47,
+        "key":  "monster_47",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  48,
+        "key":  "monster_48",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  49,
+        "key":  "monster_49",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  50,
+        "key":  "monster_50",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  51,
+        "key":  "monster_51",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  52,
+        "key":  "monster_52",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  53,
+        "key":  "monster_53",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  54,
+        "key":  "monster_54",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  55,
+        "key":  "monster_55",
+        "cell":  150,
+        "idle":  4,
+        "walk":  6,
+        "attack":  8
+    },
+    {
+        "id":  56,
+        "key":  "monster_56",
+        "cell":  60,
+        "idle":  10,
+        "walk":  10,
+        "attack":  10
+    },
+    {
+        "id":  57,
+        "key":  "monster_57",
+        "cell":  150,
+        "idle":  5,
+        "walk":  4,
+        "attack":  4
+    }
+]

@@ -1,0 +1,5 @@
+名字	坐标X	坐标Y	等级限制	职业限制	目标场景编号	目标位置X	目标位置Y
+name	x	y	levelRequired	raceRequired	destSceneID	destX	destY
+回城	1	165	0	0	3	39	140
+回城	57	120	0	0	3	39	140
+回城	50	30	0	0	3	39	140

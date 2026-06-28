@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002056" doing="klr-doing" completed="klr-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<klr>1333012900</klr>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“克莱儿”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<klr>
+		<text>我见过很多像你这样的新人哦！帮我收集些“食人花之心”，我会把一半的报酬分你。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002056" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</klr>
+	<klr-doing>
+		<text>要小心那些食人花哦</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </klr-doing>
+   <klr-completed>
+		<text>干的不错，这些金币，算是见面礼。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002056" />
+		</options>
+    </klr-completed>
+</root>

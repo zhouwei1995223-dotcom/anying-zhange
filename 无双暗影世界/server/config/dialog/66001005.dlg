@@ -1,0 +1,63 @@
+<root>
+<goodsEntries>
+		<d1>1333990015</d1>
+		<d2>1333990016</d2>
+		<d3>1333990017</d3>
+</goodsEntries>
+    <start>
+        <text>要使用传送功能吗？</text>
+        <color></color>
+        <options>			
+			<option text="回那亚村" command="transport:3:36:56" />
+			<option text="1号圣诞之乡" command="goto:sd1" />
+			<option text="3号圣诞之乡" command="goto:sd3" />
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<sd1>
+        <text>要进1号圣诞之乡吗？</text>
+        <color></color>
+        <options>
+			<option text="左上位置" command="transport:1225:27:27" />
+			<option text="左下位置" command="transport:1225:45:135" />
+			<option text="右上位置" command="transport:1225:83:51" />
+			<option text="右下位置" command="transport:1225:96:120" />
+			<option text="离开" command="" />
+		</options>
+	</sd1>
+	<sd3>
+        <text>要进3号圣诞之乡吗？</text>
+        <color></color>
+        <options>
+			<option text="左上位置" command="transport:1227:27:27" />
+			<option text="左下位置" command="transport:1227:45:135" />
+			<option text="右上位置" command="transport:1227:83:51" />
+			<option text="右下位置" command="transport:1227:96:120" />
+			<option text="离开" command="" />
+		</options>
+	</sd3>
+	<d1>
+        <text>圣诞老人正在找“圣诞之星”，如果你把圣诞之星送给他，他会送给你10个元宝。</text>
+        <color></color>
+        <options>
+			<option text="传进圣诞之屋" command="createDuplicate:1228" />
+			<option text="离开" command="" />
+		</options>
+	</d1>
+	<d2>
+        <text>圣诞老人正在找“圣诞之星”，如果你把圣诞之星送给他，他会送给你10个元宝。</text>
+        <color></color>
+        <options>
+			<option text="传进圣诞之屋" command="createDuplicate:1229" />
+			<option text="离开" command="" />
+		</options>
+	</d2>
+	<d3>
+        <text>圣诞老人正在找“圣诞之星”，如果你把圣诞之星送给他，他会送给你10个元宝。</text>
+        <color></color>
+        <options>
+			<option text="传进圣诞之屋" command="createDuplicate:1230" />
+			<option text="离开" command="" />
+		</options>
+	</d3>
+</root>

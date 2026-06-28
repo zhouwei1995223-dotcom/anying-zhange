@@ -1,0 +1,3 @@
+编号	名字	坐标X	坐标Y	图像	对话	商店	脚本	行为
+id	name	x	y	image	dialog	shop	script	ai
+3040	传送使者	10	14	23	66000616	0	0	0

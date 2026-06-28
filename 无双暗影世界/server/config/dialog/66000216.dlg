@@ -1,0 +1,37 @@
+<root>
+	<taskEntries>
+		<task id="10000100" doing="zongzi-doing" completed="zongzi-completed" />
+	</taskEntries>
+   <start>
+		<text>我是活动使者，今天的活动是粽子换勋章，5个粽子就能换一个勋章，至于勋章的作用去问GM吧</text>
+		<color></color>
+		<options>
+			<option text="参加活动" color="" bgColor="" command="giveTask:10000100" />
+			<option text="不参加活动" color="" bgColor="" command="" />
+		</options>
+   </start>
+   <zongzi-doing>
+		<text>收集到粽子了吗？想想粽子真好吃……</text>
+		<color></color>
+		<options>
+			<option text="还没收集齐" color="" bgColor="" command="" />
+			<option text="就知道吃……" color="" bgColor="" command="" />
+		</options>
+   </zongzi-doing>
+   <zongzi-completed>
+		<text>很好，终于有粽子吃了，来，这是勋章，请收好</text>
+		<color></color>
+		<options>
+			 <option text="给你粽子" color="" bgColor="" command="completeTask:10000100" />
+			 <option text="我有粽子……但是不给你@_@" color="" bgColor="" command="goto:next" />
+		</options>
+   </zongzi-completed>
+   <next>
+		<text>你这个坏人，给我粽子！！</text>
+		<color></color>
+		<options>
+			 <option text="看你可怜，给你吧" color="" bgColor="" command="completeTask:10000100" />
+			 <option text="就是不给，就是不给*_*" color="" bgColor="" command="" />
+		</options>
+   </next>
+</root>

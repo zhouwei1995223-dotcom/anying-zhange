@@ -1,0 +1,11 @@
+<root>
+   <start>
+		<text>我这里有免费的传送功能，要试试吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到仓库管理员" command="transport:23:84:81" />
+			 <option text="传送到传送使者" command="transport:23:116:45" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start>
+</root>

@@ -1,0 +1,17 @@
+<root>
+	<start>
+		<text>给我6万金币，我可以告诉你一个秘密！</text>
+		<color></color>
+		<options>
+			 <option text="交出6万金币" command="goto:start0" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<start0>
+		<text>呵呵，收钱只是开个玩笑，过一阵子，我这里会开放一个神秘的关卡任务。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start0>
+</root>

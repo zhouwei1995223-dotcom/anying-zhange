@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>你好，我这里出售终极装备的合成卷，想要更强大的实力的话，终极武器可是不能缺少的。\n合成终极武器的材料可以在boss挑战场里面的boss中获得哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

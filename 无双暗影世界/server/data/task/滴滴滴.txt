@@ -1,0 +1,10 @@
+<app.island.data.HeroTaskList>
+	<historys>10003044,</historys>
+	<tasks></tasks>
+	<limitedTasks></limitedTasks>
+	<ringTaskCounter>0</ringTaskCounter>
+	<lastEndRingTime>0</lastEndRingTime>
+	<lastRingGroupID>0</lastRingGroupID>
+	<id>20008</id>
+	<name>µÎµÎµÎ</name>
+</app.island.data.HeroTaskList>

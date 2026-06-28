@@ -1,0 +1,79 @@
+<root>
+	<taskEntries>
+		<task id="20000021" completed="start" conceDone="start" />
+		<task id="20000032" completed="lp-completed" />
+		<task id="20000022" doing="yk-doing" completed="yk-completed" onceDone="lp" />
+		<task id="20000021" doing="ykstart" />						
+	</taskEntries>
+	<goodsEntries>
+		<start>1333050002</start>
+	</goodsEntries>
+	<start>
+		<text>要回去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上回去" command="transport:13:97:123" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+	<ykstart>
+		<text>你好，人类的朋友，我是龙族的使者，很高兴你能来。</text>
+		<color></color>
+		<options>
+			 <option text="你好，我是来帮助你得！" command="goto:yk" />
+		</options>
+	</ykstart>
+	<yk>
+		<text>魔巨人·犹加是一个残暴的巨人，我为了消灭他，才追到这个空间，但这个空间封印了我的力量。</text>
+		<color></color>
+		<options>
+			 <option text="我要怎么帮助你？" command="goto:next" />
+		</options>
+	</yk>
+	<next>
+		<text>消灭魔巨人·犹加，才能解除这里的封印！但魔巨人·犹加是一个狡猾的敌人，只有你打败他所有的奴卜后，他才会出现！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000022" />
+			 <option text="拒绝任务" command="" />
+		</options>
+	</next>
+	<yk-doing>
+		<text>消灭36个巨人的奴卜后，魔巨人·犹加会在地图中间位置出现！祝你好运！</text>
+		<color></color>
+		<options>
+			 <option text="我这就去把它干掉" command="" />
+			 <option text="我要回去" color="" bgColor="" command="transport:13:97:123" />
+		</options>
+	</yk-doing>
+	<yk-completed>
+		<text>很好朋友，你已成功的把魔巨人·犹加消灭了，这是我族的鳞片，是我族神圣友谊的证明。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000022" />
+			 <option text="我要回去" color="" bgColor="" command="transport:13:97:123" />
+		</options>
+	</yk-completed>
+	<lp>
+		<text>要回梵奇城吗？</text>
+		<color></color>
+		<options>
+			<option text="回去梵奇城" command="transport:13:97:123" />
+			<option text="哎，鳞片……丢了" command="goto:lp-next" />
+		</options>
+	</lp>
+	<lp-next>
+		<text>朋友看来你遇到了什么麻烦，有什么我可以帮你的吗？</text>
+		<color></color>
+		<options>
+			<option text="我把龙族鳞片搞丢了" command="giveTask:20000032" />
+		</options>
+	</lp-next>
+	<lp-completed>
+		<text>小问题，我再给你一个好了。</text>
+		<color></color>
+		<options>
+			 <option text="领取“龙族鳞片”" command="completeTask:20000032" />
+		</options>
+	</lp-completed>
+</root>

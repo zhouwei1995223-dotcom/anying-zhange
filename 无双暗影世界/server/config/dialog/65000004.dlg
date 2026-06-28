@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要去那舍岛吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:2:13:70" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

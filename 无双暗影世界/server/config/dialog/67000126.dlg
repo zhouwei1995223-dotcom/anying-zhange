@@ -1,0 +1,47 @@
+<root>
+	<taskEntries>
+		<task id="20000098" completed="yrlg-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<start>1333123459</start>
+	</goodsEntries>
+	<start>
+		<text>我可以送你回那亚村，或是试炼之殿30层，有关转生的问题可以来问我。</text>
+		<color></color>
+		<options>
+			 <option text="回那亚村" command="transport:3:78:157" />
+			 <option text="回试炼之殿" command="createDuplicate:5030" />
+			 <option text="转生解说" command="goto:yrlg" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<yrlg>
+		<text>转生后你会获得一些可以自由分配的属性点数，但是你的等级会降为30级。</text>
+		<color></color>
+		<options>
+			 <option text="关于转生穿装备" command="goto:yrlg1" />
+		</options>
+	</yrlg>
+	<yrlg1>
+		<text>转生不仅有属性点数的奖励，还可以从转生时所穿的装备上吸取一些属性，吸取的属性会变为人物的永久属性，这些永久属性是按装备属性的比率来吸取,只是转生时所穿的装备会消失。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yrlg1>
+	<yrlg-completed>
+		<text>转生后你会获得一些可以自由分配的属性点数，但是你的等级会变为30级，所以你还需要很长的时间来重新修练，在此期间你会遇到很多的危险。</text>
+		<color></color>
+		<options>
+			 <option text="转生奖励只有这些吗？" command="goto:yrlg-net" />
+		</options>
+	</yrlg-completed>
+	<yrlg-net>
+		<text>转生不仅有属性点数的奖励，还可以从转生时所穿的装备上吸取一些属性，这些属性是按装备的属性比率来吸取,同时也是永久性得，只是那样装备就会消失。这是“血精的印记”使用后就可以直接转生，同时你会飞到转生后的场景。</text>
+		<color></color>
+		<options>
+			 <option text="领取转生物品" command="completeTask:20000098" />
+			 <option text="离开" command="" />
+		</options>
+	</yrlg-net>
+</root>

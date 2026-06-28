@@ -1,0 +1,18 @@
+<root>
+	<start>
+		<text>把本关的怪物全部消灭后，找“过关使者”就能传到下一关。</text>
+		<color></color>
+		<options>
+			 <option text="放弃闯关" command="goto:na" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<na>
+		<text>即然你放弃闯关，我可以送你回那亚村，要回去吗？</text>
+		<color></color>
+		<options>
+			 <option text="回那亚村" command="transport:3:0:0" />
+			 <option text="离开" command="" />
+		</options>
+	</na>	
+</root>

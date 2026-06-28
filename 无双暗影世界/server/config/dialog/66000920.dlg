@@ -1,0 +1,172 @@
+<root>
+	<taskEntries>
+		<task id="10003050" completed="smzl-completed" />
+		<task id="10003051" completed="jysz" />
+		<task id="10003052" completed="qxsz" />
+		<task id="10003053" completed="jlsz" />
+		<task id="10003054" completed="lmsz" />
+		<task id="10003055" completed="mgsz" />
+		<task id="10003056" completed="cssz" />
+		<task id="10003057" completed="zysz" />
+		<task id="10003058" completed="bjsz" />
+		<task id="10003059" completed="spsz" />
+		<task id="10003060" completed="yxbs" />
+		<task id="10003061" completed="fsbs" />
+		<task id="10003062" completed="zsbs" />
+		<task id="10003060" onceDone="ov" />
+		<task id="10003061" onceDone="ov" />
+		<task id="10003062" onceDone="ov" />
+	</taskEntries>
+	<raceEntries 0="yx" 1="fs" 2="zs" />
+	<start>
+		<text>见到你很高兴，不过我现在很忙，等你40级以上再来找我吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<smzl-completed>
+		<text>我们正在排练，闲杂人等，请速速离开。</text>
+		<color></color>
+		<options>
+			 <option text="是礼品使者介绍我来得" command="goto:gr" />
+			 <option text="离开" command="" />
+		</options>
+	</smzl-completed>
+	<gr>
+		<text>啊，贵人呀，我欠礼品使者的人情太多了，一直在想怎么还他，难得他让你来，让我有这个机会可以还他人情。可是，我现在只随身带了一个“生命之源”你先拿着，然后跟我小弟们先聊聊，我回去再找些宝贝送给你。</text>
+		<color></color>
+		<options>
+			 <option text="领取“生命之源”" command="completeTask:10003050" />
+			 <option text="离开" command="" />
+		</options>
+	</gr>
+	<jysz>
+		<text>哦，你喜欢“荚依”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“晚礼服”" command="completeTask:10003051" />
+			 <option text="离开" command="" />
+		</options>
+	</jysz>
+	<qxsz>
+		<text>哦，你喜欢“秋香”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“秋香袍”" command="completeTask:10003052" />
+			 <option text="离开" command="" />
+		</options>
+	</qxsz>
+	<jlsz>
+		<text>哦，你喜欢“佳丽”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“清爽佳丽”" command="completeTask:10003053" />
+			 <option text="离开" command="" />
+		</options>
+	</jlsz>
+	<lmsz>
+		<text>哦，你喜欢“辣妹”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“辣妹装”" command="completeTask:10003054" />
+			 <option text="离开" command="" />
+		</options>
+	</lmsz>
+	<mgsz>
+		<text>哦，你喜欢“玫瑰”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“火玫瑰”" command="completeTask:10003055" />
+			 <option text="离开" command="" />
+		</options>
+	</mgsz>
+	<cssz>
+		<text>哦，你喜欢“崇尚”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“崇尚自由”" command="completeTask:10003056" />
+			 <option text="离开" command="" />
+		</options>
+	</cssz>
+	<zysz>
+		<text>哦，你喜欢“状元”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“状元袍”" command="completeTask:10003057" />
+			 <option text="离开" command="" />
+		</options>
+	</zysz>
+	<bjsz>
+		<text>哦，你喜欢“伯爵”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“暗夜伯爵”" command="completeTask:10003058" />
+			 <option text="离开" command="" />
+		</options>
+	</bjsz>
+	<spsz>
+		<text>哦，你喜欢“审判者”的那种时装呀，没问题，我就送你一件。</text>
+		<color></color>
+		<options>
+			 <option text="领取时装“暗黑审判者”" command="completeTask:10003059" />
+			 <option text="离开" command="" />
+		</options>
+	</spsz>
+	<yx>
+		<text>我找到一个离线挂机宝石，你先拿着玩，让我看看你还需要什么东西。</text>
+		<color></color>
+		<options>
+			 <option text="领取离线挂机宝石" command="giveTask:10003060" />
+			 <option text="离开" command="" />
+		</options>
+	</yx>
+	<fs>
+		<text>我找到一个离线挂机宝石，你先拿着玩，让我看看你还需要什么东西。</text>
+		<color></color>
+		<options>
+			 <option text="领取离线挂机宝石" command="giveTask:10003061" />
+			 <option text="离开" command="" />
+		</options>
+	</fs>
+	<zs>
+		<text>我找到一个离线挂机宝石，你先拿着玩，让我看看你还需要什么东西。</text>
+		<color></color>
+		<options>
+			 <option text="领取离线挂机宝石" command="giveTask:10003062" />
+			 <option text="离开" command="" />
+		</options>
+	</zs>
+	<yxbs>
+		<text>看来你还少把好的武器，这样吧，我再送你把极品卓越长弓+3，怎么样。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品卓越长弓" command="completeTask:10003060" />
+			 <option text="离开" command="" />
+		</options>
+	</yxbs>
+	<fsbs>
+		<text>看来你还少把好的武器，这样吧，我再送你把极品怒涛杖+3，怎么样。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品怒涛杖" command="completeTask:10003061" />
+			 <option text="离开" command="" />
+		</options>
+	</fsbs>
+	<zsbs>
+		<text>看来你还少把好的武器，这样吧，我再送你把极品破军剑+3，怎么样。</text>
+		<color></color>
+		<options>
+			 <option text="领取极品破军剑" command="completeTask:10003062" />
+			 <option text="离开" command="" />
+		</options>
+	</zsbs>
+	<ov>
+		<text>你可以跟我这些手下们多聊聊，他们可是一群杰出的人才呀。</text>
+		<color></color>
+		<options>
+			 <option text="回贝伦城" command="transport:8:72:114" />
+			 <option text="离开" command="" />
+		</options>
+	</ov>
+</root>

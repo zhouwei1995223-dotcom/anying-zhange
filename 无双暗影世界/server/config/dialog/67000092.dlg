@@ -1,0 +1,59 @@
+<root>
+	<taskEntries>
+		<task id="20000083" doing="yrt-doing" completed="yrt-completed" />
+	</taskEntries>
+	<raceEntries 0="start" 1="yrt" 2="start" />
+	<start>
+		<text>你好，我是魔法师·艾谱莉，你找我有事吗？</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<yrt>
+		<text>你好，我是魔法师·艾谱莉，我很愿意帮助你。</text>
+		<color></color>
+		<options>
+			 <option text="很高兴见到你，能告诉我关于迷之城的事吗？" command="goto:yrt-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</yrt>
+	<yrt-next0>
+		<text>迷之城是一个神奇的空间，这里的时间似乎不受外面时间的影响，实际上我们几人在这里已经几十年了。</text>
+		<color></color>
+		<options>
+			 <option text="真神奇" command="goto:yrt-next1" />
+		</options>
+	</yrt-next0>
+	<yrt-next1>
+		<text>我们也是因为转生才来到这里得，如果你愿意帮助我做件事情，我可以告诉你们进入“迷之城”的方法。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000083" />
+			 <option text="离开" command="" />
+		</options>
+	</yrt-next1>	
+	<yrt-doing>
+		<text>消灭50个幻影骷髅弓箭手，就可以完成任务了，你去外面找找吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yrt-doing>
+	<yrt-completed>
+		<text>看来你完成了任务，这是进入迷之殿的“卷轴”，你最好带两个朋友上去，因为里面比较危险。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="goto:yrt-next2" />
+			 <option text="离开" command="" />
+		</options>
+	</yrt-completed>
+	<yrt-next2>
+		<text>请等一下，有件事请你帮忙，如果你在迷之殿中遇到“艾诺特”，请您告诉他，我在迷之城入口处等他。</text>
+		<color></color>
+		<options>
+			 <option text="好得，如果有见到他,我会帮你转达。" command="completeTask:20000083" />
+			 <option text="离开" command="" />
+		</options>
+	</yrt-next2>
+</root>

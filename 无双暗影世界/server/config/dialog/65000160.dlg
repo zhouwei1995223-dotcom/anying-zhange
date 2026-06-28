@@ -1,0 +1,14 @@
+<root>
+   <start>
+		<text>要去其他城市吗？？我可以帮助你！</text>
+		<color></color>
+		<options>
+			 <option text="那亚村(价格:500 怪物5-19级)" color="" bgColor="" command="travel:3:500" />
+			 <option text="幻漠城(价格:1000 怪物45-47级)" color="" bgColor="" command="travel:7:1000" />
+			 <option text="梵奇城(价格:500 怪物37-51级)" color="" bgColor="" command="travel:13:500" />
+			 <option text="暗精镇(价格:1000 怪物55-69级)" color="" bgColor="" command="travel:19:1000" />
+			 <option text="夏基亚城(价格:1500 怪物67-83级)" color="" bgColor="" command="travel:23:1500" />
+			 <option text="柏恩岛(价格:5000 转生后可去)" color="" bgColor="" command="travel:56:5000" />
+		</options>
+   </start>
+</root>

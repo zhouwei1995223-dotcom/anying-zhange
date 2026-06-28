@@ -1,0 +1,23 @@
+﻿{
+    "userData":  {
+                     "bundleName":  "",
+                     "optimizeHotUpdate":  false,
+                     "compressionType":  {
+
+                                         },
+                     "isRemoteBundle":  false,
+                     "priority":  1,
+                     "inlineSpriteFrames":  false,
+                     "isBundle":  false
+                 },
+    "uuid":  "8acb89f1-c3b0-4266-b87c-a7c5ab066a5b",
+    "files":  [
+
+              ],
+    "ver":  "1.1.3",
+    "importer":  "directory",
+    "subMetas":  {
+
+                 },
+    "imported":  true
+}

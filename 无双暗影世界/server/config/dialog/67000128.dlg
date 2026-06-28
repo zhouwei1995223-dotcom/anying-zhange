@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>
+		<task id="20000098" doing="yrlg-doing" completed="yrlg-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<yrlg>1333123459</yrlg>
+	</goodsEntries>
+	<start>
+		<text>艾日格雷以充满智慧的眼神俯视着你，仿佛可以看透一切。</text>
+		<color></color>
+		<options>
+			 <option text="尊敬的血精灵之王" command="goto:yrlg-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<yrlg-next0>
+		<text>转生是创世之神的意志，但转生是一件非常危险的事情，你可以找我的大臣了解转生相关的事情。</text>
+		<color></color>
+		<options>
+			 <option text="领取任务" command="giveTask:20000098" />
+			 <option text="离开" command="" />
+		</options>
+	</yrlg-next0>
+	<yrlg>
+		<text>想离开这里的话，可以找我的大臣。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yrlg>
+	<yrlg-completed>
+		<text>转生相关的事情，可以找我的大臣了解。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yrlg-completed>
+</root>

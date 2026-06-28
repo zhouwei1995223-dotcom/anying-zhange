@@ -1,0 +1,20 @@
+<root>
+	<deathEntries>
+		<gg>8</gg>
+	</deathEntries>
+	<start>
+		<text>只有把本关的怪物全部消灭后，才能到达下一关。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<gg>
+		<text>你已经通过了本关的试炼，要去下一关吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到下一层" command="createDuplicate:5034" />
+			 <option text="离开" command="" />
+		</options>
+	</gg>
+</root>

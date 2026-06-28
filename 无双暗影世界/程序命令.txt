@@ -1,0 +1,19 @@
+loadCommands 重新加载服务
+setWebServicePassword  设置web密码
+setWebServiceIPList    设置webip
+totalBytesSended
+totalBytesRead
+setServerConfig 设置服务器配置
+getServerInfo 获取服务器信息
+memory
+netDebug 网络信息
+threads
+currentJobCount
+clearRanks 清除排行榜
+heroCount 在线玩家
+onlineCount 连接数
+gmGrade 名字 255 设置GM权限
+broadcast 公告
+stop 停止服务
+saveAll 全部保存
+exit

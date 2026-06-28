@@ -1,0 +1,60 @@
+<root>
+    <taskEntries>
+		<task id="10004000" completed="yx-doing" />
+		<task id="10004001" completed="fs-doing" />
+		<task id="10004002" completed="zs-doing" />
+    </taskEntries>
+	<raceEntries 0="yx" 1="fs" 2="zs" />
+	<start>
+        <text>要参加圣诞活动吗？</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+    <yx>
+        <text>要参加圣诞活动吗？你需要在我这领个任务，然后找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>
+			<option text="领取任务" command="giveTask:10004000" />
+			<option text="离开" command="" />
+		</options>
+	</yx>
+	<yx-doing>
+        <text>你现在需要找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</yx-doing>
+	<fs>
+        <text>要参加圣诞活动吗？你需要在我这领个任务，然后找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>
+			<option text="领取任务" command="giveTask:10004001" />
+			<option text="离开" command="" />
+		</options>
+	</fs>
+	<fs-doing>
+        <text>你现在需要找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</fs-doing>
+	<zs>
+        <text>要参加圣诞活动吗？你需要在我这领个任务，然后找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>			
+			<option text="领取任务" command="giveTask:10004002" />
+			<option text="离开" command="" />
+		</options>
+	</zs>
+	<zs-doing>
+        <text>你现在需要找“圣诞使者”领取圣诞武器，就可以进圣诞地图。</text>
+        <color></color>
+        <options>			
+			<option text="离开" command="" />
+		</options>
+	</zs-doing>
+</root>

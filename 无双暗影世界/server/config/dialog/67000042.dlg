@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要使用传送功能吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送" command="createDuplicate:3003" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+</root>

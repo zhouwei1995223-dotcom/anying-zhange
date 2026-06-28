@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002060" doing="hrda-doing" completed="hrda-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<hrda>1333012900</hrda>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“胡尔达”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<hrda>
+		<text>好久没见到新面孔了，这样吧，你帮我消灭125只深渊恶魔，按规矩我可以把报酬分你一半。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002060" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</hrda>
+	<hrda-doing>
+		<text>你要小心那些“深渊恶魔”，他们攻击不弱。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </hrda-doing>
+   <hrda-completed>
+		<text>这是你的报酬，一起加油吧。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002060" />
+		</options>
+    </hrda-completed>
+</root>

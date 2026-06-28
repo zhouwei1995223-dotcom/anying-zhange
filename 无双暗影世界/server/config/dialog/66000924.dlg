@@ -1,0 +1,161 @@
+<root>
+	<taskEntries>
+		<task id="20000047" doing="huis-doing" completed="huis-completed" />
+		<task id="20000048" doing="qyuan-doing" completed="qyuan-completed" />
+		<task id="20000049" doing="gjlh-doing" completed="gjlh-completed" />
+		<task id="20000050" doing="gjzf-doing" completed="gjzf-completed" />
+		<task id="20000051" doing="zjzf-doing" completed="zjzf-completed" />
+		<task id="20000052" doing="zjlh-doing" completed="zjlh-completed" />
+	</taskEntries>
+	<start>
+		<text>冲等和合成系统正在升级，升级成功后，天工石和起源宝石将不能使用，你可以找我领取任务，来换取新的宝石。</text>
+		<color></color>
+		<options>
+			 <option text="回收天工石" command="goto:huis" />
+			 <option text="回收起源宝石" command="goto:qyuan" />
+			 <option text="回收高级灵魂宝石" command="goto:gjlh" />
+			 <option text="回收高级祝福宝石" command="goto:gjzf" />
+			 <option text="回收中级祝福宝石" command="goto:zjzf" />
+			 <option text="回收中级灵魂宝石" command="goto:zjlh" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<gjlh>
+		<text>冲等系统正在升级，升级成功后，高级灵魂宝石将不能使用，你可以用一个高级灵魂宝石找我换取一个“祈祷宝石”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000049" />
+			 <option text="离开" command="" />
+		</options>
+	</gjlh>
+	<gjzf>
+		<text>冲等系统正在升级，升级成功后，高级祝福宝石将不能使用，你可以用一个高级祝福宝石找我换取一个“祈祷宝石”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000050" />
+			 <option text="离开" command="" />
+		</options>
+	</gjzf>
+	<zjzf>
+		<text>冲等系统正在升级，升级成功后，中级祝福宝石将不能使用，你可以用一个中级祝福宝石找我换取一个“32万血的生命之源”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000051" />
+			 <option text="离开" command="" />
+		</options>
+	</zjzf>
+	<zjlh>
+		<text>冲等系统正在升级，升级成功后，中级灵魂宝石将不能使用，你可以用一个中级灵魂宝石找我换取一个“32万血的生命之源”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000052" />
+			 <option text="离开" command="" />
+		</options>
+	</zjlh>
+	<huis>
+		<text>冲等系统正在升级，升级成功后，天工石将不能使用，你可以用一个天工石找我换取一个“五级天晶石”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000047" />
+			 <option text="离开" command="" />
+		</options>
+	</huis>
+	<huis-doing>
+		<text>你身上没有天工石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</huis-doing>
+	<huis-completed>
+		<text>要换取“五级天晶石”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取天工石" command="completeTask:20000047" />
+			 <option text="离开" command="" />
+		</options>
+	</huis-completed>
+	<qyuan>
+		<text>冲等系统正在升级，升级成功后，起源宝石将不能使用，你可以用一个起源宝石找我换取一个“祈祷宝石”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000048" />
+			 <option text="离开" command="" />
+		</options>
+	</qyuan>
+	<qyuan-doing>
+		<text>你身上没有起源宝石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</qyuan-doing>
+	<qyuan-completed>
+		<text>要用“起源宝石”来换取“祈祷宝石”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取祈祷宝石" command="completeTask:20000048" />
+			 <option text="离开" command="" />
+		</options>
+	</qyuan-completed>
+	<gjlh-doing>
+		<text>你身上没有高级灵魂宝石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</gjlh-doing>
+	<gjlh-completed>
+		<text>要用“高级灵魂宝石”来换取“祈祷宝石”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取祈祷宝石" command="completeTask:20000049" />
+			 <option text="离开" command="" />
+		</options>
+	</gjlh-completed>
+	<gjzf-doing>
+		<text>你身上没有高级祝福宝石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</gjzf-doing>
+	<gjzf-completed>
+		<text>要用“高级祝福宝石”来换取“祈祷宝石”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取祈祷宝石" command="completeTask:20000050" />
+			 <option text="离开" command="" />
+		</options>
+	</gjzf-completed>
+	<zjzf-doing>
+		<text>你身上没有中级祝福宝石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</zjzf-doing>
+	<zjzf-completed>
+		<text>要用“中级祝福宝石”来换取“32万血的生命之源”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取祈祷宝石" command="completeTask:20000051" />
+			 <option text="离开" command="" />
+		</options>
+	</zjzf-completed>
+	<zjlh-doing>
+		<text>你身上没有中级灵魂宝石。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</zjlh-doing>
+	<zjlh-completed>
+		<text>要用“中级灵魂宝石”来换取“32万血的生命之源”吗？</text>
+		<color></color>
+		<options>
+			 <option text="换取祈祷宝石" command="completeTask:20000052" />
+			 <option text="离开" command="" />
+		</options>
+	</zjlh-completed>
+</root>

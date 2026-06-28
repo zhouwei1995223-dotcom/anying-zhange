@@ -1,0 +1,229 @@
+<root>
+	<taskEntries>		
+		<task id="10002043" completed="xiezhi-completed" />
+		<task id="10002044" completed="ymr-completed" />
+		<task id="10002045" completed="sg-completed" />
+		<task id="10002046" completed="srh-completed" />
+		<task id="10002047" completed="fkjs-completed" />
+		<task id="10002048" completed="ygsj-completed" />
+		<task id="10002049" completed="xejr-completed" />
+		<task id="10002050" completed="lhys-completed" />
+		<task id="10002051" completed="klzs-completed" />
+		<task id="10002052" completed="guijian-completed" />
+		<task id="10002007" completed="xunyun-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<cd>1333012800</cd>
+	</goodsEntries>
+	<start>
+		<text>我是佣用兵“伯特卡罗”，你找我有事吗？</text>
+		<color></color>
+		<options>
+			<option text="看错人了，离开" command="" />
+		</options>
+   </start>
+   <xunyun-completed>
+		<text>这是幸运之石，也是你的报酬，有了它你就可以找我领取每日任务。</text>
+		<color></color>
+		<options>
+			<option text="领取幸运之石" command="completeTask:10002007" />
+			<option text="离开" command="" />
+		</options>
+   </xunyun-completed>
+   <cd>
+		<text>我这里集中了各地人们委托事务，如果你有实力的话，可以找我领取一些任务。</text>
+		<color></color>
+		<options>
+			<option text="消灭蝎子(限制：0级以上)" command="goto:xiezhi" />
+			<option text="消灭野蛮人(限制：12级以上)" command="goto:ymr" />
+			<option text="消灭沙怪(限制：24级以上)" command="goto:sg" />
+			<option text="消灭食人花(限制：36级以上)" command="goto:srh" />
+			<option text="消灭疯狂剑士(限制：48级以上)" command="goto:fkjs" />
+			<option text="查看下一层" command="goto:cd1" />
+			<option text="离开" command="" />
+		</options>
+   </cd>
+   <cd1>
+		<text>我这里集中了各地人们委托事务，如果你有实力的话，可以找我领取一些任务。</text>
+		<color></color>
+		<options>
+			<option text="消灭远古树精(限制：60级以上)" command="goto:ygsj" />
+			<option text="消灭邪恶巨人(限制：72级以上)" command="goto:xejr" />
+			<option text="消灭烈火元素(限制：84级以上)" command="goto:lhys" />
+			<option text="消灭骷髅战士(限制：96级以上)" command="goto:klzs" />
+			<option text="消灭鬼将(限制：108级以上)" command="goto:guijian" />
+			<option text="返回上一层" command="goto:cd" />
+			<option text="离开" command="" />
+		</options>
+   </cd1>
+   <xiezhi>
+		<text>那亚村的村民委托我们，帮助他们消灭60只蝎子,这个任务你有没有兴趣？</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002043" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd" />
+			 <option text="离开" command="" />
+		</options>
+   </xiezhi>
+   <xiezhi-completed>
+		<text>这是本次任务的报酬，你收下吧！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002043" />
+		</options>
+    </xiezhi-completed>
+	<ymr>
+		<text>有一批野蛮人正在向那亚村移动，那里的村民有些担心，所以委托我们去消灭他们,你有没有兴趣？</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002044" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd" />
+		</options>
+   </ymr>
+   <ymr-completed>
+		<text>干的不错，这是任务的报酬，你收下吧！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002044" />
+			 <option text="离开" command="" />
+		</options>
+    </ymr-completed>
+	<sg>
+		<text>最近不少贝伦城的村民都被沙怪攻击了，我这里有他们的委托，你要不要去帮助他们！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002045" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd" />
+		</options>
+   </sg>
+   <sg-completed>
+		<text>这是你的报酬，也是贝伦城村民的一点心意，你就收下吧。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002045" />
+			 <option text="离开" command="" />
+		</options>
+    </sg-completed>
+	<srh>
+		<text>食人花是一种繁殖和攻击性都很强的怪物，幻漠城和梵奇城的村民深受其害，你要不要去帮助他们！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002046" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd" />
+		</options>
+   </srh>
+   <srh-completed>
+		<text>这是你的报酬，也是村民的一点心意，你就收下吧。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002046" />
+			 <option text="离开" command="" />
+		</options>
+    </srh-completed>
+	<fkjs>
+		<text>疯狂剑士在暗精镇造成不了小的骚动，我这里有暗精镇村民的委托，你有没有兴趣。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002047" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd" />
+		</options>
+   </fkjs>
+   <fkjs-completed>
+		<text>干得不错，年轻人，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002047" />
+			 <option text="离开" command="" />
+		</options>
+    </fkjs-completed>
+	<ygsj>
+		<text>远古树精在暗精镇存在日子已久，但最近他们的行为显得非常不安，请你去调查一下。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002048" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd1" />
+		</options>
+   </ygsj>
+   <ygsj-completed>
+		<text>虽然你提供的信息很保贵，但和我们预期猜想的差不多，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002048" />
+			 <option text="离开" command="" />
+		</options>
+    </ygsj-completed>
+	<xejr>
+		<text>在夏基亚城西南部和血精森林出现了一群强大的邪恶巨人，消灭他们是当务之急。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002049" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd1" />
+		</options>
+   </xejr>
+   <xejr-completed>
+		<text>任务完成的很不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002049" />
+			 <option text="离开" command="" />
+		</options>
+    </xejr-completed>
+	<lhys>
+		<text>烈火元素是一种毁灭性的存在，把它从我们的空间消灭，才是正确的选择。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002050" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd1" />
+		</options>
+   </lhys>
+   <lhys-completed>
+		<text>任务完成的很不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002050" />
+			 <option text="离开" command="" />
+		</options>
+    </lhys-completed>
+	<klzs>
+		<text>任何利用战士尸体的行为都是不允许得，把骷髅战士消灭，让他们的灵魂安息。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002051" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd1" />
+		</options>
+   </klzs>
+   <klzs-completed>
+		<text>我为死者感谢你，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002051" />
+			 <option text="离开" command="" />
+		</options>
+    </klzs-completed>
+	<guijian>
+		<text>鬼将漆黑的形体结构无疑凝聚着太多的怨念，只有消灭他们，才能让他们的灵魂得以解脱。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002052" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:cd1" />
+		</options>
+   </guijian>
+   <guijian-completed>
+		<text>任务完成的很不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10002052" />
+			 <option text="离开" command="" />
+		</options>
+    </guijian-completed>
+</root>

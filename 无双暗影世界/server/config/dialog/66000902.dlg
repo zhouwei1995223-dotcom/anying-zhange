@@ -1,0 +1,44 @@
+<root>
+	<taskEntries>
+		<task id="10003031" completed="zb" />
+		<task id="10003032" completed="dj" onceDone="cs" />
+		<task id="10003030" onceDone="cs" />
+		<task id="10003031" onceDone="cs" />
+	</taskEntries>
+	<start>
+		<text>这里专门出售宝石，嘿嘿，要来两颗吗？</text>
+		<color></color>
+		<options>
+			 <option text="我就是来看宝石的" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+    <zb>
+		<text>在随身商店，元宝商店有出售一些珠宝，而我们出售的价格相对便宜些。</text>
+		<color></color>
+		<options>
+			<option text="什么珠宝" command="goto:zb1" />
+		</options>
+	</zb>
+	<zb1>
+		<text>我们暂时只能出售两种珠宝：一种是天晶石，通过它锻造装备，可以提升装备的品质；另一种是地异石，可以用来合成，提升装备的等级。</text>
+		<color></color>
+		<options>
+			<option text="我知道了，领取礼物" command="completeTask:10003031" />
+		</options>
+	</zb1>
+	<dj>
+		<text>找“锻造匠师”聊聊,了解冲等和合成的相关信息，他就会送你的东西哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</dj>
+	<cs>
+		<text>我另一个兄弟在贝伦城做生意，有空的话记得多光顾我们哦!</text>
+		<color></color>
+		<options>
+			 <option text="我会得" command="" />
+		</options>
+	</cs>
+</root>

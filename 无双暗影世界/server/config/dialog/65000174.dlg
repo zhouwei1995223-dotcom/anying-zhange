@@ -1,0 +1,20 @@
+<root>
+	<taskEntries>
+		<task id="20000070" completed="lzdwt-completed" onceDone="start" />
+	</taskEntries>
+   <start>
+		<text>保卫家园就是我们永远的责任。</text>
+		<color></color>
+		<options>
+			<option text="离开" command="" />
+		</options>
+   </start>
+   <lzdwt-completed>
+		<text>年轻的勇士，你们以强大的实力消灭了兽王施瓦新格，保卫了我们的家园，这些是给你们的礼物。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000070" />
+			 <option text="离开" command="" />
+		</options>
+   </lzdwt-completed>
+   </root>

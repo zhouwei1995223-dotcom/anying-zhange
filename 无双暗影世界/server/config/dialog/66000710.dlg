@@ -1,0 +1,232 @@
+<root>
+	<taskEntries>
+		<task id="20000061" doing="yxzz-doing" completed="yxzz-completed" />
+		<task id="10000007" completed="cs" />
+		<task id="10003007" completed="cs" />
+		<task id="10003017" completed="cs" />
+		<task id="10003027" completed="cs" />
+		<task id="10000006" completed="guide-completed" />
+		<task id="10003006" completed="yx-completed" />
+		<task id="10003016" completed="fs-completed" />
+		<task id="10003026" completed="zs-completed" />
+		<task id="10000010" completed="mouse-completed" />
+		<task id="10000042" completed="dmg-completed" />
+	</taskEntries>
+	<levelEntries>
+		<1>start</1>
+		<121>brw</121>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:tiaozaostart" />
+			 <option text="离开" command="" />
+		</options>
+   </brw>
+   <tiaozaostart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看。</text>
+		<color></color>
+		<options>			
+			<option text="讨厌的老鼠" command="goto:mouse" />			
+			<option text="多目怪" command="goto:dmg" />
+			<option text="返回上一层" command="goto:brw" />
+			<option text="离开" command="" />
+		</options>
+   </tiaozaostart>
+   <dmg>
+		<text>你看到那些多目怪了吗？就是那种恐怖怪物，帮我杀6只多目怪，我会给你报酬的。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10000042" />
+			<option text="拒绝任务" command="" />
+			<option text="返回上一层" command="goto:tiaozaostart" />
+		</options>
+   </dmg>
+   <dmg-completed>
+		<text>你已经消灭了多目怪啊，真厉害！</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10000042" />
+			<option text="我来买点药" command="buy" />
+		</options>
+	</dmg-completed>
+	<mouse>
+		<text>你看到那些老鼠了吗？就是那舍岛上的那些，它们真的很烦对不对？帮我杀一些那里的老鼠，我会给你报酬的。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10000010" />
+			<option text="拒绝任务" command="" />
+			<option text="返回上一层" command="goto:tiaozaostart" />
+		</options>
+	</mouse>
+	<mouse-completed>
+		<text>你已经消灭了足够多老鼠啊，真厉害！</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10000010" />
+
+		</options>
+	</mouse-completed>
+	<help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+	</help>
+	<guide-completed>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:next" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</guide-completed>
+	<next>
+		<text>我是这里的修女，专门出售药水类的物品。</text>
+		<color></color>
+		<options>
+			<option text="哦……那我以后肯定要经常来" command="goto:next1" />
+		</options>
+	</next>
+	<next1>
+		<text>我要教你如何和其他人交流……</text>
+		<color></color>
+		<options>
+			<option text="我已经会聊天了啊" command="goto:next2" />
+		</options>
+	</next1>
+	<next2>
+		<text>不是聊天，是进行组队啊之类的，你只要对着其他人点击鼠标右键就可以弹出相应的菜单，然后就可以自由选择了，组队的话只能由队长发起哦。下面去和传送使者打个招呼吧，他在上面的船边，你以后要经常和他打交道的。</text>
+		<color></color>
+		<options>
+			<option text="好，我现在就去" command="completeTask:10000006" />
+		</options>
+	</next2>
+	<yx-completed>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:yxnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</yx-completed>
+	<yxnext>
+		<text>我是这里的修女，专门出售药水类的物品。</text>
+		<color></color>
+		<options>
+			<option text="哦……那我以后肯定要经常来" command="goto:yxnext1" />
+		</options>
+	</yxnext>
+	<yxnext1>
+		<text>我要教你如何和其他人交流……</text>
+		<color></color>
+		<options>
+			<option text="我已经会聊天了啊" command="goto:yxnext2" />
+		</options>
+	</yxnext1>
+	<yxnext2>
+		<text>不是聊天，是进行组队啊之类的，你只要对着其他人点击鼠标右键就可以弹出相应的菜单，然后就可以自由选择了，组队的话只能由队长发起哦。下面去和传送使者打个招呼吧，他在上面的船边，你以后要经常和他打交道的。</text>
+		<color></color>
+		<options>
+			<option text="好，我现在就去" command="completeTask:10003006" />
+		</options>
+	</yxnext2>
+	<fs-completed>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:fsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</fs-completed>
+	<fsnext>
+		<text>我是这里的修女，专门出售药水类的物品。</text>
+		<color></color>
+		<options>
+			<option text="哦……那我以后肯定要经常来" command="goto:fsnext1" />
+		</options>
+	</fsnext>
+	<fsnext1>
+		<text>我要教你如何和其他人交流……</text>
+		<color></color>
+		<options>
+			<option text="我已经会聊天了啊" command="goto:fsnext2" />
+		</options>
+	</fsnext1>
+	<fsnext2>
+		<text>不是聊天，是进行组队啊之类的，你只要对着其他人点击鼠标右键就可以弹出相应的菜单，然后就可以自由选择了，组队的话只能由队长发起哦。下面去和传送使者打个招呼吧，他在上面的船边，你以后要经常和他打交道的。</text>
+		<color></color>
+		<options>
+			<option text="好，我现在就去" command="completeTask:10003016" />
+		</options>
+	</fsnext2>
+	<zs-completed>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:zsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</zs-completed>
+	<zsnext>
+		<text>我是这里的修女，专门出售药水类的物品。</text>
+		<color></color>
+		<options>
+			<option text="哦……那我以后肯定要经常来" command="goto:zsnext1" />
+		</options>
+	</zsnext>
+	<zsnext1>
+		<text>我要教你如何和其他人交流……</text>
+		<color></color>
+		<options>
+			<option text="我已经会聊天了啊" command="goto:zsnext2" />
+		</options>
+	</zsnext1>
+	<zsnext2>
+		<text>不是聊天，是进行组队啊之类的，你只要对着其他人点击鼠标右键就可以弹出相应的菜单，然后就可以自由选择了，组队的话只能由队长发起哦。下面去和传送使者打个招呼吧，他在上面的船边，你以后要经常和他打交道得。</text>
+		<color></color>
+		<options>
+			<option text="好，我现在就去" command="completeTask:10003026" />
+		</options>
+	</zsnext2>
+	<cs>
+		<text>你现在可以去找传送使者，他在(26.35)坐标附近，我可以帮你传送到他身边。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:28:35" />
+			<option text="买入" command="buy" />
+			<option text="杀怪任务" command="goto:tiaozaostart" />
+			<option text="离开" command="" />
+		</options>
+	</cs>
+	<yxzz-doing>
+		<text>在找“艾特鲁里亚王子”吗？他去帮我们消灭那舍岛的多目怪了。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</yxzz-doing>
+	<yxzz-completed>
+		<text>我是“普罗·克洛托”，你的任务已完成，不能常期停留在过去的时间里，要回“普罗之殿”领取任务奖励吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:24:21" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</yxzz-completed>
+</root>

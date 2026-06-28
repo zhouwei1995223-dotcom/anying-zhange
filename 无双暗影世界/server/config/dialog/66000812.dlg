@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要传送到贝伦城吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:8:72:109" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

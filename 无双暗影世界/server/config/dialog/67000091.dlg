@@ -1,0 +1,59 @@
+<root>
+	<taskEntries>
+		<task id="20000082" doing="grs-doing" completed="grs-completed" />
+	</taskEntries>
+	<raceEntries 0="grs" 1="start" 2="start" />
+	<start>
+		<text>你好，我是弓手·格瑞丝，你找我有事吗？</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<grs>
+		<text>你好，我是弓手·格瑞丝，从你坚毅的眼神可以看出，你拥有的强大实力，也许我能帮到你。</text>
+		<color></color>
+		<options>
+			 <option text="很高兴见到你，能告诉我关于迷之城的事吗？" command="goto:grs-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</grs>
+	<grs-next0>
+		<text>迷之城是一个神奇的空间，这里的时间似乎不受外面时间的影响，实际上我们几人在这里已经几十年了。</text>
+		<color></color>
+		<options>
+			 <option text="真神奇" command="goto:grs-next1" />
+		</options>
+	</grs-next0>
+	<grs-next1>
+		<text>我们也是因为转生才来到这里得，如果你愿意帮助我做件事情，我可以告诉你们进入“迷之城”的方法。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000082" />
+			 <option text="离开" command="" />
+		</options>
+	</grs-next1>	
+	<grs-doing>
+		<text>消灭50个幻影士兵，就可以完成任务了，你去外面找找吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</grs-doing>
+	<grs-completed>
+		<text>看来你完成了任务，这是进入迷之殿的“卷轴”，你最好带两个朋友上去，因为里面比较危险。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="goto:grs-next2" />
+			 <option text="离开" command="" />
+		</options>
+	</grs-completed>
+	<grs-next2>
+		<text>请等一下，有件事请你帮忙，如果你在迷之殿中遇到“格鲁”，请您告诉他，我在迷之城入口处等他。</text>
+		<color></color>
+		<options>
+			 <option text="好得，如果有见到他,我会帮你转达。" command="completeTask:20000082" />
+			 <option text="离开" command="" />
+		</options>
+	</grs-next2>
+</root>

@@ -1,0 +1,102 @@
+<root>
+	<taskEntries>
+		<task id="20000088" doing="wunda-doing" completed="wunda-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<hmzd>1333011809</hmzd>
+		<wunda>1333011804</wunda>
+	</goodsEntries>	
+	<start>
+		<text>你找我有事吗？</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<hmzd>
+		<text>你可以先回到迷之城找两个朋友组队，然后使用卷轴就会被传送到下一个地点了。</text>
+		<color></color>
+		<options>
+			 <option text="回到迷之城" command="transport:4001:52:110" />
+			 <option text="离开" command="" />
+		</options>
+	</hmzd>
+	<wunda>
+		<text>想要去下一关，你就要完成我的任务，这个任务很简单，消灭名字是正确答案的怪物。</text>
+		<color></color>
+		<options>
+			 <option text="说出你的题目吧" command="goto:wunda-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</wunda>
+	<wunda-next0>
+		<text>你要先回答怪我一个问题后才能接到任务，你可以择题目类型。</text>
+		<color></color>
+		<options>
+			 <option text="奥运类" command="goto:aoyun" />
+			 <option text="娱乐类" command="goto:yule" />
+			 <option text="历史类" command="goto:ls" />
+			 <option text="地理类" command="goto:dl" />
+			 <option text="返回上一层" command="goto:wunda" />
+		</options>
+	</wunda-next0>
+	<aoyun>
+		<text>2008年北京奥运会中国共得了多少枚银牌?</text>
+		<color></color>
+		<options>
+			 <option text="21枚" command="giveTask:20000088" />
+			 <option text="28枚" command="transport:-1:11:44" />
+			 <option text="51枚" command="transport:-1:61:44" />
+			 <option text="100枚" command="transport:-1:36:50" />
+			 <option text="返回上一层" command="goto:wunda" />
+		</options>
+	</aoyun>
+	<yule>
+		<text>2008年北京奥运会闭幕式上和多明戈演唱《爱的火焰》的人是谁？</text>
+		<color></color>
+		<options>
+			 <option text="林妙可" command="transport:-1:11:44" />
+			 <option text="宋祖英" command="giveTask:20000088" />
+			 <option text="林肯" command="transport:-1:61:44" />
+			 <option text="周星驰" command="transport:-1:36:50" />
+			 <option text="返回上一层" command="goto:wunda" />
+		</options>
+	</yule>
+	<ls>
+		<text>中国第一个皇帝是谁？</text>
+		<color></color>
+		<options>
+			 <option text="黄帝" command="transport:-1:13:24" />
+			 <option text="蚩尤" command="transport:-1:60:24" />
+			 <option text="武则天" command="transport:-1:61:44" />
+			 <option text="嬴政" command="giveTask:20000088" />
+			 <option text="返回上一层" command="goto:wunda" />
+		</options>
+	</ls>
+	<dl>
+		<text>号称天府之国的“成都”是中国的哪个省？</text>
+		<color></color>
+		<options>
+			 <option text="四川" command="giveTask:20000088" />
+			 <option text="浙江" command="transport:-1:11:44" />
+			 <option text="福建" command="transport:-1:61:44" />
+			 <option text="广东" command="transport:-1:36:50" />
+			 <option text="返回上一层" command="goto:wunda" />
+		</options>
+	</dl>
+	<wunda-doing>
+		<text>2008年北京奥运会中国共得了多少枚奖牌。答案是？提示：消灭名字是正确答案的怪物，就可以完成任务。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</wunda-doing>
+	<wunda-completed>
+		<text>很好，这是进入下一关的</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000088" />
+			 <option text="离开" command="" />
+		</options>
+	</wunda-completed>
+</root>

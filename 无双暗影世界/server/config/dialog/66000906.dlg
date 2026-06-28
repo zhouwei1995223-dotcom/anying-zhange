@@ -1,0 +1,73 @@
+<root>
+	<taskEntries>
+		<task id="10003044" doing="sn-doing" completed="ysn-complete" />
+		<task id="10003045" doing="sn-doing" completed="fsn-complete" />
+		<task id="10003046" doing="sn-doing" completed="zsn-complete" />
+		<task id="10003047" completed="xn" />
+		<task id="10003048" completed="js" />
+		<task id="10003049" completed="zhlr" />
+		<task id="10003044" onceDone="start"/>
+		<task id="10003045" onceDone="start"/>
+		<task id="10003046" onceDone="start"/>
+	</taskEntries>
+	<start>
+		<text>加油，这个世界的未来是你们的</text>
+		<color></color>
+		<options>
+			 <option text="好的。" command="" />
+		</options>
+	</start>
+	<sn-doing>
+		<text>试炼指导员就在下面，他的身手很不错，你要小心哦。</text>
+		<color></color>
+		<options>
+			<option text="嗯，我会小心得。" command="" />
+			<option text="离开" command="" />		 
+		</options>
+	</sn-doing>
+	<ysn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003044" />
+			<option text="离开" command="" />
+		</options>
+	</ysn-complete>
+	<fsn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003045" />
+			<option text="离开" command="" />
+		</options>
+	</fsn-complete>
+	<zsn-complete>
+		<text>看来你通过试炼指导员的考验，这把武器就赠送给你，希望你以后的旅途更加顺利。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003046" />
+			<option text="离开" command="" />
+		</options>
+	</zsn-complete>
+	<xn>
+		<text>你现在可以找旁边的修女聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</xn>
+	<js>
+		<text>你现在可以找旁边的奸商聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</js>
+	<zhlr>
+		<text>你现在可以找旁边的智慧老人聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</zhlr>
+</root>

@@ -1,0 +1,4 @@
+编号	名字	坐标X	坐标Y	图像	对话	商店	脚本
+id	name	x	y	image	dialog	shop	script
+0	转生解说员	21	18	9	65000175	0	
+0	格雷王	24	18	35	66000107	0	

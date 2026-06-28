@@ -1,0 +1,113 @@
+<root>
+	<taskEntries>
+		<task id="20000089" doing="ghsss-doing" completed="ghsss-completed" />
+		<task id="20000090" doing="gdm-doing" completed="gdm-completed" />
+		<task id="20000091" doing="gmjs-doing" completed="gmjs-completed" />
+	</taskEntries>
+	<raceEntries 0="gru" 1="start" 2="start" />
+	<goodsEntries>
+		<hmzd>1333011810</hmzd>
+	</goodsEntries>
+	<start>
+		<text>格鲁用一双很冷的睛注视着你。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<hmzd>
+		<text>你可以先回到迷之城找两个朋友组队，然后使用卷轴就会被传送到下一个地点了。</text>
+		<color></color>
+		<options>
+			 <option text="回到迷之城" command="transport:4001:52:110" />
+			 <option text="离开" command="" />
+		</options>
+	</hmzd>
+	<gru>
+		<text>你好，我叫格鲁，我也是一位弓箭手，有没有兴趣来比试一下箭术。</text>
+		<color></color>
+		<options>
+			 <option text="怎么比你来定" command="goto:gru-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</gru>
+	<gru-next0>
+		<text>这有三种怪“黑色绅士”、“多魔”、“魔剑士”随你选，如果实在打不过的话，可以删除任务重选哦。</text>
+		<color></color>
+		<options>
+			 <option text="黑色绅士" command="giveTask:20000089" />
+			 <option text="多魔" command="giveTask:20000090" />
+			 <option text="魔剑士" command="giveTask:20000091" />
+			 <option text="离开" command="" />
+		</options>
+	</gru-next0>	
+	<ghsss-doing>
+		<text>能消灭16个黑色绅士，就说明你的实力不错哦。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</ghsss-doing>
+	<gdm-doing>
+		<text>能消灭16个多魔，就说明你的实力不错哦。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</gdm-doing>
+	<gmjs-doing>
+		<text>能消灭16个魔剑士，就说明你的实力不错哦。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</gmjs-doing>
+	<ghsss-completed>
+		<text>看来你实力不错哦！</text>
+		<color></color>
+		<options>
+			 <option text="格瑞丝让我转告你，她在迷之城入口处等你。" command="goto:ghsss-next2" />
+			 <option text="离开" command="" />
+		</options>
+	</ghsss-completed>
+	<ghsss-next2>
+		<text>这个就送你吧，使用后可以传到下一层哦！最好找几个伙伴，那里有个牛头怪很危险。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000089" />
+			 <option text="离开" command="" />
+		</options>
+	</ghsss-next2>
+	<gdm-completed>
+		<text>看来你实力不错哦！</text>
+		<color></color>
+		<options>
+			 <option text="格瑞丝让我转告你，她在迷之城入口处等你。" command="goto:gdm-next2" />
+			 <option text="离开" command="" />
+		</options>
+	</gdm-completed>
+	<gdm-next2>
+		<text>这个就送你吧，使用后可以传到下一层哦！最好找几个伙伴，那里有个牛头怪很危险。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000090" />
+			 <option text="离开" command="" />
+		</options>
+	</gdm-next2>
+	<gmjs-completed>
+		<text>看来你实力不错哦！</text>
+		<color></color>
+		<options>
+			 <option text="格瑞丝让我转告你，她在迷之城入口处等你。" command="goto:gmjs-next2" />
+			 <option text="离开" command="" />
+		</options>
+	</gmjs-completed>
+	<gmjs-next2>
+		<text>这个就送你吧，使用后可以传到下一层哦！最好找几个伙伴，那里有个牛头怪很危险。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000091" />
+			 <option text="离开" command="" />
+		</options>
+	</gmjs-next2>
+</root>

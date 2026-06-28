@@ -1,0 +1,31 @@
+<root>
+	<not-time>
+		<text>您好，乐意为您服务！\n我是自由竞技场管理员。自由竞技场每天中午1点和晚上9点各开放一次，每次30分钟，所有60级以上的玩家都可以参加，下一次活动还没有开始，请到时候来参加吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</not-time>
+	<over-time1>
+		<text>您好，乐意为您服务！\n我是自由竞技场管理员。自由竞技场每天中午1点和晚上9点各开放一次，每次30分钟，所有60级以上的玩家都可以参加，今天的上一次活动已经结束，下一次活动还没有开始，请到时候来参加吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</over-time1>
+	<over-time2>
+		<text>您好，乐意为您服务！\n我是自由竞技场管理员。自由竞技场每天中午1点和晚上9点各开放一次，每次30分钟，所有60级以上的玩家都可以参加，今天两次活动都已经结束了，请明天再来参加吧。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</over-time2>
+	<start>
+		<text>您好，乐意为您服务！\n我是自由竞技场管理员。自由竞技场每天中午1点和晚上9点各开放一次，每次30分钟，所有60级以上的玩家都可以参加，在这里跟其他玩家一起PK竞技，没有死亡惩罚、没有PK记录，每次击杀玩家可以得到相应的经验和功勋值。</text>
+		<color></color>
+		<options>
+			 <option text="我要参加" command="enter" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

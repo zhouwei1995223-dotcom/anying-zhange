@@ -1,0 +1,3 @@
+编号	名字	坐标X	坐标Y	图像	对话	商店	脚本	行为
+id	name	x	y	image	dialog	shop	script	ai
+66001003	圣诞老人	24	18	11	66001003	0	0	0

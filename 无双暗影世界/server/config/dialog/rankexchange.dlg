@@ -1,0 +1,65 @@
+<root>
+   <start>
+		<text>你好，$heroName，很乐意为你服务！亿乐开发小组授权我进行如下的业务：</text>
+		<color></color>
+		<options>
+			 <option text="排行榜设置" command="goto:setup" />
+			 <option text="荣耀榜排名兑换元宝" command="goto:rank3" />
+			 <option text="行者榜排名兑换元宝" command="goto:rank6" />
+			 <option text="活跃榜排名兑换元宝" command="goto:rank5" />
+		</options>
+   </start>
+   <setup>
+		<text>在某些方面来讲，排行榜可能破坏了您的隐私，即使您的个人属性达到了前20名，您也可以选择不上榜，避免自己的名字出现在大众面前。</text>
+		<color></color>
+		<options>
+			 <option text="我要上榜" command="rank:1" />
+			 <option text="我不上榜" command="rank:0" />
+		</options>
+   </setup>
+   <result>
+		<text>谢谢你，你的排行榜设置已经完成。</text>
+		<color></color>
+		<options>
+			 <option text="真是太好了" command="" />
+		</options>
+   </result>
+   <rank3>
+		<text>如果你现在是荣耀榜的上榜玩家，我可以为你兑换元宝，每1000点荣耀兑换1个元宝，兑换以后，会扣除你的荣耀值，你很快就从会排行榜上被删除。确定兑换吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要兑换" command="exchange:3" />
+			 <option text="我舍不得" command="" />
+		</options>
+   </rank3>
+   <rank5>
+		<text>如果你现在是活跃榜的榜上玩家，我可以为你兑换元宝，每10个小时活跃值兑换1个元宝，兑换以后，会扣除你的活跃值，你很快就会从排行榜上被删除。确定兑换吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要兑换" command="exchange:5" />
+			 <option text="我舍不得" command="" />
+		</options>
+   </rank5>
+   <rank6>
+		<text>如果你现在是行者榜的榜上玩家，我可以为你兑换元宝，每10000步兑换1个元宝，兑换以后，会扣除你的行走步数，你很快就会从排行榜上被删除。确定兑换吗？</text>
+		<color></color>
+		<options>
+			 <option text="我要兑换" command="exchange:6" />
+			 <option text="我舍不得" command="" />
+		</options>
+   </rank6>
+   <notOnTop>
+		<text>抱歉，我现在不能为你兑换，你还还没有上榜。你需要多多努力，提高自己排名。</text>
+		<color></color>
+		<options>
+			 <option text="真遗憾啊" command="" />
+		</options>
+   </notOnTop>
+   <noProperty>
+		<text>抱歉，你的这方面属性值太低，我现在不能为你兑换。你需要多多努力，提高自己排名。</text>
+		<color></color>
+		<options>
+			 <option text="真遗憾啊" command="" />
+		</options>
+   </noProperty>
+</root>

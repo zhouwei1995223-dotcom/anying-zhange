@@ -1,0 +1,29 @@
+<root>
+	<taskEntries>
+		<task id="10003049" completed="zhlr" onceDone="start"/>
+		<task id="10003048" completed="xn-complete" onceDone="start"/>	
+		<task id="10003047" onceDone="start"/>		
+	</taskEntries>
+	<start>
+		<text>奸商这名字只是个称呼，其实我们并不奸，只是经营有道而以。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<xn-complete>
+		<text>我们出售一些魔法卷轴，同时也常收购一些特殊物品。有空的话常来看看，在我们这可以接到收集任务，可以赚钱哦。对了，这宝贝就送给你了。</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10003048" />
+			<option text="离开" command="" />
+		</options>
+	</xn-complete>
+	<zhlr>
+		<text>你现在可以找旁边的智慧老人聊聊，会有意外收获哦！</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="" />
+		</options>
+	</zhlr>
+</root>

@@ -1,0 +1,20 @@
+# Cocos generated folders
+cocos-remake/library/
+cocos-remake/temp/
+cocos-remake/local/
+cocos-remake/build/
+cocos-remake/profiles/
+cocos-remake/node_modules/
+
+# Local generated/debug output
+tmp*/
+_tmp*/
+tmp*
+_tmp*
+*.log
+
+# Editor/system noise
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

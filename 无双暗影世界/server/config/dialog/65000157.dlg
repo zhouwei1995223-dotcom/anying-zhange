@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要过去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:55:71:20" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

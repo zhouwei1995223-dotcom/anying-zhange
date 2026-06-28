@@ -1,0 +1,70 @@
+<root>
+	<taskEntries>
+		<task id="20000086" doing="mzd1-doing" completed="mzd1-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<hmzd>1333011807</hmzd>
+		<mzd1>1333011804</mzd1>
+	</goodsEntries>	
+	<start>
+		<text>即然你身上没有月光石，你也就没有接受考验的资格，要出去吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到血精森林" command="transport:20:41:88" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<hmzd>
+		<text>你可以先回到迷之城找两个朋友组队，然后使用卷轴就会被传送到下一个地点了。</text>
+		<color></color>
+		<options>
+			 <option text="回到迷之城" command="transport:4001:52:110" />
+			 <option text="离开" command="" />
+		</options>
+	</hmzd>
+	<mzd1>
+		<text>你好，正在接受考验的人，如果你迷失了方向，你可以在我这试试。</text>
+		<color></color>
+		<options>
+			 <option text="怎么才能进入下一层？" command="goto:mzd1-next0" />
+			 <option text="离开" command="" />
+		</options>
+	</mzd1>
+	<mzd1-next0>
+		<text>在这二十个使者当中，只有一个使者，可以把你们传送到下一层。</text>
+		<color></color>
+		<options>
+			 <option text="这也太难找了" command="goto:mzd1-next1" />
+		</options>
+	</mzd1-next0>
+	<mzd1-next1>
+		<text>如果你实在找不到，可以在我这接受一个任务，完成后我会给你进入下一层的卷轴。</text>
+		<color></color>
+		<options>
+			 <option text="什么任务" command="goto:mzd1-next2" />
+		</options>
+	</mzd1-next1>	
+	<mzd1-next2>
+		<text>我有3个宝箱，被这些阿布族人给偷走了，如果你能帮我找回来，我可以帮你进入下一层。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000086" />
+			 <option text="离开" command="" />
+		</options>
+	</mzd1-next2>
+	<mzd1-doing>
+		<text>宝箱就在阿布族人身上。</text>
+		<color></color>
+		<options>
+			 <option text="知道了" command="" />
+		</options>
+	</mzd1-doing>
+	<mzd1-completed>
+		<text>看来你完成了任务，这是进入下一层的“卷轴”。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000086" />
+			 <option text="离开" command="" />
+		</options>
+	</mzd1-completed>
+</root>

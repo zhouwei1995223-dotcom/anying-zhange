@@ -1,0 +1,103 @@
+<root>
+	<taskEntries>	
+		<task id="10002029" doing="huanz-doing" completed="huanz-completed" />
+		<task id="10002026" completed="saguai-completed" />
+		<task id="10002027" completed="zgl-completed" />
+		<task id="10002028" completed="zhaoyun-completed" />
+		<task id="10002030" completed="zhfei-completed" />
+		<task id="10002031" completed="guanyu-completed" />
+	</taskEntries>
+	<start>
+		<text>我就是肉肉王国的首相，你可以在我这了解一些信息。</text>
+		<color></color>
+		<options>
+			<option text="领取任务" command="goto:huanz" />
+			<option text="迷宫信息" command="goto:next" />
+			<option text="任务信息" command="goto:next2" />
+			<option text="离开" command="" />
+			<option text="回那亚村" command="transport:3:52:61" />
+		</options>
+   </start>
+   <saguai-completed>
+		<text>欢迎光临，这里是肉肉迷宫第四层。</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="completeTask:10002026" />
+		</options>
+   </saguai-completed>
+   <zgl-completed>
+		<text>欢迎光临，这里是肉肉迷宫第四层。</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="completeTask:10002027" />
+		</options>
+   </zgl-completed>
+   <zhaoyun-completed>
+		<text>欢迎光临，这里是肉肉迷宫第四层。</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="completeTask:10002028" />
+		</options>
+   </zhaoyun-completed>
+   <zhfei-completed>
+		<text>欢迎光临，这里是肉肉迷宫第四层。</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="completeTask:10002030" />
+		</options>
+   </zhfei-completed>
+   <guanyu-completed>
+		<text>欢迎光临，这里是肉肉迷宫第四层。</text>
+		<color></color>
+		<options>
+			<option text="我知道了" command="completeTask:10002031" />
+		</options>
+   </guanyu-completed>
+   <next>
+		<text>迷宫共六层，有两种方法可以到达一下层，一就是完成我给于的任务,我会把你传送到下一层。</text>
+		<color></color>
+		<options>
+			<option text="另一种呢？" command="goto:next1" />
+		</options>
+   </next>
+   <next1>
+		<text>另一种方法就是找传送使者，在6个传送使者中，找到正确的传送使者就能把你传送到下一层。</text>
+		<color></color>
+		<options>
+			<option text="我明白了" command="" />
+			<option text="返回" command="goto:start" />
+		</options>
+   </next1>
+   <next2>
+		<text>任务有六个英雄，按关数排列是肉肉英雄刘备、肉肉英雄诸葛亮、肉肉英雄赵云、肉肉英雄黄忠、肉肉英雄张飞、肉肉英雄关羽。</text>
+		<color></color>
+		<options>
+			<option text="我明白了" command="" />
+			<option text="返回" command="goto:start" />
+		</options>
+   </next2>
+   <huanz>
+		<text>只要你打败我们肉肉王国的英雄，我就可以把你传到下一关。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002029" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:bombstart" />
+			 <option text="离开" command="" />
+		</options>
+   </huanz>
+   <huanz-doing>
+		<text>只有打败两个肉肉大兵的人才有资格见到我们的英雄。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </huanz-doing>
+   <huanz-completed>
+		<text>看来你已经完成任务了，要去下一层吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到下一层" command="createDuplicate:3007" />
+		</options>
+    </huanz-completed>
+</root>

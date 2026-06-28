@@ -1,0 +1,20 @@
+<serverInfo>
+	<dropedTreasure>0</dropedTreasure>
+	<prizedTreasure>0</prizedTreasure>
+	<payedTreasure>1200000</payedTreasure>
+	<consumedTreasure>181860</consumedTreasure>
+	<connectionCount>6</connectionCount>
+	<heroLoginCount>6</heroLoginCount>
+	<createdDuplicateCount>2</createdDuplicateCount>
+	<receivedMessageCount>995</receivedMessageCount>
+	<receivedPingCount>2170</receivedPingCount>
+	<sendedMessageCount>3172</sendedMessageCount>
+	<elfCount>0</elfCount>
+	<manCount>0</manCount>
+	<orcCount>0</orcCount>
+	<maxOnlineCount>1</maxOnlineCount>
+	<onlinePeakTime>1177029027</onlinePeakTime>
+	<heroUsingAppletCount>0</heroUsingAppletCount>
+	<averageOnlineCount>1</averageOnlineCount>
+	<launchTime>1505839113674</launchTime>
+</serverInfo>

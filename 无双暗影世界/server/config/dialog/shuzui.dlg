@@ -1,0 +1,208 @@
+<root>
+	<taskEntries>
+		<task id="10000101" doing="shuzui-doing" completed="shuzui1-completed" />
+		<task id="10000102" doing="shuzui-doing" completed="shuzui2-completed" />
+		<task id="10000103" doing="shuzui-doing" completed="shuzui3-completed" />
+		<task id="10000104" doing="shuzui-doing" completed="shuzui4-completed" />
+		<task id="10000105" doing="shuzui-doing" completed="shuzui5-completed" />
+		<task id="10000106" doing="shuzui-doing" completed="shuzui6-completed" />
+		<task id="10000107" doing="shuzui-doing" completed="shuzui7-completed" />
+		<task id="10000108" doing="shuzui-doing" completed="shuzui8-completed" />
+		<task id="10000109" doing="shuzui-doing" completed="shuzui9-completed" />
+		<task id="10000110" doing="shuzui-doing" completed="shuzui10-completed" />
+		<task id="10000111" doing="shuzui-doing" completed="shuzui11-completed" />
+	</taskEntries>
+	<levelEntries>
+		<11>start</11>
+		<21>shuzui1start</21>
+		<31>shuzui2start</31>
+		<41>shuzui3start</41>
+		<51>shuzui4start</51>
+		<61>shuzui5start</61>
+		<71>shuzui6start</71>
+		<81>shuzui7start</81>
+		<91>shuzui8start</91>
+		<101>shuzui9start</101>
+		<111>shuzui10start</111>
+		<121>shuzui11start</121>
+	</levelEntries>
+   <start>
+		<text>11级以上才可以接赎罪任务</text>
+		<color></color>
+		<options>
+			 <option text="那我升升再来" color="" bgColor="" command="" />
+		</options>
+   </start>
+   <shuzui1start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000101" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui1start>
+   <shuzui2start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000102" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui2start>
+   <shuzui3start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000103" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui3start>
+   <shuzui4start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000104" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui4start>
+   <shuzui5start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000105" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui5start>
+   <shuzui6start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000106" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui6start>
+   <shuzui7start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000107" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui7start>
+   <shuzui8start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000108" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui8start>
+   <shuzui9start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000109" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui9start>
+   <shuzui10start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000110" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui10start>
+   <shuzui11start>
+		<text>罪恶之源再次出现，你只需要杀死罪恶之源的喽喽们，罪恶之源就会出现，杀死它然后再来找我</text>
+		<color></color>
+		<options>
+             <option text="接受任务" color="" bgColor="" command="giveTask:10000111" />
+             <option text="拒绝任务" color="" bgColor="" command="" />
+		</options>
+   </shuzui11start>
+   <shuzui-doing>
+		<text>快去消灭罪恶之源</text>
+		<color></color>
+		<options>
+			 <option text="马上去" color="" bgColor="" command="" />
+		</options>
+   </shuzui-doing>
+   <shuzui1-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000101" />
+		</options>
+   </shuzui1-completed>
+   <shuzui2-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000102" />
+		</options>
+   </shuzui2-completed>
+   <shuzui3-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000103" />
+		</options>
+   </shuzui3-completed>
+   <shuzui4-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000104" />
+		</options>
+   </shuzui4-completed>
+   <shuzui5-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000105" />
+		</options>
+   </shuzui5-completed>
+   <shuzui6-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000106" />
+		</options>
+   </shuzui6-completed>
+   <shuzui7-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000107" />
+		</options>
+   </shuzui7-completed>
+   <shuzui8-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000108" />
+		</options>
+   </shuzui8-completed>
+   <shuzui9-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000109" />
+		</options>
+   </shuzui9-completed>
+   <shuzui10-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000110" />
+		</options>
+   </shuzui10-completed>
+   <shuzui11-completed>
+		<text>来，这是消灭罪恶之源的奖励</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" color="" bgColor="" command="completeTask:10000111" />
+		</options>
+   </shuzui11-completed>
+</root>

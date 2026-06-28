@@ -1,0 +1,17 @@
+<root>
+   <start>
+		<text>你好，你需要买武器吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="暂时还不需要" color="" bgColor="" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>下次再来看看吧！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+</root>

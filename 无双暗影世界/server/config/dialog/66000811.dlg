@@ -1,0 +1,10 @@
+<root>
+  <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="" />
+		</options>
+   </start>
+</root>

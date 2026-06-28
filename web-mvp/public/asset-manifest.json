@@ -1,0 +1,25 @@
+{
+  "oldRoot": "无双暗影世界",
+  "directImages": {
+    ".gif": 15,
+    ".jpg": 170,
+    ".png": 1
+  },
+  "mapData": {
+    ".blk": 122,
+    ".map": 163,
+    ".rar": 1,
+    ".scc": 1
+  },
+  "packedZipCount": 230,
+  "samples": [
+    "无双暗影世界\\client\\image\\magic\\1.gif",
+    "无双暗影世界\\client\\image\\magic\\10.gif",
+    "无双暗影世界\\client\\image\\magic\\11.gif",
+    "无双暗影世界\\client\\image\\magic\\2.gif",
+    "无双暗影世界\\client\\image\\magic\\3.gif",
+    "无双暗影世界\\client\\image\\magic\\4.gif",
+    "无双暗影世界\\client\\image\\magic\\5.gif",
+    "无双暗影世界\\client\\image\\magic\\6.gif"
+  ]
+}

@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要回去吗？我送你回塔魔尼地宫</text>
+		<color></color>
+		<options>
+			 <option text="好的，谢谢。" command="transport:55:63:87" />
+
+		</options>
+   </start>
+</root>

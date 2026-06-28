@@ -1,0 +1,21 @@
+<root>
+	<levelEntries>
+		<120>activity</120>
+	</levelEntries>
+	<start>
+		<text>节日快乐！</text>
+		<color></color>
+		<options>
+			 <option text="谢谢" command="" />
+			 <option text="关闭" command="" />
+		</options>
+	</start>
+	<activity>
+		<text>为了庆祝六一儿童节日，我们计划在游戏中举行一个满级体验活动，即是暂时性将您的等级提高到120级，方便您体会游戏中的一些高级内容，在本次服务器关闭后，您的等级会降回去，但是此期间获得的收益保存。您有兴趣参与吗？</text>
+		<color>BEF305</color>
+		<options>
+			 <option text="我参加" command="changeLevel:120" />
+			 <option text="没兴趣" command="" />
+		</options>
+	</activity>
+</root>

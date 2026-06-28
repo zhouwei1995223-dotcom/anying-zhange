@@ -1,0 +1,270 @@
+<root>
+	<taskEntries>
+              <task id="11000101" doing="start" completed="start"/>
+              <task id="11000102" doing="start" completed="start"/>
+              <task id="11000103" doing="start" completed="start"/>
+              <task id="11000104" doing="start" completed="start"/>
+              <task id="11000105" doing="start" completed="start"/>
+              <task id="11000106" doing="start" completed="start"/>
+              <task id="11000107" doing="start" completed="start"/>
+              <task id="11000108" doing="start" completed="start"/>
+              <task id="11000109" doing="start" completed="start"/>
+              <task id="11000110" doing="start" completed="start"/>
+	</taskEntries>
+	<levelEntries>
+            <12>start</12>
+            <24>start</24>
+            <36>start</36>
+            <48>start</48>
+            <60>start</60>
+            <72>start</72>
+            <84>start</84>
+            <96>start</96>
+            <108>start</108>
+            <180>start</180>		
+	</levelEntries>
+   <start>
+		<text>上面交给的任务总算做完了</text>
+		<color></color>
+		<options>
+			 <option text="还真辛苦" command="" />
+		</options>
+   </start>
+   <yumao1>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu1" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao1>
+   <yu1>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000101" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu1>
+   <yumao1-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000101" />
+		</options>
+   </yumao1-completed>
+   <yumao2>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu2" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao2>
+   <yu2>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000102" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu2>
+   <yumao2-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000102" />
+		</options>
+   </yumao2-completed>
+   <yumao3>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu3" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao3>
+   <yu3>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000103" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu3>
+   <yumao3-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000103" />
+		</options>
+   </yumao3-completed>
+   <yumao4>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu4" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao4>
+   <yu4>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000104" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu4>
+   <yumao4-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000104" />
+		</options>
+   </yumao4-completed>
+   <yumao5>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu5" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao5>
+   <yu5>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000105" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu5>
+   <yumao5-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000105" />
+		</options>
+   </yumao5-completed>
+   <yumao6>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu6" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao6>
+   <yu6>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000106" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu6>
+   <yumao6-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000106" />
+		</options>
+   </yumao6-completed>
+   <yumao7>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu7" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao7>
+   <yu7>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000107" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu7>
+   <yumao7-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000107" />
+		</options>
+   </yumao7-completed>
+   <yumao8>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu8" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao8>
+   <yu8>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000108" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu8>
+   <yumao8-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000108" />
+		</options>
+   </yumao8-completed>
+   <yumao9>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu9" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao9>
+   <yu9>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000109" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu9>
+   <yumao9-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000109" />
+		</options>
+   </yumao9-completed>
+   <yumao10>
+		<text>我是七夕使者，为了让牛郎和织女见上一面，上面派我放喜鹊帮他们，但是喜鹊的数量实在太多了，你愿意帮我吗？</text>
+		<color></color>
+		<options>
+			 <option text="看你这么可怜，我帮你吧" command="goto:yu10" />
+			 <option text="不关我的事" command="" />
+		</options>
+   </yumao10>
+   <yu10>
+		<text>但是，这个是上面派下来的任务不能有闪失，为了证明你的实力，去收集7根喜鹊的羽毛给我，你拿给我羽毛我就给你喜鹊</text>
+		<color></color>
+		<options>
+             <option text="……好吧" command="giveTask:11000110" />
+             <option text="这么麻烦，我不来了" command="" />
+		</options>
+   </yu10>
+   <yumao10-completed>
+		<text>哦~看来你确实有资格帮我放喜鹊，这是给你的七夕喜鹊，记得要到这只喜鹊指定的地点放哦</text>
+		<color></color>
+		<options>
+             <option text="好，记得了" command="completeTask:11000110" />
+		</options>
+   </yumao10-completed>
+   <yumao-doing>
+		<text>还没收集到7根吗？赶快去吧</text>
+		<color></color>
+		<options>
+             <option text="别催嘛" command="" />
+		</options>
+   </yumao-doing>
+</root>

@@ -1,0 +1,14 @@
+<app.island.entity.User>
+	<password>741852963</password>
+	<adOwner></adOwner>
+	<heroIds>20003,20010,,</heroIds>
+	<heroNames>dddd,cccc,,</heroNames>
+	<loginCount>89</loginCount>
+	<treasure>9254</treasure>
+	<earnedTreasure>0</earnedTreasure>
+	<payedTreasure>257777777</payedTreasure>
+	<consumedTreasure>571095</consumedTreasure>
+	<lastLoginIP>127.0.0.1</lastLoginIP>
+	<id>20002</id>
+	<name>zzw1995</name>
+</app.island.entity.User>

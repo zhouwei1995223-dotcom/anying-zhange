@@ -1,0 +1,44 @@
+<root>
+	<taskEntries>
+		<task id="10003030" completed="sw" onceDone="bl" />
+		<task id="10003031" onceDone="bl" />
+		<task id="10003032" onceDone="bl" />
+	</taskEntries>
+	<start>
+		<text>想要了解副本相关的信息吗？</text>
+		<color></color>
+		<options>
+			 <option text="介绍副本" command="goto:fb0" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+    <fb0>
+		<text>在游戏中有些练级的副本场景，在这类的副本场景中练级杀怪，得到的经验，金钱还有暴出的物品都比野外高很多。</text>
+		<color></color>
+		<options>
+			<option text="怎样才能进这些副本？" command="goto:fb1" />
+		</options>
+	</fb0>
+	<fb1>
+		<text>你可以从怪物身上打到一些副本卷，或者从元宝商店中直接购买，使用这些副本卷就可以进入练级副本。我这有个好东西送给你，你现在去找“城市守卫队长”，他也会送你东西哦。</text>
+		<color></color>
+		<options>
+			<option text="领取礼物" command="giveTask:10003030" />
+			<option text="离开" command="" />
+		</options>
+	</fb1>
+	<sw>
+		<text>找“城市守卫队长”,了解PK相关信息，他就会送你好东西哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</sw>
+	<bl>
+		<text>游戏中有很多练级的副本场景，在这类的副本场景中练级杀怪，得到的经验、金钱还有暴出物品的机率都比野外高很多。</text>
+		<color></color>
+		<options>
+			 <option text="这些我早知道了" command="" />
+		</options>
+	</bl>
+</root>

@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要回贝伦城吗？</text>
+		<color></color>
+		<options>
+			 <option text="回贝伦城" command="transport:8:72:106" />
+			 <option text="继续战斗" command="" />
+		</options>
+   </start>
+</root>

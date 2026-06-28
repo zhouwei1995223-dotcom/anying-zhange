@@ -1,0 +1,95 @@
+<root>
+    <taskEntries>
+		<task id="10004000" completed="yx-completed" />
+		<task id="10004001" completed="fs-completed" />
+		<task id="10004002" completed="zs-completed" />
+    </taskEntries>
+	<goodsEntries>
+		<sd>1210049900</sd>
+		<sd>1210049901</sd>
+		<sd>1210049902</sd>
+		<sd>1210049903</sd>
+		<sd>1232049900</sd>
+		<sd>1232049901</sd>
+		<sd>1232049902</sd>
+		<sd>1232049903</sd>
+		<sd>1221049900</sd>
+		<sd>1221049901</sd>
+		<sd>1221049902</sd>
+		<sd>1221049903</sd>
+	</goodsEntries>
+	<start>
+        <text>要参加圣诞活动吗？先找圣诞老人领取任务吧!</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<yx-completed>
+        <text>圣诞小偷攻击了“圣诞之乡”，这把武器给你，拿着武器跟我去消灭圣诞小偷吧!</text>
+        <color></color>
+        <options>
+			<option text="领取武器" command="completeTask:10004000" />
+			<option text="离开" command="" />
+		</options>
+	</yx-completed>
+	<fs-completed>
+        <text>圣诞小偷攻击了“圣诞之乡”，这把武器给你，拿着武器跟我去消灭圣诞小偷吧!</text>
+        <color></color>
+        <options>
+			<option text="领取武器" command="completeTask:10004001" />
+			<option text="离开" command="" />
+		</options>
+	</fs-completed>
+	<zs-completed>
+        <text>圣诞小偷攻击了“圣诞之乡”，这把武器给你，拿着武器跟我去消灭圣诞小偷吧!</text>
+        <color></color>
+        <options>			
+			<option text="领取武器" command="completeTask:10004002" />
+			<option text="离开" command="" />
+		</options>
+	</zs-completed>
+	<sd>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。1号和2号圣诞之乡是竞技场模式地图，3号圣诞之乡是保护模式地图。</text>
+        <color></color>
+        <options>
+			<option text="1号圣诞之乡" command="goto:sd1" />
+			<option text="2号圣诞之乡" command="goto:sd2" />
+			<option text="3号圣诞之乡" command="goto:sd3" />
+			<option text="离开" command="" />
+		</options>
+	</sd>
+	<sd1>
+        <text>要进1号圣诞之乡吗？</text>
+        <color></color>
+        <options>
+			<option text="左上位置" command="transport:1225:27:27" />
+			<option text="左下位置" command="transport:1225:45:135" />
+			<option text="右上位置" command="transport:1225:83:51" />
+			<option text="右下位置" command="transport:1225:96:120" />
+			<option text="离开" command="" />
+		</options>
+	</sd1>
+	<sd2>
+        <text>要进2号圣诞之乡吗？</text>
+        <color></color>
+        <options>
+			<option text="左上位置" command="transport:1226:27:27" />
+			<option text="左下位置" command="transport:1226:45:135" />
+			<option text="右上位置" command="transport:1226:83:51" />
+			<option text="右下位置" command="transport:1226:96:120" />
+			<option text="离开" command="" />
+		</options>
+	</sd2>
+	<sd3>
+        <text>要进3号圣诞之乡吗？</text>
+        <color></color>
+        <options>
+			<option text="左上位置" command="transport:1227:27:27" />
+			<option text="左下位置" command="transport:1227:45:135" />
+			<option text="右上位置" command="transport:1227:83:51" />
+			<option text="右下位置" command="transport:1227:96:120" />
+			<option text="离开" command="" />
+		</options>
+	</sd3>
+</root>

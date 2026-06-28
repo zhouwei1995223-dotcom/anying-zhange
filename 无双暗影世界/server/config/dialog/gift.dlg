@@ -1,0 +1,55 @@
+<root>
+   <setup>
+		<text>你好，GM，我可以为你设置各种礼品方案，请选择吧：</text>
+		<color></color>
+		<options>
+			 <option text="设置每日礼品" command="goto:daily" />
+			 <option text="设置80级礼品" command="goto:level80" />
+			 <option text="设置100级礼品" command="goto:level100" />
+			 <option text="设置120级礼品" command="goto:level120" />
+			 <option text="我也领取礼品" command="goto:start" />
+		</options>
+   </setup>
+   <daily>
+		<text>现在我将为你设置每日礼品。每日礼品是每个帐号每天可以领取一次的物品。所赠送的物品是来自你的个人摆摊中的物品，如果有多个物品，则每次随机抽取一个送给玩家。</text>
+		<color></color>
+		<options>
+			 <option text="设置" command="setupDaily" />
+			 <option text="取消" command="" />
+		</options>
+   </daily>
+   <level80>
+		<text>现在我将为你设置80级礼品。80级礼品是当玩家达到80级的时候赠送的礼品。所赠送的物品是来自你的个人摆摊中的物品，如果有多个物品，则每次随机抽取一个送给玩家。</text>
+		<color></color>
+		<options>
+			 <option text="设置" command="setup30" />
+			 <option text="取消" command="" />
+		</options>
+   </level80>
+   <level100>
+		<text>现在我将为你设置100级礼品。100级礼品是当玩家达到100级的时候赠送的礼品。所赠送的物品是来自你的个人摆摊中的物品，如果有多个物品，则每次随机抽取一个送给玩家。</text>
+		<color></color>
+		<options>
+			 <option text="设置" command="setup60" />
+			 <option text="取消" command="" />
+		</options>
+   </level100>
+   <level120>
+		<text>现在我将为你设置120级礼品。120级礼品是当玩家达到120级的时候赠送的礼品。所赠送的物品是来自你的个人摆摊中的物品，如果有多个物品，则每次随机抽取一个送给玩家。</text>
+		<color></color>
+		<options>
+			 <option text="设置" command="setup90" />
+			 <option text="取消" command="" />
+		</options>
+   </level120>
+   <start>
+		<text>你好，亲爱的$heroName！我是礼品大使，代表游戏管理员向大家发放礼品。</text>
+		<color></color>
+		<options>
+			 <option text="领取每日礼品" command="getDailyGift" />
+			 <option text="领取80级礼品" command="getLevel30Gift" />
+			 <option text="领取100级礼品" command="getLevel60Gift" />
+			 <option text="领取120级礼品" command="getLevel90Gift" />
+		</options>
+   </start>
+</root>

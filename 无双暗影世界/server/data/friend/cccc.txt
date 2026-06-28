@@ -1,0 +1,8 @@
+<app.island.data.FriendList>
+	<friends></friends>
+	<enemies></enemies>
+	<blacks></blacks>
+	<students></students>
+	<id>20010</id>
+	<name>cccc</name>
+</app.island.data.FriendList>

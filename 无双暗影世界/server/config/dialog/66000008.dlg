@@ -1,0 +1,36 @@
+<root>
+	<raceEntries 0="youxia" 1="fashi" 2="zhanshi" />
+	<youxia>
+		<text>游侠竞技场不限进入等级，你还可以选择进入竞技场的位置。</text>
+		<color></color>
+		<options>
+			 <option text="左上位置" command="transport:107:20:24" />
+			 <option text="右上位置" command="transport:107:56:24" />
+			 <option text="左下位置" command="transport:107:20:76" />
+			 <option text="右下位置" command="transport:107:56:76" />
+			 <option text="离开" command="" />
+		</options>
+	</youxia>
+	<fashi>
+		<text>法师竞技场不限进入等级，你还可以选择进入竞技场的位置。</text>
+		<color></color>
+		<options>
+			 <option text="左上位置" command="transport:108:20:24" />
+			 <option text="右上位置" command="transport:108:56:24" />
+			 <option text="左下位置" command="transport:108:20:76" />
+			 <option text="右下位置" command="transport:108:56:76" />
+			 <option text="离开" command="" />
+		</options>
+	</fashi>
+	<zhanshi>
+		<text>战士竞技场不限进入等级，你还可以选择进入竞技场的位置。</text>
+		<color></color>
+		<options>
+			 <option text="左上位置" command="transport:109:20:24" />
+			 <option text="右上位置" command="transport:109:56:24" />
+			 <option text="左下位置" command="transport:109:20:76" />
+			 <option text="右下位置" command="transport:109:56:76" />
+			 <option text="离开" command="" />
+		</options>
+	</zhanshi>
+</root>

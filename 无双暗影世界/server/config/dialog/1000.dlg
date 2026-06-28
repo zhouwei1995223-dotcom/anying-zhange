@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要回去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上回去" command="transport:3:46:51" />
+			 <option text="暂不回去" command="" />
+		</options>
+   </start>
+</root>

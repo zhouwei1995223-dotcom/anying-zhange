@@ -1,0 +1,20 @@
+<root>
+   <start>
+		<text>来买些绚丽画面的礼品吧，使用会给情侣，朋友很大的惊喜哦！</text>
+		<color></color>
+		<options>
+			 <option text="仅对象个人可见类" command="openShop:101" />
+			 <option text="对象屏幕所有人可见类" command="openShop:102" />
+			 <option text="对象场景所有人可见类" command="openShop:103" />
+	         <option text="全世界都可见类" command="openShop:104" />
+             <option text="暂时还不需要"  command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>下次再来看看吧！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+</root>

@@ -1,0 +1,148 @@
+<root>
+	<taskEntries>
+		<task id="10000018" completed="undead-completed" />
+		<task id="10000019" completed="fire-completed" />
+		<task id="10000020" completed="eat-completed" />
+	</taskEntries>
+	<levelEntries>
+		<14>start</14>
+		<1210>brw</1210>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:undeadstart" />
+			 <option text="离开" command="" />
+		</options>
+   </brw>
+   <undeadstart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>
+			<option text="失心的剑士（限制：18级以上）" command="goto:undead" />
+			<option text="丛林守卫者（限制：22级以上）" command="goto:fire" />
+			<option text="看不见的敌人（限制：26级以上）" command="goto:eat" />
+			<option text="返回上一层" command="goto:brw" />
+			<option text="离开" command="" />
+		</options>
+   </undeadstart>
+   <help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" color="" bgColor="" command="" />
+		</options>
+   </help>
+   <undead>
+		<text>真让人心痛，那些剑士以前是这里最棒的，但是他们现在却像魔物一样，虽然不想，但是你还是去结果了他们吧</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000018" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:undeadstart" />
+		</options>
+   </undead>
+   <undead-completed>
+		<text>这下他们也可以安息了</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" color="" bgColor="" command="completeTask:10000018" />
+			 <option text="我回来买药的" color="" bgColor="" command="buy" />
+		</options>
+   </undead-completed>
+   <eat>
+		<text>最近经常发生沙怪袭击商队的事情，我们需要民间的力量去消灭它们，你去杀死58个沙怪，这样商道可以安全一点</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000020" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:undeadstart" />
+		</options>
+   </eat>
+   <eat-completed>
+		<text>你已经杀死它们了呀？这下商道应该安全些了</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000020" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </eat-completed>
+   <fire>
+		<text>虽然那些树精已经活了上万年，但是现在我们才是这里的主人，你去杀50个树精，好让他们知道现在谁说了算</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000019" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:undeadstart" />
+		</options>
+   </fire>
+   <fire-completed>
+		<text>这下它们应该知道谁是这里真正的主人了！这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000019" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </fire-completed>
+   <ymr>
+		<text>那些野蛮人聚集在城门外，肯定不会有什么好事，你去消灭38个野蛮人，来警告他们一下。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000046" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:undeadstart" />
+		</options>
+   </ymr>
+   <ymr-completed>
+		<text>这下它们知道我们的实力了！这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000046" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </ymr-completed>
+   <ngg>
+		<text>贝伦城右城门直走可到“贝诺尼森林”，那里是我经常钓鱼的地方，现被南瓜怪占领了，请你帮我消灭他们吧！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000047" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:undeadstart" />
+		</options>
+   </ngg>
+   <ngg-completed>
+		<text>这下我又可以去钓鱼了！这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000047" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </ngg-completed>
+   <sbin>
+		<text>贝伦城右城门直走可到“贝诺尼森林”，最近有大量士兵在哪找什么东西，你去帮我调查下！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000048" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:undeadstart" />
+		</options>
+   </sbin>
+   <sbin-completed>
+		<text>虽然你并没有调查出结果！但是我不会食言的，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000048" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+   </sbin-completed>
+</root>

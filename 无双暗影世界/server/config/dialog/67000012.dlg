@@ -1,0 +1,227 @@
+<root>
+	<taskEntries>		
+		<task id="10002033" completed="xz-completed" />
+		<task id="10002034" completed="haix-completed" />
+		<task id="10002035" completed="kjs-completed" />
+		<task id="10002036" completed="ngg-completed" />
+		<task id="10002037" completed="hys-completed" />
+		<task id="10002038" completed="nggx-completed" />
+		<task id="10002039" completed="bzq-completed" />
+		<task id="10002040" completed="hl-completed" />
+		<task id="10002041" completed="klg-completed" />
+		<task id="10002042" completed="ls-completed" />
+		<task id="10002006" completed="xiwang-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<cd>1333012700</cd>
+	</goodsEntries>
+	<start>
+		<text>我是艾比盖，如果你有什么有趣的东西，别忘了来找我，我会出高价。</text>
+		<color></color>
+		<options>
+			<option text="等我有了我再来找你" command="" />
+		</options>
+	</start>
+	<xiwang-completed>
+		<text>这是希望之石，只要你背包里有了它，就可以在我这领取每日任务。</text>
+		<color></color>
+		<options>
+			<option text="领取希望之石" command="completeTask:10002006" />
+			<option text="离开" command="" />
+		</options>
+	</xiwang-completed>
+	<cd>
+		<text>我是艾比盖，我常收集一些有趣的东西，你每天可以来看看有没有适合你收集的任务。</text>
+		<color></color>
+		<options>
+			<option text="蝎子的毒液(限制：0级以上)" command="goto:xz" />
+			<option text="海星之眼(限制：12级以上)" command="goto:haix" />
+			<option text="狂剑士的头盔(限制：24级以上)" command="goto:kjs" />
+			<option text="南瓜怪的帽子(限制：36级以上)" command="goto:ngg" />
+			<option text="火焰石(限制：48级以上)" command="goto:hys" />
+			<option text="查看下一层" command="goto:cd1" />
+			<option text="离开" command="" />
+		</options>
+	</cd>
+	<cd1>
+		<text>我是艾比盖，我常收集一些有趣的东西，你每天可以来看看有没有适合你收集的任务。</text>
+		<color></color>
+		<options>
+			<option text="南瓜怪之心(限制：60级以上)" command="goto:nggx" />
+			<option text="爆炸球的碎片(限制：72级以上)" command="goto:bzq" />
+			<option text="火灵(限制：84级以上)" command="goto:hl" />
+			<option text="骷髅盔(限制：96级以上)" command="goto:klg" />
+			<option text="燃烧之石(限制：108级以上)" command="goto:ls" />
+			<option text="返回上一层" command="goto:cd" />
+			<option text="离开" command="" />
+		</options>
+	</cd1>
+	<xz>
+		<text>我需要一些“蝎子的毒液”来制造一些东西，请你帮我找6个过来我会给你很高的报酬。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002033" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+	</xz>
+	<xz-completed>
+		<text>干的不错，这是你的报酬，明天的话也许还需要一些。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002033" />
+			<option text="离开" command="" />
+		</options>
+	</xz-completed>
+	<haix>
+		<text>“海星之眼”是制造魔法水的材料，如果你能帮我找齐6个的话，我会给你很高的报酬。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002034" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+	</haix>
+	<haix-completed>
+		<text>干的不错，这是你的报酬，有需要再找你。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002034" />
+			<option text="离开" command="" />
+		</options>
+	</haix-completed>
+	<kjs>
+		<text>我正在做研究，需要6个“狂剑士的头盔”，如果你能收集到，我会给你满意的报酬。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002035" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd" />
+		</options>
+	</kjs>
+	<kjs-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002035" />
+			<option text="离开" command="" />
+		</options>
+	</kjs-completed>
+	<ngg>
+		<text>“南瓜怪的帽子”似乎隐藏着一些秘密，你收集6个过来，报酬会很吸引人的哦！</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002036" />
+			<option text="离开" command="" />
+		</options>
+	</ngg>
+	<ngg-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002036" />
+			<option text="离开" command="" />
+		</options>
+	</ngg-completed>
+	<hys>
+		<text>“火焰石”制成粉末可是很不错的魔法药，收集6个过来，你将得到一大袋金币。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002037" />
+			<option text="离开" command="" />
+		</options>
+	</hys>
+	<hys-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002037" />
+			<option text="离开" command="" />
+		</options>
+	</hys-completed>
+	<nggx>
+		<text>“南瓜怪之心”是南瓜怪的魔力之源，收集6个过来，你将得到一大袋金币。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002038" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd1" />
+		</options>
+	</nggx>
+	<nggx-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002038" />
+			<option text="离开" command="" />
+		</options>
+	</nggx-completed>
+	<bzq>
+		<text>“爆炸球”是一种很不稳定的魔法生物，如果你能收集6个它的碎片，这些金币就是你得。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002039" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd1" />
+		</options>
+	</bzq>
+	<bzq-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002039" />
+			<option text="离开" command="" />
+		</options>
+	</bzq-completed>
+	<hl>
+		<text>只有纯净的烈火元素才拥有“火灵”，收集6个过来，你会得到不小的财富。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002040" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd1" />
+		</options>
+	</hl>
+	<hl-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002040" />
+			<option text="离开" command="" />
+		</options>
+	</hl-completed>
+	<klg>
+		<text>也许是那些头盔让骷髅战士变的强大，收集6个“骷髅盔”给我，你会拥有大笔的金币。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002041" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd1" />
+		</options>
+	</klg>
+	<klg-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002041" />
+			<option text="离开" command="" />
+		</options>
+	</klg-completed>
+	<ls>
+		<text>从燃烧巨人身上可以收集到“燃烧之石”，收集6个给我，你会有满意的报酬。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="giveTask:10002042" />
+			<option text="离开" command="" />
+			<option text="返回上一层" command="goto:cd1" />
+		</options>
+	</ls>
+	<ls-completed>
+		<text>干的不错，这是你的报酬。</text>
+		<color></color>
+		<options>
+			<option text="领取报酬" command="completeTask:10002042" />
+			<option text="离开" command="" />
+		</options>
+	</ls-completed>
+</root>

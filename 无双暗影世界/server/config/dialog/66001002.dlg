@@ -1,0 +1,306 @@
+<root>
+    <taskEntries>
+		<task id="10004003" doing="start-doing" completed="start-completed" />
+		<task id="10004004" doing="start0-doing" completed="start0-completed" />
+		<task id="10004005" doing="start1-doing" completed="start1-completed" />
+		<task id="10004006" doing="start2-doing" completed="start2-completed" />
+		<task id="10004007" doing="start3-doing" completed="start3-completed" />
+		<task id="10004008" doing="start4-doing" completed="start4-completed" />
+		<task id="10004009" doing="start5-doing" completed="start5-completed" />
+		<task id="10004010" doing="start6-doing" completed="start6-completed" />
+		<task id="10004011" doing="start7-doing" completed="start7-completed" />
+		<task id="10004012" doing="start8-doing" completed="start8-completed" />
+		<task id="10004013" doing="start9-doing" completed="start9-completed" />
+		<task id="10004014" doing="start10-doing" completed="start10-completed" />
+    </taskEntries>
+    <levelEntries>
+	<10>start</10>
+	<20>start0</20>
+	<30>start1</30>
+	<40>start2</40>
+	<50>start3</50>
+	<60>start4</60>
+	<70>start5</70>
+	<80>star6</80>
+	<90>star7</90>
+	<100>start8</100>
+	<110>start9</110>
+	<1100>start10</1100>
+    </levelEntries>
+    <start>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004003" />
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<start-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start-doing>
+	<start-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004003" />
+			<option text="离开" command="" />
+		</options>
+	</start-completed>
+	<start0>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004004" />
+			<option text="离开" command="" />
+		</options>
+	</start0>
+	<start0-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start0-doing>
+	<start0-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004004" />
+			<option text="离开" command="" />
+		</options>
+	</start0-completed>
+	<start1>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004005" />
+			<option text="离开" command="" />
+		</options>
+	</start1>
+	<start1-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start1-doing>
+	<start1-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004005" />
+			<option text="离开" command="" />
+		</options>
+	</start1-completed>
+	<start2>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004006" />
+			<option text="离开" command="" />
+		</options>
+	</start2>
+	<start2-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start2-doing>
+	<start2-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004006" />
+			<option text="离开" command="" />
+		</options>
+	</start2-completed>
+	<start3>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004007" />
+			<option text="离开" command="" />
+		</options>
+	</start3>
+	<start3-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start3-doing>
+	<start3-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004007" />
+			<option text="离开" command="" />
+		</options>
+	</start3-completed>
+	<start4>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004008" />
+			<option text="离开" command="" />
+		</options>
+	</start4>
+	<start4-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start4-doing>
+	<start4-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004008" />
+			<option text="离开" command="" />
+		</options>
+	</start4-completed>
+	<start5>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004009" />
+			<option text="离开" command="" />
+		</options>
+	</start5>
+	<start5-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start5-doing>
+	<start5-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004009" />
+			<option text="离开" command="" />
+		</options>
+	</start5-completed>
+	<start6>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004010" />
+			<option text="离开" command="" />
+		</options>
+	</start6>
+	<start6-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start6-doing>
+	<start6-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004010" />
+			<option text="离开" command="" />
+		</options>
+	</start6-completed>
+	<start7>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004011" />
+			<option text="离开" command="" />
+		</options>
+	</start7>
+	<start7-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start7-doing>
+	<start7-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004011" />
+			<option text="离开" command="" />
+		</options>
+	</start7-completed>
+	<start8>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004012" />
+			<option text="离开" command="" />
+		</options>
+	</start8>
+	<start8-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start8-doing>
+	<start8-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004012" />
+			<option text="离开" command="" />
+		</options>
+	</start8-completed>
+	<start9>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004013" />
+			<option text="离开" command="" />
+		</options>
+	</start9>
+	<start9-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start9-doing>
+	<start9-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004013" />
+			<option text="离开" command="" />
+		</options>
+	</start9-completed>
+	<start10>
+        <text>圣诞小偷攻击了“圣诞之乡”，只要你消灭20个圣诞小偷，就可以找我领取奖励。</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004014" />
+			<option text="离开" command="" />
+		</options>
+	</start10>
+	<start10-doing>
+        <text>圣诞小偷攻击了“圣诞之乡”，希望早日把他们铲除。</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</start10-doing>
+	<start10-completed>
+        <text>圣诞小偷好像少了很多，这是你的奖励。</text>
+        <color></color>
+        <options>
+			<option text="领取奖励" command="completeTask:10004014" />
+			<option text="离开" command="" />
+		</options>
+	</start10-completed>
+</root>

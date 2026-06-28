@@ -1,0 +1,10 @@
+<app.island.data.HeroTaskList>
+	<historys>10000009,10003046,10003062,10003058,</historys>
+	<tasks>10001011,-2,1176960042,1176964138;10001010,0,1177618518,1177622614;</tasks>
+	<limitedTasks>10001011,1175250333;</limitedTasks>
+	<ringTaskCounter>0</ringTaskCounter>
+	<lastEndRingTime>0</lastEndRingTime>
+	<lastRingGroupID>0</lastRingGroupID>
+	<id>20001</id>
+	<name>无双暗影世界</name>
+</app.island.data.HeroTaskList>

@@ -1,0 +1,9 @@
+<root>
+	<start>
+		<text>居然还有人能跑到这来，真是难得，有什么我能帮助你吗？</text>
+		<color></color>
+		<options>
+			 <option text="回那亚村" command="transport:3:78:175" />
+		</options>
+	</start>
+</root>

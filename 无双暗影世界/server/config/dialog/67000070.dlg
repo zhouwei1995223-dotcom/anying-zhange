@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要使用传送功能吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" command="transport:-1:31:118" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start>
+</root>

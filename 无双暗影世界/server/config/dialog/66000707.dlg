@@ -1,0 +1,95 @@
+<root>
+	<taskEntries>
+		<task id="20000061" doing="yxzz-doing" completed="yxzz-completed" onceDone="start" />
+	</taskEntries>
+	<levelEntries>
+		<120>start</120>
+		<1200>yxzzstart</1200>
+	</levelEntries>
+	<yxzzstart>
+		<text>黑夜的绪任克斯森林，逐渐苏醒的发光小精灵，细流的风带着动人的三弦琴。。。</text>
+		<color></color>
+		<options>
+			 <option text="120级主线任务" command="goto:yxzz" />
+			 <option text="离开" command="" />
+		</options>
+	</yxzzstart>
+	<yxzz>
+		<text>我是“普罗·克洛托”，不用惊讶，你见到我会有种奇怪的感觉，那是因为命运之轮把我们的命运缠在了一起，现在有件事要你去完成。</text>
+		<color></color>
+		<options>
+			 <option text="关于命运之轮" command="goto:first" />
+			 <option text="离开" command="" />
+		</options>
+	</yxzz>
+	<first>
+		<text>命运之轮的转动决定了历史的发展，我是命运女神“克洛托”之子，拥有窥视命运之轮的能力。</text>
+		<color></color>
+		 <options>
+			 <option text="有什么事要我完成？" command="goto:second" />
+			 <option text="离开" command="" />
+		</options>
+	</first>
+	<second>
+		<text>600年前“艾特鲁王国”发生了动乱，依冬公主被魔族控制，要把她弟弟“艾特鲁里亚王子”杀死，最后艾特鲁里亚王子为了躲避他姐姐的追杀，四处流浪。</text>
+		<color></color>
+		<options>
+			 <option text="艾特鲁里亚王？" command="goto:third" />
+			 <option text="离开" command="" />
+		</options>
+	</second>
+	<third>
+		<text>逃亡四个月后，艾特鲁里亚王子在绪任克斯森林遇到了精灵公主艾丽斯。艾丽斯喜欢上了这位王子，为了帮助艾特鲁里亚王子，她把神器—暗影之弓借给了王子，让他回去拯救“艾特鲁王国”。</text>
+	    <color></color>
+		<options>
+			 <option text="然后呢？" command="goto:forth" />
+			 <option text="离开" command="" />
+		</options>
+	</third>
+	<forth>
+		<text>暗影之弓是强大的武器，但以人类的身体是无法发挥暗影之弓的最大威力。最后艾特鲁里亚王子被打败，神器—暗影之弓也落入了魔族的手里。魔族在拥有神器—暗影之弓后，就开始进攻精灵族，最后魔族统治了艾雷布大陆。</text>
+		<color></color>
+		<options>
+			 <option text="那真是可怕的结局" command="goto:fifth" />
+			 <option text="离开" command="" />
+		</options>
+	</forth>
+	<fifth>
+		<text>现在的历史是“英雄哈尔特姆德和艾特鲁里亚最终把魔族赶出了艾雷布大陆”，那是因为我们改了历史的发展，所以我要让你回到600年前，帮助艾特鲁里亚王子拯救“艾特鲁王国”。</text>
+	<color></color>
+		<options>
+			 <option text="怎么回到600年前" command="goto:seventh" />
+			 <option text="离开" command="" />
+		</options>
+    </fifth>
+	<seventh>
+		<text>神不能直接参于人类的战争，我可以为你打开“时空之门”让你回到600年前，大臣“梅迪乌斯”是魔族的卧底，是他控制了公主，所以你的任务就是找到王子，然后消灭“梅迪乌斯”。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000061" />
+			 <option text="离开" command="" />
+		</options>
+	</seventh>
+	<yxzz-doing>
+		<text>准备好了吗？“时间之门”已经打开，记住找到王子，然后消灭“梅迪乌斯”。</text>
+		<color></color>
+		<options>
+			 <option text="回到600年前" command="transport:3061:35:40" />
+			 <option text="离开" command="" />
+		</options>
+	</yxzz-doing>
+	<yxzz-completed>
+		<text>命运真是奇怪的东西，这是你的奖励！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000061" />
+		</options>
+	</yxzz-completed>
+	<start>
+		<text>黑夜的绪任克斯森林，逐渐苏醒的发光小精灵，细流的风带着动人的三弦琴。。。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

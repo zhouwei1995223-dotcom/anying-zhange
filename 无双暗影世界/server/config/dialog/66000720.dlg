@@ -1,0 +1,9 @@
+<root>
+   <start>
+		<text>我的特长是治疗，如果你受伤了，我会治愈你的伤口。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

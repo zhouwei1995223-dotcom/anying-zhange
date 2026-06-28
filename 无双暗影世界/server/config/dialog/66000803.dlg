@@ -1,0 +1,46 @@
+<root>
+	<taskEntries>
+		<task id="10003041" completed="tz-completed" />
+		<task id="10003042" completed="hc-completed" onceDone="start" />
+		<task id="10003041" onceDone="start" />
+	</taskEntries>
+	<start>
+		<text>套装系统是以整套形式出现的装备，单件套装装备和普通装备没有什么区别，不过当同时穿上更多同套的套装装备，会有意想不到的惊喜哦！</text>
+		<color></color>
+		<options>
+			 <option text="这个我知道" command="" />
+		</options>
+	</start>
+	<tz-completed>
+		<text>没见过金色的装备吧？哈哈，现在你有机会穿上是不是很激动呢？</text>
+		<color></color>
+		<options>
+			 <option text="套装是什么样得？" command="goto:tz-next" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</tz-completed>
+	<tz-next>
+		<text>套装系统是以整套形式出现的装备，单件套装装备和普通装备没有什么区别，不过当同时穿上更多同套的套装装备，会有意想不到的惊喜哦！</text>
+		<color></color>
+		<options>
+			 <option text="哪怎么获得套装呢？" command="goto:tz-t" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</tz-next>
+	<tz-t>
+		<text>套装装备必须通过材料合成，关于怎么合成就要去问合成介绍员啦！</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="completeTask:10003041" />
+			 <option text="离开" command="" />
+		</options>
+	</tz-t>
+	<hc-completed>
+		<text>要我把你传送到“合成介绍员”的附近吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="transport:-1:50:135" />
+			 <option text="我自已去" command="" />
+		</options>
+	</hc-completed>
+</root>

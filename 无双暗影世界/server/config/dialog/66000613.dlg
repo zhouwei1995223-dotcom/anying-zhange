@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>“施瓦新格”受重伤后藏起来了，等你消灭一些兽族小兵后，他才会出现。</text>
+		<color></color>
+		<options>
+			 <option text="回夏基亚城" command="transport:23:131:46" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

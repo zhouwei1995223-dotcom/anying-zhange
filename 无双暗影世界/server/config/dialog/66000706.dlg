@@ -1,0 +1,32 @@
+<root>
+	<taskEntries>
+		<task id="20000061" doing="yxzz" completed="yxzz" onceDone="start" />
+	</taskEntries>
+	<levelEntries>
+		<120>start</120>
+		<1200>yxzz</1200>
+	</levelEntries>
+	<start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+		</options>
+	</start>
+	<yxzz>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="120级主线任务" command="goto:yxzz1" />
+		</options>
+	</yxzz>
+	<yxzz1>
+		<text>克洛托国王“普罗·克洛托”复活了，他很想见你。如果你现在要去见他，我可以送你过去！</text>
+		<color></color>
+		<options>
+			 <option text="传送到“普罗之殿”" command="transport:3060:23:41" />
+			 <option text="没兴趣" command="" />
+		</options>
+	</yxzz1>
+</root>

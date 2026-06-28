@@ -1,0 +1,109 @@
+<root>
+	<taskEntries>
+		<task id="10000015" completed="bomb-completed" />
+		<task id="10000016" completed="orc-completed" />
+		<task id="10000017" completed="stone-completed" />
+		<task id="10000013" completed="xiez-completed" />
+	</taskEntries>
+	<levelEntries>
+		<6>start</6>
+		<121>brw</121>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </start>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" color="" bgColor="" command="buy" />
+			 <option text="杀怪任务" color="" bgColor="" command="goto:bombstart" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </brw>
+   <bombstart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>			
+			<option text="有毒的蝎子（限制：2级以上）" color="" bgColor="" command="goto:xiez" />
+			<option text="看似可爱的海星（限制：6级以上）" color="" bgColor="" command="goto:bomb" />
+			<option text="恐怖的跳蚤（限制：10级以上）" command="goto:orc" />
+			<option text="野蛮人的进攻（限制：14级以上）" color="" bgColor="" command="goto:stone" />
+			<option text="返回上一层" color="" bgColor="" command="goto:brw" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </bombstart>
+   <bomb>
+		<text>外面那些海星，看起来很可爱，上次我想走近了看一下，没想到却被打了一下，你去帮我杀24只海星星替我出口气</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000015" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:bombstart" />
+		</options>
+   </bomb>
+   <bomb-completed>
+		<text>这么快就完成任务了啊，来，这是给你的奖励！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" color="" bgColor="" command="completeTask:10000015" />
+			 <option text="我回来买药的" color="" bgColor="" command="buy" />
+		</options>
+    </bomb-completed>
+	<orc>
+		<text>看那些跳蚤，现在它们变那么大了，一定发生了可怕的事，你去消灭30只看看。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000016" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:bombstart" />
+		</options>
+	</orc>
+	<orc-completed>
+		<text>这么快就把它们消灭了，看来只是变大了而以。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000016" />
+			 <option text="我回来买药的" command="buy" />
+		</options>
+	</orc-completed>
+   <stone>
+		<text>最近经常有野蛮人来进攻这里，得给那些野蛮人点颜色瞧瞧，去杀35只野蛮人让他们知道我们的厉害</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000017" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:bombstart" />
+		</options>
+   </stone>
+   <stone-completed>
+		<text>哈哈，看他们还敢不敢来，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" color="" bgColor="" command="completeTask:10000017" />
+			 <option text="我回来买药的" color="" bgColor="" command="buy" />
+		</options>
+   </stone-completed>
+   <xiez>
+		<text>村子周围有一些毒蝎子出没，为了村子的安全，我们正找一些人来消灭它。你愿意帮我们吗？</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10000013" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:bombstart" />
+		</options>
+   </xiez>
+   <xiez-completed>
+		<text>这么快就完成任务了啊，来，这是给你的奖励！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" color="" bgColor="" command="completeTask:10000013" />
+			 <option text="我回来买药的" color="" bgColor="" command="buy" />
+		</options>
+    </xiez-completed>
+</root>

@@ -1,0 +1,147 @@
+<root>
+	<start1>
+		<text>欢迎你，我是公会管理员，有什么需要我服务的吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="察看公会" command="view" />
+			<option text="创建公会" command="create" />
+			<option text="公会帮助" command="goto:help" />
+			<option text="没什么事" command="" />
+		</options>
+	</start1>
+	<start2>
+		<text>欢迎你，我是公会管理员，有什么需要我服务的吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="察看公会" command="view" />
+			<option text="公会设置" command="goto:setup" />
+			<option text="升级公会" command="goto:upgrade" />
+			<option text="公会帮助" command="goto:help" />
+			<option text="没什么事" command="" />
+		</options>
+	</start2>
+	<start3>
+		<text>欢迎你，我是公会管理员，有什么需要我服务的吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="察看公会" command="view" />
+			<option text="公会帮助" command="goto:help" />
+			<option text="没什么事" command="" />
+		</options>
+	</start3>
+	<help>
+		<text>公会是一个玩家组织团体，任何玩家在等级达到60级以后都可以创建公会。创建公会需要有公会许可证，并且缴纳10万的保证金。公会可以升级，不同级别的公会具有不同的功能和权限。公会创建后，要注意保证公会资产的数量，系统每天会扣除公会管理费，如果资产不足，公会将被降级（1级公会则被解散）。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="1级公会" command="goto:level1" />
+			<option text="2级公会" command="goto:level2" />
+			<option text="3级公会" command="goto:level3" />
+			<option text="4级公会" command="goto:level4" />
+			<option text="5级公会" command="goto:level5" />
+			<option text="我知道了" command="" />
+		</options>
+	</help>
+	<create-can>
+		<text>你已经满足了创建公会的条件，现在创建吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="确定" command="yesCreate" />
+			<option text="取消" command="" />
+		</options>
+	</create-can>
+	<create-cannot>
+		<text>你还没有到达创建公会的条件，请检查是否具备公会许可证，背包有足够的手续费，并且等级到达60级。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="关闭" command="" />
+		</options>
+	</create-cannot>
+	<upgrade>
+		<text>公会升级可以提升公会的等级，使公会的规模扩大，并且具备更多的能力和权限。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="现在升级" command="upgradeGuild" />
+			<option text="没什么事" command="" />
+		</options>
+	</upgrade>
+	<upgrade-full>
+		<text>你的公会无法再升级了!</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="关闭" command="" />
+		</options>
+	</upgrade-full>
+	<upgrade-can>
+		<text>你的公会满足了升级的条件，确定要升级吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="确定" command="yesUpgrade" />
+			<option text="取消" command="" />
+		</options>
+	</upgrade-can>
+	<upgrade-cannot>
+		<text>无法升级，请检查你的金币、公会声望、公会升级令、会员规模是否达到需求。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</upgrade-cannot>
+	<level1>
+		<text>1级公会也就是刚创建的公会。创建时，系统会赠送1万金币作为公会资产。它能容纳20个会员，不具备仓库功能，不能设立公会根据地，不能进行公会战争，不能占领和经营城市。1级公会每天需缴纳1万管理费。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</level1>
+	<level2>
+		<text>2级公会能容纳40个会员，具有公会仓库功能，仓库容量为100个格子。1级公会可以升级到2级公会，需要公会升级令，公会声望到达100、会员达到10、手续费10万。2级公会每天需缴纳2万管理费。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</level2>
+	<level3>
+		<text>3级公会能容纳60个会员，仓库容量为150个格子。3级公会能设立公会根据地。2级公会可以升级到3级公会，需要公会升级令、公会声望到达200、会员达到20、续费20万。3级公会每天需缴纳3万管理费。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</level3>
+	<level4>
+		<text>4级公会能容纳80个会员，仓库容量为200个格子。4级公会能进行公会战争。3级公会可以升级到4级公会，需要公会升级令、公会声望到达300、会员达到30、手续费30万。4级公会每天需缴纳4万管理费。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</level4>
+	<level5>
+		<text>5级公会能容纳100个会员，仓库容量为250个格子。5级公会能占领和经营城市。4级公会可以升级到5级公会，需要公会升级令、公会声望到达300、会员达到40、手续费40万。5级公会每天需缴纳5万管理费。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="返回" command="goto:help" />
+			<option text="关闭" command="" />
+		</options>
+	</level5>
+	<setup>
+		<text>请选择你要设置的内容</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="入会申请处理方式" command="goto:join-setup" />
+			<option text="关闭" command="" />
+		</options>
+	</setup>
+	<join-setup>
+		<text>入会申请功能是指当其他玩家在公会列表中，选择你的公会申请加入时所采取的处理方式。</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="必须我本人亲自处理" command="acceptMethod:1" />
+			<option text="我不在线副会长可以处理" command="acceptMethod:2" />
+			<option text="拒绝接受玩家的申请" command="acceptMethod:0" />
+		</options>
+	</join-setup>
+</root>

@@ -1,0 +1,11 @@
+<root>
+   <start>
+		<text>你好，我是传送使者，负责各个地图间的传送，如果你要去其它地图，可以来找我。对了，8级时，你可以去那亚村试试？</text>
+		<color></color>
+		<options>
+			 <option text="传送到新迪岛(新手村)" command="transport:1:28:35" />
+			 <option text="传送到那亚村(怪物：5-19级)" command="transport:3:19:56" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+</root>

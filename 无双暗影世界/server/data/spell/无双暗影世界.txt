@@ -1,0 +1,5 @@
+<app.island.data.SpellList>
+	<spells>95020401,3;</spells>
+	<id>20001</id>
+	<name>无双暗影世界</name>
+</app.island.data.SpellList>

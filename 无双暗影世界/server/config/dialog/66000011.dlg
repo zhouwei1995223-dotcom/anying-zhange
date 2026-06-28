@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>我可以送你回夏基亚城，要回去吗？</text>
+		<color></color>
+		<options>
+			 <option text="回夏基亚城" command="transport:23:129:38" />
+			 <option text="离开" command="" />
+		</options>
+	</start>	
+</root>

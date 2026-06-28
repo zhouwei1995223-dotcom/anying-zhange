@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002055" doing="xlr-doing" completed="xlr-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<xlr>1333012900</xlr>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“谢里尔”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<xlr>
+		<text>你就是总部派过来支援我的吗？帮我干掉100个树精，我会把报酬分你一半。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002055" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</xlr>
+	<xlr-doing>
+		<text>你要小心树精会用魔法攻击！</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </xlr-doing>
+   <xlr-completed>
+		<text>干的不错，这些金币，算是见面礼。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002055" />
+		</options>
+    </xlr-completed>
+</root>

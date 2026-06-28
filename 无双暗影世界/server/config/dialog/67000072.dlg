@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002054" doing="kaq-doing" completed="kaq-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<kaq>1333012900</kaq>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“卡拉奇”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<kaq>
+		<text>你就是新加入的冒险者呀！按规矩，你帮我收集一些“野蛮人的战利品”，我会给你一些见面礼。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002054" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</kaq>
+	<kaq-doing>
+		<text>你要小心那些野蛮人哦！</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </kaq-doing>
+   <kaq-completed>
+		<text>看来你把东西搞齐了，这些金币，算是见面礼。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002054" />
+		</options>
+    </kaq-completed>
+</root>

@@ -1,0 +1,46 @@
+<root>
+	<taskEntries>
+		<task id="10003040" completed="cw-completed" />
+		<task id="10003041" completed="tz-completed" onceDone="start" />
+		<task id="10003040" onceDone="start" />
+	</taskEntries>
+	<start>
+		<text>宠物有充足的体力和良好的心情才会更快的成长，需要多关心下宠物伙伴哦！</text>
+		<color></color>
+		<options>
+			 <option text="这个我知道" command="" />
+		</options>
+	</start>
+	<cw-completed>
+		<text>养一个好的宠物，不仅好看很拉风，宠物的属性还会加在你的身上哦！</text>
+		<color></color>
+		<options>
+			 <option text="宠物怎么获得？" command="goto:cw-next" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</cw-completed>
+	<cw-next>
+		<text>宠物是通过抓捕获得，不同等级的抓捕工具可以抓到不同等级的宠物，刚抓到的宠物都为幼年期，战斗的时候带上它，它也会获得经验成长，当它达到进化期顶级的时候，可以通过完成任务让它进化，进化后的宠物会增加新的基础属性。</text>
+		<color></color>
+		<options>
+			 <option text="养宠有什么秘决？" command="goto:cw-t" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</cw-next>
+	<cw-t>
+		<text>宠物有充足的体力和良好的心情才会更快的成长，需要多关心下宠物伙伴哦！当宠物完成最后一次进化的时候，还会获得强大的宠物技能，快去找寻你的伙伴吧！差点忘了，套装介绍员还有事情和你说！</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="completeTask:10003040" />
+			 <option text="离开" command="" />
+		</options>
+	</cw-t>
+	<tz-completed>
+		<text>要我把你传送到“套装介绍员”的附近吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="transport:-1:47:83" />
+			 <option text="我自已去" command="" />
+		</options>
+	</tz-completed>
+</root>

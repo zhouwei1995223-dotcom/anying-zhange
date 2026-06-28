@@ -1,0 +1,100 @@
+<root>
+	<taskEntries>
+		<task id="10000007" completed="guide-completed" onceDone="start2" />
+		<task id="10000009" completed="start2" onceDone="start2" />
+		<task id="10003007" completed="yx-completed" onceDone="start2" />
+		<task id="10003017" completed="fs-completed" onceDone="start2" />
+		<task id="10003027" completed="zs-completed" onceDone="start2" />
+		<task id="10000008" completed="start2" onceDone="start2" />
+		<task id="10000006" completed="start2" onceDone="start2" />
+		<task id="10000005" completed="start2" onceDone="start2" />
+		<task id="10000004" completed="start2" onceDone="start2" />
+		<task id="10000003" completed="start2" onceDone="start2" />
+		<task id="10000002" completed="start2" onceDone="start2" />
+		<task id="10000001" completed="start2" onceDone="start2" />
+	</taskEntries>
+	<start>
+		<text>看来你还没有找新手指导员领取新人任务，新人任务奖励很多经验哦，还能领到很不错的礼品，快去找新手指导员吧！</text>
+		<color>EE7600</color>
+		<options>
+			 <option text="传到那舍岛" command="transport:2:13:70" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+	<guide-completed>
+		<text>前面就是那舍岛啦，要去吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:next" />
+			<option text="马上过去" command="transport:2:13:70" />
+			<option text="暂时不去" command="" />			 
+		</options>
+	</guide-completed>
+	<next>
+		<text>我是负责各地图间传送的传送使者，和我对话就能选择传送到相邻的地图，你在各个地方都可以看到我的同行，有事就来找我哈。你现在可以去找礼品使者，他会送你一些神奇
+的东西哦!</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢，我这就去" command="completeTask:10000007" />
+		</options>
+	</next>
+	<yx-completed>
+		<text>前面就是那舍岛啦，要去吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:yxnext" />
+			<option text="马上过去" command="transport:2:13:70" />
+			<option text="暂时不去" command="" />			 
+		</options>
+	</yx-completed>
+	<yxnext>
+		<text>我是负责各地图间传送的传送使者，和我对话就能选择传送到相邻的地图，你在各个地方都可以看到我的同行，有事就来找我哈。你现在可以去找礼品使者，他会送你一些神奇
+的东西哦!</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢，我这就去。" command="completeTask:10003007" />
+		</options>
+	</yxnext>
+	<fs-completed>
+		<text>前面就是那舍岛啦，要去吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:fsnext" />
+			<option text="马上过去" command="transport:2:13:70" />
+			<option text="暂时不去" command="" />			 
+		</options>
+	</fs-completed>
+	<fsnext>
+		<text>我是负责各地图间传送的传送使者，和我对话就能选择传送到相邻的地图，你在各个地方都可以看到我的同行，有事就来找我哈。你现在可以去找礼品使者，他会送你一些神奇
+的东西哦!</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢，我这就去。" command="completeTask:10003017" />
+		</options>
+	</fsnext>
+	<zs-completed>
+		<text>前面就是那舍岛啦，要去吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:zsnext" />
+			<option text="马上过去" command="transport:2:13:70" />
+			<option text="暂时不去" command="" />			 
+		</options>
+	</zs-completed>
+	<zsnext>
+		<text>我是负责各地图间传送的传送使者，和我对话就能选择传送到相邻的地图，你在各个地方都可以看到我的同行，有事就来找我哈。你现在可以去找礼品使者，他会送你一些神奇
+的东西哦!</text>
+		<color></color>
+		<options>
+			<option text="好，谢谢，我这就去。" command="completeTask:10003027" />
+		</options>
+	</zsnext>
+	<start2>
+		<text>前面就是那舍岛啦，要去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" command="transport:2:13:70" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start2>
+</root>

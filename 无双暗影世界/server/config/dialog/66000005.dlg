@@ -1,0 +1,130 @@
+<root>
+	<taskEntries>
+		<task id="10000003" completed="wq" onceDone="start" />
+		<task id="10003003" completed="wq" onceDone="start" />
+		<task id="10003013" completed="wq" onceDone="start" />
+		<task id="10003023" completed="wq" onceDone="start" />
+		<task id="10000002" completed="guide-completed" onceDone="start" />
+		<task id="10003002" completed="yx-completed" onceDone="start" />
+		<task id="10003012" completed="fs-completed" onceDone="start" />
+		<task id="10003022" completed="zs-completed" onceDone="start" />
+		<task id="10003001" completed="start" onceDone="guide-completed" />
+	</taskEntries>
+   <start>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>记住我的品牌哦！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <guide-completed>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="暂时还不需要" command="goto:help" />
+			<option text="新手指导任务" command="goto:next" />
+		</options>
+	</guide-completed>
+	<next>
+		<text>欢迎观临，我是防具商人，负责出售各个职业的防具。防具一共有4类，帽子、衣服、鞋子和盾牌，其中盾牌是战士专用物品，在武器商人那里可以买到，对了，有空记得常来光顾哦!</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:next1" />
+		</options>
+	</next>
+	<next1>
+		<text>还有，所有人都有3个属性，是强壮、敏捷和智慧，当等级提升了以后它们就会得到提升。对了，我的同行武器商人找你，他就在我旁边。</text>
+		<color></color>
+		<options>
+			<option text="谢谢，我这就去" command="completeTask:10000002;giveTask:10000003" />
+		</options>
+	</next1>
+	
+	<yx-completed>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:yxnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />			
+		</options>
+	</yx-completed>
+	<yxnext>
+		<text>欢迎观临，我是防具商人，负责出售各个职业的防具。防具一共有4类，帽子、衣服、鞋子和盾牌，其中盾牌是战士专用物品，在武器商人那里可以买到，对了，有空记得常来光顾哦!</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:yxnext1" />
+		</options>
+	</yxnext>
+	<yxnext1>
+		<text>还有，所有人都有3个属性，是强壮、敏捷和智慧，当等级提升了以后它们就会得到提升。对了，我的同行武器商人找你，他就在我旁边。</text>
+		<color></color>
+		<options>
+			<option text="谢谢，我这就去" command="completeTask:10003002;giveTask:10003003" />
+		</options>
+	</yxnext1>
+	<fs-completed>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:fsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />			
+		</options>
+	</fs-completed>
+	<fsnext>
+		<text>欢迎观临，我是防具商人，负责出售各个职业的防具。防具一共有4类，帽子、衣服、鞋子和盾牌，其中盾牌是战士专用物品，在武器商人那里可以买到，对了，有空记得常来光顾哦!</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:fsnext1" />
+		</options>
+	</fsnext>
+	<fsnext1>
+		<text>还有，所有人都有3个属性，是强壮、敏捷和智慧，当等级提升了以后它们就会得到提升。对了，我的同行武器商人找你，他就在我旁边。</text>
+		<color></color>
+		<options>
+			<option text="谢谢，我这就去" command="completeTask:10003012;giveTask:10003013" />
+		</options>
+	</fsnext1>
+	<zs-completed>
+		<text>我这里有上好的防具，都是出自工匠大师之手，有看上眼的吗？</text>
+		<color></color>
+		<options>
+			<option text="新手指导任务" command="goto:zsnext" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />			
+		</options>
+	</zs-completed>
+	<zsnext>
+		<text>欢迎观临，我是防具商人，负责出售各个职业的防具。防具一共有4类，帽子、衣服、鞋子和盾牌，其中盾牌是战士专用物品，在武器商人那里可以买到，对了，有空记得常来光顾哦!</text>
+		<color></color>
+		<options>
+			<option text="……好的" command="goto:zsnext1" />
+		</options>
+	</zsnext>
+	<zsnext1>
+		<text>还有，所有人都有3个属性，是强壮、敏捷和智慧，当等级提升了以后它们就会得到提升。对了，我的同行武器商人找你，他就在我旁边。</text>
+		<color></color>
+		<options>
+			<option text="谢谢，我这就去" command="completeTask:10003022;giveTask:10003023" />
+		</options>
+	</zsnext1>
+	<wq>
+		<text>找不到武器商人吗？他就在我旁边(44.28)坐标，如果你找不到他，我可以送你过去。</text>
+		<color></color>
+		<options>
+			<option text="传送过去" command="transport:-1:44:30" />
+			<option text="买入" command="buy" />
+			<option text="离开" command="" />
+		</options>
+	</wq>
+</root>

@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>我这里有一些稀有的药品，有需要的话可以来看看？</text>
+		<color></color>
+		<options>
+			 <option text="买物品" command="buy" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+</root>

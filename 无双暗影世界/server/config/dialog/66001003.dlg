@@ -1,0 +1,92 @@
+<root>
+    <taskEntries>
+		<task id="10004015" doing="d1-doing" completed="d1-completed" />
+		<task id="10004016" doing="d2-doing" completed="d2-completed" />
+		<task id="10004017" doing="d3-doing" completed="d3-completed" />
+    </taskEntries>
+	<goodsEntries>
+		<d1>1333990015</d1>
+		<d2>1333990016</d2>
+		<d3>1333990017</d3>
+	</goodsEntries>
+    <start>
+        <text>“圣诞星星”不见了，你能帮我找回来吗？</text>
+        <color></color>
+        <options>
+			<option text="回那亚村" command="transport:3:36:56" />
+			<option text="离开" command="" />
+		</options>
+	</start>
+	<d1>
+        <text>“圣诞星星”不见了，你能帮我找回来吗？</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004015" />			
+			<option text="离开" command="" />
+			<option text="回那亚村" command="transport:3:36:56" />
+		</options>
+	</d1>
+	<d1-doing>
+        <text>你还没找到“圣诞星星”呀!</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</d1-doing>
+	<d1-completed>
+        <text>你找到“圣诞星星”了呀，这有10元宝就送给你了</text>
+        <color></color>
+        <options>
+			<option text="完成任务" command="completeTask:10004015" />
+			<option text="离开" command="" />
+		</options>
+	</d1-completed>
+	<d2>
+        <text>“圣诞星星”不见了，你能帮我找回来吗？</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004016" />			
+			<option text="离开" command="" />
+			<option text="回那亚村" command="transport:3:36:56" />
+		</options>
+	</d2>
+	<d2-doing>
+        <text>你还没找到“圣诞星星”呀!</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</d2-doing>
+	<d2-completed>
+        <text>你找到“圣诞星星”了呀，这有10元宝就送给你了</text>
+        <color></color>
+        <options>
+			<option text="完成任务" command="completeTask:10004016" />
+			<option text="离开" command="" />
+		</options>
+	</d2-completed>
+	<d3>
+        <text>“圣诞星星”不见了，你能帮我找回来吗？</text>
+        <color></color>
+        <options>
+			<option text="接受任务" command="giveTask:10004017" />			
+			<option text="离开" command="" />
+			<option text="回那亚村" command="transport:3:36:56" />
+		</options>
+	</d3>
+	<d3-doing>
+        <text>你还没找到“圣诞星星”呀!</text>
+        <color></color>
+        <options>
+			<option text="离开" command="" />
+		</options>
+	</d3-doing>
+	<d3-completed>
+        <text>你找到“圣诞星星”了呀，这有10元宝就送给你了</text>
+        <color></color>
+        <options>
+			<option text="完成任务" command="completeTask:10004017" />
+			<option text="离开" command="" />
+		</options>
+	</d3-completed>
+</root>

@@ -1,0 +1,38 @@
+<root>
+	<taskEntries>		
+		<task id="10002057" doing="adl-doing" completed="adl-completed" />
+	</taskEntries>
+	<goodsEntries>
+		<adl>1333012900</adl>
+	</goodsEntries>
+	<start>
+		<text>你可以叫我“奥德丽”，我是一位冒险者。</text>
+		<color></color>
+		<options>
+			 <option text="见到你很高兴" command="" />
+		</options>
+	</start>
+	<adl>
+		<text>帮我从疯狂剑士手里抢回6个断剑，我会给你报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10002057" />
+			 <option text="拒绝任务" command="" />
+			 <option text="离开" command="" />
+		</options>
+	</adl>
+	<adl-doing>
+		<text>疯狂剑士已失去理智，你要小心。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </adl-doing>
+   <adl-completed>
+		<text>这些金币是你的了。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10002057" />
+		</options>
+    </adl-completed>
+</root>

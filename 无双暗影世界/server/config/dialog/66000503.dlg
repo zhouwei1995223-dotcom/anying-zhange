@@ -1,0 +1,97 @@
+<root>
+	<taskEntries>
+		<task id="10001008" completed="ngg1-completed" />
+		<task id="10001009" completed="gd1-completed" />
+		<task id="10000025" completed="dj-completed" />
+	</taskEntries>
+	<levelEntries>
+		<54>start</54>
+		<1210>sj</1210>
+	</levelEntries>
+   <start>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>想赚钱吗？你等级高些后！可以在我这接一些收集物品的任务。</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <sj>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" command="buy" />
+			<option text="收集任务" command="goto:ngg1start" />
+			<option text="离开" command="" />
+		</options>
+   </sj>
+   <ngg1start>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+             <option text="断剑(限制:46级以上)" command="goto:dj" />
+			 <option text="南瓜怪之心(限制:54级以上)" command="goto:ngg1" />
+			 <option text="剧毒的液体(限制:58级以上)" command="goto:gd1" />
+			 <option text="返回上一层" command="goto:sj" />
+			 <option text="离开" command="" />
+		</options>
+   </ngg1start>
+   <ngg1>
+		<text>如果你能帮我收集12个南瓜怪之心，我会给你报酬得！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10001008" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:ngg1start" />
+		</options>
+   </ngg1>
+   <ngg1-completed>
+		<text>虽然我是奸商，但是我不会食言的，这是你的报酬</text>
+		<color></color>
+		<options>
+			 <option text="这实在太容易了，下次来点有挑战的" command="completeTask:10001008" />
+			 <option text="我只是回来买点东西" command="buy" />
+		</options>
+   </ngg1-completed>
+   <gd1>
+		<text>如果你能帮我收集12个剧毒的液体，我会给你报酬得！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10001009" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:ngg1start" />
+		</options>
+   </gd1>
+   <gd1-completed>
+		<text>虽然我是奸商，但是我不会食言的，这是你的报酬</text>
+		<color></color>
+		<options>
+			 <option text="这实在太容易了，下次来点有挑战的" command="completeTask:10001009" />
+			 <option text="我只是回来买点东西" command="buy" />
+		</options>
+   </gd1-completed>  
+   <dj>
+		<text>那些疯狂剑士太目中无人了，如果你把他们剑打断并带5个回来，我会给你很高的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000025" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:ngg1start" />
+		</options>
+   </dj>
+   <dj-completed>
+		<text>这下他们应该清醒一些，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000025" />
+			 <option text="我只是回来买点东西" command="buy" />
+		</options>
+   </dj-completed>  
+</root>

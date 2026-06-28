@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>前面就是迷林岛，要去吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:14:95:82" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

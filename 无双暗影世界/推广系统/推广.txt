@@ -1,0 +1,9 @@
+<?php
+error_reporting(0);
+session_start();
+include_once('out.php');
+$adOwner=$_GET["tg"];
+?>
+
+<param name="adOwner" value=<?=$adOwner?>>
+

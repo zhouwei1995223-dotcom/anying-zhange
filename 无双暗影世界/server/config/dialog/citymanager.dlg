@@ -1,0 +1,156 @@
+<root>
+   <noGuild>
+		<text>你好，$heroName！我是$sceneName的管理员。你还没有公会组织，快去加入一个吧。当你成为某个公会的成员后，我非常乐意跟你打交道。</text>
+		<color></color>
+		<options>
+			 <option text="我马上加公会" command="viewGuildList" />
+			 <option text="暂时还不考虑" command="" />
+		</options>
+   </noGuild>
+   <cityOwner>
+		<text>你好，伟大的$heroName！每次看到你，心情都很高兴啊！有什么为你效劳的吗？</text>
+		<color></color>
+		<options>
+			 <option text="城市管理" command="manage" />
+			 <option text="没什么事" command="" />
+		</options>
+   </cityOwner>
+   <noFlag>
+		<text>伟大的$heroName，请你先把公会旗帜插好，可以吗？</text>
+		<color></color>
+		<options>
+			 <option text="好的我知道了" command="" />
+		</options>
+   </noFlag>
+   <cityMember>
+		<text>你好，亲爱的$heroName！每次看到你，心情都很高兴啊！</text>
+		<color></color>
+		<options>
+			 <option text="你也好" command="" />
+		</options>
+   </cityMember>
+   <fighting>
+		<text>是否已经消灭了强大的黑夜魔王，拿到城市之证？</text>
+		<color></color>
+		<options>
+			 <option text="已经拿到城市之证" command="gotLicence" />
+			 <option text="还没有，正在战斗" command="" />
+		</options>
+   </fighting>
+   <flagPrompt>
+		<text>伟大的$heroName，恭喜你当上了$sceneName的城主！请你立即将公会旗帜插在本城市的某个安全的位置，作为统治本城市的象征，并且要保护好。如果一旦公会旗帜被砍掉或者取消，你的公会将失去对本城市的统治，你也失去城主的宝座！</text>
+		<color></color>
+		<options>
+			 <option text="好的我知道了" command="" />
+		</options>
+   </flagPrompt>
+   <guildNoLevel>
+		<text>你好，尊敬的$heroName！在这个混乱的秩序下，我多么希望有一位具备实力与声望的公会会长，来担任$sceneName的城主，管理这个城市！快去升级你的公会吧，达到5级后就有能力来统治$sceneName了。</text>
+		<color></color>
+		<options>
+			 <option text="我知道了" command="" />
+		</options>
+   </guildNoLevel>
+   <noOwnerToLeader>
+		<text>你好，尊敬的$heroName！在这个混乱的秩序下，我多么希望有一位具备实力与声望的公会会长，来担任$sceneName的城主，来管理这个城市！作为会长的你，也许具有这个能力。</text>
+		<color></color>
+		<options>
+			 <option text="非我莫属啦" command="goto:cityApply" />
+			 <option text="我可没兴趣" command="" />
+		</options>
+   </noOwnerToLeader>
+   <cityApply>
+		<text>你需要挑战黑夜魔王，杀死他，从他身上得到城市之证。他很难引出来的，你需要给我100万金币。任何公会拿到此证就可以成为这个城市的统治者，所以你可别让其他公会抢跑了哦！</text>
+		<color></color>
+		<options>
+			 <option text="现在挑战他" command="challengeBoss" />
+			 <option text="以后再说吧" command="" />
+		</options>
+   </cityApply>
+   <noOwnerToMember>
+		<text>你好，尊敬的$heroName！在这个混乱的秩序下，我多么希望有一位具备实力与声望的公会会长，来担任$sceneName的城主，来管理这个城市！也许你所在的公会具备这个能力，去将你的会长请来吧。</text>
+		<color></color>
+		<options>
+			 <option text="我马上就去" command="" />
+		</options>
+   </noOwnerToMember>
+   <notLeader>
+		<text>如果你拿到了城市之证，请将它交给你的公会会长，让他到我这里来跟我谈谈。</text>
+		<color></color>
+		<options>
+			 <option text="哦，好的" command="" />
+		</options>
+   </notLeader>
+   <noLicence>
+		<text>你身上并没有什么城市之证！作为公会之长，将来可能统治和领导一个城市，你怎么可以欺骗善良的我？我扣除你一个元宝，以示惩罚。</text>
+		<color></color>
+		<options>
+			 <option text="下次不敢了" command="" />
+		</options>
+   </noLicence>
+   <otherGuildLeader>
+		<text>你好，强大的$heroName！自从〖$ownerGuild〗公会在$cityTakeTime占领$sceneName以来，【$cityMaster】一直统治和管理着这个城市。他已经赚取了很多金钱和元宝啦！所谓风水轮流转，江山轮流坐，并非一日当上城主就永远是城主。如果其他公会具备了更雄厚的实力，就可以来接替【$cityMaster】，成为新的统治者。我看好你哦！</text>
+		<color></color>
+		<options>
+			 <option text="我要挑战取而代之" command="goto:challengeGuild" />
+			 <option text="没兴趣，看看而已" command="" />
+		</options>
+   </otherGuildLeader>
+   <challengeGuild>
+		<text>你的勇气非常可嘉！不过要挑战〖$ownerGuild〗，可是一个艰巨和危险的任务。你必须交纳100万金币作为保证金，在本周星期六晚20点，你们跟〖$ownerGuild〗的战斗将会开始。你方需要在3个小时内砍掉对方的公会旗帜。如果获得胜利，你将成为新的城主，并领回这100万金币；如果失败，就会失去这100万。你确定要挑战吗？</text>
+		<color></color>
+		<options>
+			 <option text="我确定挑战" command="challengeGuild" />
+			 <option text="还是算了吧" command="" />
+		</options>
+   </challengeGuild>
+   <weekend>
+		<text>哦，非常抱歉，忘了告诉你，今天是周末，我放假，不处理宣战的业务~~~~~</text>
+		<color></color>
+		<options>
+			 <option text="晕啊" command="" />
+		</options>
+   </weekend>
+   <alreadyChallenged1>
+		<text>你真是贵人多忘事啊，你已经宣战过了。战斗即将开始，你们要做充分的准备哦！</text>
+		<color></color>
+		<options>
+			 <option text="恩恩恩" command="" />
+		</options>
+   </alreadyChallenged1>
+   <alreadyChallenged2>
+		<text>可惜你来晚了一步！已经有公会向〖$ownerGuild〗发起挑战了！这个星期六晚上20点，他们的战斗将会开始，你到时别错过了一场盛大的战争哦！</text>
+		<color></color>
+		<options>
+			 <option text="真气人啊我下次来早点" command="" />
+		</options>
+   </alreadyChallenged2>
+   <noChallengeMoney>
+		<text>你的公会资产中并没有100万！你们这么穷，怎么可以挑战呢〖$ownerGuild〗？去弄点钱再来吧！</text>
+		<color></color>
+		<options>
+			 <option text="不好意思啊" command="" />
+		</options>
+   </noChallengeMoney>
+   <otherGuildMember>
+		<text>自从〖$ownerGuild〗公会在$cityTakeTime占领$sceneName以来，【$cityMaster】一直统治和管理着这个城市。他已经赚取了很多金钱和元宝啦！所谓风水轮流转，江山轮流坐，去叫你的公会会长过来，我跟他谈谈。</text>
+		<color></color>
+		<options>
+			 <option text="这就去" command="" />
+		</options>
+   </otherGuildMember>
+   <otherCityOwner>
+		<text>恩...你们已经统治了其他的城市，我觉得很遗憾~~~本来还寄希望你们公会能占领并且管理好这个城市呢。</text>
+		<color></color>
+		<options>
+			 <option text="可惜呀" command="" />
+		</options>
+   </otherCityOwner>
+   <start>
+		<text>自从〖$ownerGuild〗公会在$cityTakeTime占领$sceneName以来，【$cityMaster】一直统治和管理着这个城市。他已经赚取了很多金钱和元宝啦！</text>
+		<color></color>
+		<options>
+			 <option text="真是羡慕他" command="" />
+		</options>
+   </start>
+</root>

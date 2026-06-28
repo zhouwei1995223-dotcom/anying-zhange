@@ -1,0 +1,36 @@
+<root>
+	<taskEntries>
+		<task id="10000000" doing="task1" completed="task2" onceDone="old" />
+	</taskEntries>
+	<start>
+		<text>欢迎你！你要接新手任务吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="是的我要接" command="giveTask:10000000" />
+			<option text="我没有兴趣" command="" />
+		</options>
+	</start>
+	<task1>
+		<text>不要在这里玩了，好好去把你的新手任务完成吧！</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="我马上去" command="" />
+			<option text="你好烦哦" command="" />
+		</options>
+	</task1>
+	<task2>
+		<text>不错，你完成了任务！要领取奖品吗？</text>
+		<color>0EDC43</color>
+		<options>
+			<option text="领取" command="completeTask:10000000" />
+			<option text="不要" command="" />
+		</options>
+	</task2>
+	<old>
+		<text>好好努力奋斗吧，这个世界的未来是你们的！</text>
+		<color></color>
+		<options>
+			<option text="关闭" command="" />
+		</options>
+	</old>
+</root>

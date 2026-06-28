@@ -1,0 +1,116 @@
+<root>
+	<taskEntries>
+		<task id="10000021" completed="bone-completed" />
+		<task id="10000022" completed="shibing-completed" />
+		<task id="10000023" completed="soul-completed" />
+		<task id="10000024" completed="jinshu-completed" />
+	</taskEntries>
+	<levelEntries>
+		<30>start</30>
+		<1210>brw</1210>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+             <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <brw>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:bonestart" />
+			 <option text="离开" command="" />
+		</options>
+   </brw>
+   <bonestart>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>			
+			<option text="万圣节的礼物（限制：30级以上）" command="goto:bone" />
+			<option text="训练有素的士兵（限制：34级以上）" command="goto:shibing" />
+			<option text="吃人的植物（限制：38级以上）" command="goto:soul" />
+			<option text="庞然大物（限制：40级以上）" command="goto:jinshu" />
+			<option text="返回上一层" command="goto:brw" />
+			<option text="离开" command="" />
+		</options>
+   </bonestart>
+   <jinshu>
+		<text>那些巨人显然没有把我们放在眼里，上次还差点踩到我，这个仇不能不报，你去替我教训一下它们，免得它们目中无人</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000024" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:bonestart" />
+		</options>
+   </jinshu>
+   <jinshu-completed>
+		<text>这下它们走路要多看着点了,这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:10000024" />
+			 <option text="买药" command="buy" />
+		</options>
+    </jinshu-completed>
+   <bone>
+		<text>那些南瓜怪，真的很烦人，不知道是哪个无聊的法师给了它们生命，现在它们到处捣乱，你最好去杀72个南瓜怪好减少一下它们的数量</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000021" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:bonestart" />
+		</options>
+   </bone>
+   <bone-completed>
+		<text>好~好~不错，给你报酬</text>
+		<color></color>
+		<options>
+			 <option text="……不用谢" command="completeTask:10000021" />
+			 <option text="买药" command="buy" />
+		</options>
+   </bone-completed>
+   <shibing>
+		<text>那些训练有素的士兵最近经常抢劫路人，真让人受不了，你最好去教训他们一下</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000022" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:bonestart" />
+		</options>
+   </shibing>
+   <shibing-completed>
+		<text>谢谢你，看他们下次还敢不敢</text>
+		<color></color>
+		<options>
+			 <option text="他们应该不敢了" command="completeTask:10000022" />
+			 <option text="买药" command="buy" />
+		</options>
+   </shibing-completed>
+   <soul>
+		<text>那些食人花生长的太快了，我们要在它们长满这里前想想办法，怎么样？你愿意去消灭一些吗？只要消灭88个就行</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000023" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:bonestart" />
+		</options>
+   </soul>
+   <soul-completed>
+		<text>我们每个人都出点力的话，它们根本不会生长的那么快的</text>
+		<color></color>
+		<options>
+			 <option text="是啊" command="completeTask:10000023" />
+			 <option text="买药" command="buy" />
+		</options>
+   </soul-completed>
+</root>

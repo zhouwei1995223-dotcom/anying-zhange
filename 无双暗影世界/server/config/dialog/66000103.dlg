@@ -1,0 +1,39 @@
+<root>
+	<taskEntries>
+		<task id="10001010" completed="dmgyj-completed" />
+	</taskEntries>
+   <start>
+		<text>HI,有什么需要的吗？我这里都是好东西哦！</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="元宝任务" color="" bgColor="" command="goto:xdstart" />
+			<option text="离开" color="" bgColor="" command="" />
+		</options>
+   </start>
+   <xdstart>
+		<text>朋友，想赚元宝吗？你可以在这我接元宝任务！</text>
+		<color></color>
+		<options>
+			<option text="击杀无双·怪异剑士" command="goto:dmgyj" />
+			<option text="返回上一层" color="" bgColor="" command="goto:start" />
+			</options>
+   </xdstart>
+   <dmgyj>
+		<text>作为一名优秀的奸商，也是要为这个世界做些贡献，去击杀一些在新手打宝地图里的无双·怪异剑士，我会给你元宝的</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" color="" bgColor="" command="giveTask:10001010" />
+			 <option text="拒绝任务" color="" bgColor="" command="" />
+			 <option text="返回上一层" color="" bgColor="" command="goto:xdstart" />
+		</options>
+   </dmgyj>
+   <dmgyj-completed>
+		<text>哎，虽然有些心疼，算了给你吧</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" color="" bgColor="" command="completeTask:10001010" />
+			 <option text="离开" color="" bgColor="" command="" />
+		</options>
+   </dmgyj-completed>
+</root>

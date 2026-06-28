@@ -1,0 +1,187 @@
+<root>
+	<taskEntries>
+		<task id="10000037" completed="cbone-completed" />
+		<task id="10000036" completed="guij-completed" />
+		<task id="10000045" completed="shib-completed" />
+		<task id="10000046" completed="youl-completed" />
+		<task id="10000047" completed="lshao-completed" />
+		<task id="20000070" completed="lzdwt-completed" onceDone="zcd" />
+	</taskEntries>
+	<levelEntries>
+		<94>start</94>
+		<108>zcd</108>
+		<1210>zhuxian</1210>
+	</levelEntries>
+   <start>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+             <option text="暂时还不需要" command="goto:help" />
+		</options>
+   </start>
+   <help>
+		<text>身体是革命的本钱，多注意身体！</text>
+		<color></color>
+		<options>
+			 <option text="关闭" command="" />
+		</options>
+   </help>
+   <zhuxian>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="领主的委托（主线可组队）" command="goto:lzdwt" />
+			 <option text="杀怪任务" command="goto:caidan" />
+			 <option text="离开" command="" />
+		</options>
+   </zhuxian>
+   <zcd>
+		<text>出门在外，最好多带点药！买点什么吗？</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="杀怪任务" command="goto:caidan" />
+			 <option text="离开" command="" />
+		</options>
+   </zcd>
+   <caidan>
+		<text>我这经常发布一些杀怪的任务，有空的话可以来看看.</text>
+		<color></color>
+		<options>
+			 <option text="疯狂的骷髅（限制：94级以上）" command="goto:cbone" />
+			 <option text="传播疫病的尸兵（限制：98级以上）" command="goto:shib" />
+			 <option text="邪恶的鬼将（限制：102级以上）" command="goto:guij" />
+			 <option text="被驱役的灵魂（限制：106级以上）" command="goto:youl" />
+			 <option text="火山的主人（限制：110级以上）" command="goto:lshao" />
+			 <option text="返回上一层" command="goto:zcd" />
+			 <option text="离开" command="" />
+		</options>
+	</caidan>
+   <cbone>
+		<text>现在城外面都是那些骷髅弓箭手，它们经常堵住不让行人通过，能不能麻烦你去和它们“交涉”一下啊</text>
+		<color></color>
+		<options>
+			 <option text="我这就去干掉他们！" command="giveTask:10000037" />			 
+			 <option text="跟骷髅交涉？有病！" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+   </cbone>
+   <cbone-completed>
+		<text>不错嘛，看来“交涉”很成功哦</text>
+		<color></color>
+		<options>
+			 <option text="小意思,领取报酬" command="completeTask:10000037" />
+			 <option text="我来买点药" command="buy" />
+		</options>
+   </cbone-completed>
+   <guij>
+		<text>听说那些鬼将身上带有一些有趣的玉石，你帮我杀一些鬼将看看，是不是真得，当然我不会让你白干得。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000036" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+   </guij>
+   <guij-completed>
+		<text>看来又是个无中生有的传说，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10000036" />
+			 <option text="我来买点药" command="buy" />
+		</options>
+   </guij-completed>
+   <shib>
+		<text>那些尸兵不仅让人恶心，还会传播疫病，请你让它们永远安息吧！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000045" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+   </shib>
+   <shib-completed>
+		<text>魔族的力量变得更加强大，有你们这样的年轻人存在，我们才会有希望，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10000045" />
+			 <option text="我来买点药" command="buy" />
+		</options>
+   </shib-completed>
+   <youl>
+		<text>被魔族杀死的人，尸体会变成尸兵，而灵魂也会变成怨灵。请你让那些成为怨灵的灵魂永远的安息吧。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000046" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+   </youl>
+   <youl-completed>
+		<text>魔族的力量变得更加强大，有你们这样的年轻人存在，我们才会有希望，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10000046" />
+			 <option text="我来买点药" command="buy" />
+		</options>
+   </youl-completed>
+   <lshao>
+		<text>那些燃烧巨人，他们自称是火山的主人，曾经给这里带来严重的火灾，只有消灭他们才是解决火灾最好的办法。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10000047" />
+			 <option text="拒绝任务" command="" />
+			 <option text="返回上一层" command="goto:caidan" />
+		</options>
+   </lshao>
+   <lshao-completed>
+		<text>终于有人可以打败他们了，这是你的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10000047" />
+			 <option text="我来买点药" command="buy" />
+		</options>
+   </lshao-completed>
+   <lzdwt>
+		<text>根据我们探子的汇报，在“西西里岛”聚集了大量的兽人部队，可能近期就会登入我们这片大陆，那时候城市，乡村会变成修罗炼狱.</text>
+		<color></color>
+		<options>
+			 <option text="下一页" command="goto:lzdwt2" />
+			 <option text="离开" command="" />
+		</options>
+   </lzdwt>
+   <lzdwt2>
+		<text>领主已经带着部队攻向“西西里岛”。但前线发回的消息，“西西里岛”兽人部队的战斗力非常强大，领主的部队根本无法抵抗，伤亡惨重。</text>
+		<color></color>
+		<options>
+			 <option text="下一页" command="goto:lzdwt3" />
+			 <option text="离开" command="" />
+		</options>
+   </lzdwt2>
+   <lzdwt3>
+		<text>领主派回来的传令兵说，以前在“阿塞林地”消灭的兽王“施瓦新格”只是个兽人小头领装扮的，现在“施瓦新格”就是为了报仇雪恨，准备攻占我们的家园.</text>
+		<color></color>
+		<options>
+			 <option text="下一页" command="goto:lzdwt4" />
+			 <option text="离开" command="" />
+		</options>
+   </lzdwt3>
+   <lzdwt4>
+		<text>领主召集大量勇士支援“西西里岛”，一举消灭“施瓦新格”和他的兽人部队，保住我们的家园。（组队进入可以一起完成任务）</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000070" />
+			 <option text="拒绝任务" command="" />
+		</options>
+   </lzdwt4>
+   <lzdwt-completed>
+		<text>我可以把你传送过去，消灭施瓦新格找到领主-梵高。</text>
+		<color></color>
+		<options>
+			 <option text="好，我这就去" command="createDuplicate:3050" />
+			 <option text="买东西" command="buy" />
+		</options>
+   </lzdwt-completed>
+</root>

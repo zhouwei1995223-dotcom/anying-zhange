@@ -1,0 +1,122 @@
+<root>
+	<taskEntries>
+		<task id="10000001" completed="ck" />
+		<task id="10000009" completed="lpsz-completed" />
+		<task id="10003001" completed="ck" />
+		<task id="10003011" completed="ck" />
+		<task id="10003021" completed="ck" />
+		<task id="10000002" completed="fj" />
+		<task id="10003002" completed="fj" />
+		<task id="10003012" completed="fj" />
+		<task id="10003022" completed="fj" />
+		<task id="10000003" completed="wq" />
+		<task id="10003003" completed="wq" />
+		<task id="10003013" completed="wq" />
+		<task id="10003023" completed="wq" />
+		<task id="10000004" completed="js" />
+		<task id="10003004" completed="js" />
+		<task id="10003014" completed="js" />
+		<task id="10003024" completed="js" />
+		<task id="10000005" completed="zh" />
+		<task id="10003005" completed="zh" />
+		<task id="10003015" completed="zh" />
+		<task id="10003025" completed="zh" />
+		<task id="10000006" completed="xn" />
+		<task id="10003006" completed="xn" />
+		<task id="10003016" completed="xn" />
+		<task id="10003026" completed="xn" />
+		<task id="10000007" completed="cs" />
+		<task id="10003007" completed="cs" onceDone="fb"/>
+		<task id="10003017" completed="cs" onceDone="fb"/>
+		<task id="10003027" completed="cs" onceDone="fb" />
+		<task id="10000008" completed="xs" onceDone="fb"/>
+		<task id="10000009" completed="cs" onceDone="fb"/>
+	</taskEntries>
+	<start>
+		<text>完成新手指导任务后就可以在我这领到神奇的礼品哦!</text>
+		<color></color>
+		<options>
+			 <option text="在哪接新手指导任务？" command="goto:next" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<next>
+		<text>你先找旁边的“新手指导员”接下任务，就可以进行新人指导任务了。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="" />
+		</options>
+	</next>
+	<ck>
+		<text>你现在可以跟“仓库管理员”谈谈，了解下“仓库”的相关功能，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</ck>
+	<fj>
+		<text>你现在可以跟“防具商人”谈谈，了解下“防具”的相关信息，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</fj>
+	<wq>
+		<text>你现在可以跟“武器商人”谈谈，了解下“人物属性”相关信息，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</wq>
+	<js>
+		<text>你现在可以跟“奸商”谈谈，了解下“聊天”相关的信息，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</js>
+	<zh>
+		<text>你现在可以跟“智慧老人”谈谈，了解下“技能”相关信息，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</zh>
+	<xn>
+		<text>你现在可以跟“修女”谈谈，了解下“组队”的相关信息，他就会给你一些礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</xn>
+	<cs>
+		<text>你现在可以跟“传送使者”谈谈，了解下“传送”的功能，他就会给你一些礼物哦，然后再来找我。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</cs>
+	<xs>
+		<text>你现在可以跟“新手指导员”谈谈，交下任务，然后再来找我。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</xs>
+	<fb>
+		<text>从我这可以进入一个非常有趣的空间，跟里面的人玩些小游戏，可以得到很神奇的礼物哦!</text>
+		<color></color>
+		<options>
+			<option text="真得吗？我想进去看看" command="createDuplicate:135" />
+			<option text="离开" command="" />
+		</options>
+	</fb>
+	<lpsz-completed>
+		<text>这是你的礼品!</text>
+		<color></color>
+		<options>
+			<option text="领取奖励" command="completeTask:10000009" />
+			<option text="离开" command="" />
+		</options>
+	</lpsz-completed>
+</root>

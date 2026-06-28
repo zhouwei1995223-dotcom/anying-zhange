@@ -1,0 +1,67 @@
+<root>
+	<taskEntries>
+		<task id="20000031" doing="boss2-doing" completed="boss2-completed" />
+	</taskEntries>
+   <start>
+		<text>你从我这了解关于本地图的一些信息和功能。</text>
+		<color></color>
+		<options>
+			 <option text="传送到幻漠城" command="transport:7:45:45" />
+			 <option text="地图信息" command="goto:map" />	
+			 <option text="任务攻略" command="goto:boss" />
+			 <option text="离开" command="" />
+		</options>
+   </start>
+   <map>
+		<text>本地图支持3人组队，有3种怪物，死亡召唤者为物理近攻、死亡暗杀者为物理远攻、红色怨念为魔法远攻。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </map>
+   <boss>
+		<text>本次任务难度较高，你可以找3个队友帮你杀够350个怪物，BOSS就会在(30，42)坐标附近出现。还有一个办法可以让你杀到BOSS。</text>
+		<color></color>
+		<options>
+			 <option text="什么办法？" command="goto:boss1" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </boss>
+   <boss1>
+		<text>只要你完成我给予你的任务，我可以把你单独传送到黑暗守门人的空间，你打败他就可以完成主线任务。</text>
+		<color></color>
+		<options>
+			 <option text="我想知道你有什么任务" command="goto:boss2" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </boss1>
+   <boss2>
+		<text>我的任务很简单，只要你帮我消灭120个“死亡召唤者”就可以了，要接受任务吗？</text>
+		<color></color>
+		<options>
+			 <option text="领取任务" command="giveTask:20000031" />
+			 <option text="离开" command="" />
+			 <option text="返回上一层" command="goto:start" />
+		</options>
+   </boss2>
+   <boss2-doing>
+		<text>消灭120个“死亡召唤者”就可以完成我的任务了，你找我还有其它事吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送到幻漠城" command="transport:7:45:45" />
+			 <option text="地图信息" command="goto:map" />
+			 <option text="离开" command="" />
+		</options>
+   </boss2-doing>
+   <boss2-completed>
+		<text>这个副本卷你就收下吧，你可以找人组队进去，使用后就可以进入到黑暗守门人所在的地宫。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000031" />
+			 <option text="离开" command="" />
+		</options>
+    </boss2-completed>
+</root>

@@ -1,0 +1,36 @@
+<root>
+	<taskEntries>
+		<task id="10003040" completed="zs-completed" onceDone="start" />
+	</taskEntries>
+	<turnEntries>
+		<1>zs</1>
+		<2>zs</2>
+		<3>zs</3>
+		<4>zs</4>
+		<5>zs</5>
+		<6>zs</6>
+	</turnEntries>
+	<start>
+		<text>自已慢慢体会转生后的世界吧，很有趣的哦!</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<zs>
+		<text>你来到这个地方，说明你的能力足够的强大，转生后增加了宠物系统，套装系统，套装合成系统，转生技能系统，具体的介绍只有各系统的介绍员最清楚啦，先去宠物介绍员那去看看吧！</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:10003040" />
+			 <option text="离开" command="" />
+		</options>
+	</zs>
+	<zs-completed>
+		<text>要我把你传送到“宠物介绍员”的附近吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="transport:-1:87:73" />
+			 <option text="我自已去" command="" />
+		</options>
+	</zs-completed>
+</root>

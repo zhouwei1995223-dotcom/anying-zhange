@@ -1,0 +1,21 @@
+<root>
+	<deathEntries>
+		<gg>18</gg>
+	</deathEntries>
+	<start>
+		<text>只有把本关的怪物全部消灭后，才能到达下一关。</text>
+		<color></color>
+		<options>
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<gg>
+		<text>你已通过本关的试炼，可以选择传送到下一关或奖励关？注意：选择奖励关，可以领取过关奖励，但会被传回那亚村。</text>
+		<color></color>
+		<options>
+			 <option text="传送到下一层" command="createDuplicate:5046" />
+			 <option text="传送到奖励关" command="createDuplicate:5545" />
+			 <option text="离开" command="" />
+		</options>
+	</gg>
+</root>

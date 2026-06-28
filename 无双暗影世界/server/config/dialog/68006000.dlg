@@ -1,0 +1,18 @@
+<root>
+	<start>
+		<text>奖品就在后面，自已去拿，要出去的话可以来找我。</text>
+		<color></color>
+		<options>
+			 <option text="我要出去" command="goto:cq" />
+			 <option text="离开" command="" />
+		</options>
+	</start>
+	<cq>
+		<text>我可以把你传送回那亚村，要回去吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="transport:3:78:175" />
+			 <option text="离开" command="" />
+		</options>
+	</cq>
+</root>

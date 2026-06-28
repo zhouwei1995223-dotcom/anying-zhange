@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>想要去深渊体验下吗，爆各种深渊装备哦，没有足够的实力还是劝你不要进去，深渊的传送卷就在我的商店里，想去的话就看看吧</text>
+		<color></color>
+		<options>
+			<option text="买入" color="" bgColor="" command="buy" />
+			<option text="离开" command="" />
+		</options>
+   </start>
+</root>

@@ -1,0 +1,6 @@
+<app.island.data.Shortcuts>
+	<idArray>0,0,0,0,0,0,0,0,0,0,0,0,</idArray>
+	<flagArray>0,0,0,0,0,0,0,0,0,0,0,0,</flagArray>
+	<id>20007</id>
+	<name>了看京汉股份</name>
+</app.island.data.Shortcuts>

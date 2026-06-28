@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要去塔魔尼地宫五层吗？</text>
+		<color></color>
+		<options>
+			 <option text="马上过去" color="" bgColor="" command="transport:53:30:63" />
+			 <option text="暂时不去" color="" bgColor="" command="" />
+		</options>
+   </start>
+</root>

@@ -1,0 +1,30 @@
+<root>
+	<taskEntries>
+		<task id="10003042" completed="cw-completed" />
+		<task id="10003043" completed="jn-completed" onceDone="start" />
+		<task id="10003042" onceDone="start" />
+	</taskEntries>
+	<start>
+		<text>套装合成需要一般材料和特殊材料，一般材料由采集原料合成获得，特殊材料通过杀死怪物和BOSS掉落获得，不同的套装合成需要的不同的材料!</text>
+		<color></color>
+		<options>
+			 <option text="这个我知道" command="" />
+		</options>
+	</start>
+	<cw-completed>
+		<text>终于来找我啦，那我就给你讲讲！套装的合成需要一般材料和特殊材料，一般材料由采集原料合成获得，特殊材料通过杀死怪物和BOSS掉落获得，要合成不同的套装需要的材料也是不同的哦，快去收集吧！别忘了去技能介绍员那去了解转生技能~</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="completeTask:10003042" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</cw-completed>
+	<jn-completed>
+		<text>要我把你传送到“技能介绍员”的附近吗？</text>
+		<color></color>
+		<options>
+			 <option text="传送过去" command="transport:-1:74:122" />
+			 <option text="我自已去" command="" />
+		</options>
+	</jn-completed>
+</root>

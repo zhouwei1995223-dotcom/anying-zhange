@@ -1,0 +1,10 @@
+<root>
+   <start>
+		<text>要回那亚村吗？</text>
+		<color></color>
+		<options>
+			 <option text="回那亚村" command="transport:3:0:0" />
+			 <option text="暂时不去" command="" />
+		</options>
+   </start>
+</root>

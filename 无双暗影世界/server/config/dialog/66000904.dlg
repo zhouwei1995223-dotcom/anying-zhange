@@ -1,0 +1,10 @@
+<root>
+	<start>
+		<text>提示你一下：把“技能”拉到快捷栏，就可以使用快捷键放技能了。</text>
+		<color></color>
+		<options>
+			 <option text="回新迪岛" command="transport:1:35:39" />
+			 <option text="暂时不去" command="" />
+		</options>
+	</start>
+</root>

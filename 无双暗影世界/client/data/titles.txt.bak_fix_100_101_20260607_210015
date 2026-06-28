@@ -1,0 +1,4 @@
+﻿# title equipment list: itemId effectNumber name
+# effectNumber reads client/pak/effect.zip image/effect/<number>.img
+1713049900 100 天下无双
+1713049901 100 天下无双一

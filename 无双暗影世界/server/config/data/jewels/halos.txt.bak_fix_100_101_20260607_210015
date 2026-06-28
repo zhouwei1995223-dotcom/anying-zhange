@@ -1,0 +1,3 @@
+编号	名字	等级需求	图标	品质	可否交易	可否丢弃	可否出售	金币	元宝	描述	升等费用	精炼几率	精炼费用	升级费用	装备类型	增加生命	增加魔法	生命恢复速度增加	魔法恢复速度增加	物理防御能力	魔法防御能力	附加物理防御力	附加魔法防御力	产生暴击几率	命中	闪避	攻击附加状态	状态产生几率	获得经验提升百分比	获得金钱倍数提升百分比	光环素材编号	附加特殊能力
+id	name	requiredLevel	icon	quality	tradable	dropable	soldable	moneyCost	treasureCost	description	increaseCost	refineRate	refineCost	upgradeCost	dType	lifeRaised	manaRaised	lifeRestoreRate	manaRestoreRate	physicalDefense	magicDefense	extraPhysicalDefense	extraMagicDefense	doubleDamageRate	hittingAbility	evadingAbility	attachedFightState	fightStateRate	expLuck	moneyLuck	goodsLuck	specialAbility
+1713059900	恭喜发财	1	1	5	1	1	1	0	0	新春春联光环，左书恭喜发财，右书万事如意，佩戴后显示环绕光效并获得额外属性	0	0	0	0	5	300	100	0	0	10	10	0	0	0	8	8	0	0	0	0	101	0

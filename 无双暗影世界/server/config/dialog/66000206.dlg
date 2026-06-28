@@ -1,0 +1,159 @@
+
+<root>
+	<taskEntries>
+		<task id="20000002" doing="" completed="youxia-completed" />
+		<task id="20000011" doing="youxia1-doing" completed="youxia1-completed" />
+		<task id="20000012" doing="youxia2-doing" completed="youxia2-completed" />
+		<task id="20000013" doing="youxia3-doing" completed="youxia3-completed" onceDone="start" />
+	</taskEntries>
+	<levelEntries>
+		<12>start</12>
+		<24>youxia0start</24>
+		<26>youxia1start</26>
+		<1210>duihua</1210>
+	</levelEntries>
+	<start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+		</options>
+	</start>
+	<duihua>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="游侠(主线)" command="goto:youxia1" />
+		</options>
+	</duihua>
+	<youxia-completed>
+		<text>勇士，你好，欢迎来到贝伦城，这将是你新一段旅程的开始。</text>
+		<color></color>
+		<options>
+			 <option text="是那亚村的智慧老人介绍我来得" command="goto:next001" />
+		</options>
+	</youxia-completed>
+	<next001>
+		<text>哦，是这样呀！我现在有点事，先送你一些小东西。你过一会儿再来找我！</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:20000002" />
+			 <option text="我来买书" command="buy" />
+		</options>
+	</next001>
+	<youxia0start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="游侠(主线)" command="goto:youxia0-completed" />
+		</options>
+	</youxia0start>
+	<youxia0-completed>
+		<text>孩子，你还太弱，等你24级以上再来找我吧！</text>
+		<color></color>
+		<options>
+			 <option text="那只好这样" command="" />
+		</options>
+	</youxia0-completed>
+	<youxia1start>
+		<text>我这里出售技能书哦！做起事情事半功倍！</text>
+		<color></color>
+		<options>
+			 <option text="买入" command="buy" />
+			 <option text="游侠(主线)" command="goto:youxia1" />
+		</options>
+	</youxia1start>
+	<youxia1>
+		<text>你好勇士，我已听说过你的事迹，如果你能帮助我调查我们这剑士发狂的原因，我会给你满意的报酬。</text>
+		<color></color>
+		<options>
+			 <option text="接受任务" command="giveTask:20000011" />
+			 <option text="拒绝任务" command="" />
+		</options>
+	</youxia1>
+	<youxia1-doing>
+		<text>你要小心狂剑士的物理攻击。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="" />
+			 <option text="买东西" command="buy" />
+		</options>
+	</youxia1-doing>
+	<youxia1-completed>
+		<text>调查好剑士发狂的原因了吗？</text>
+		<color></color>
+		<options>
+			<option text="剑士似乎被某种力量控制了,而且这里的树木有点奇怪。" command="goto:next" />
+		</options>
+	</youxia1-completed>
+	<next>
+		<text>这是你的报酬勇士，这里的树精会用魔法攻击路人，如果你帮我们调查，我会给你更高的报酬</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬" command="completeTask:20000011" />
+			 <option text="我来买书" command="buy" />
+		</options>
+	</next>
+	<youxia2-doing>
+		<text>勇士，你要小心树精会用魔法攻击你。</text>
+		<color></color>
+		<options>
+			 <option text="我会顺利完成任务得" command="" />
+			 <option text="买东西" command="buy" />
+		</options>
+	</youxia2-doing>
+	<youxia2-completed>
+		<text>调查好树精为什么会攻击路人了吗？</text>
+		<color></color>
+		<options>
+			 <option text="树精和狂剑士，可能是被一种看不见的力量控制着。" command="goto:next1" />
+		</options>
+	</youxia2-completed>
+	<next1>
+		<text>看不见的力量?最近听一些路人说，城的北面出现了一些像沙子一样的怪物，也许和这件事有关！</text>
+		<color></color>
+		<options>
+			 <option text="那是沙怪" command="goto:next10" />
+		</options>
+	</next1>
+	<next10>
+		<text>这是你的报酬，勇士！请你帮我们调查一下那怪物吧，我们会给你报酬得。</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬并接受任务" command="completeTask:20000012" />
+			 <option text="我来买书" command="buy" />
+		</options>
+	</next10>
+	<youxia3-doing>
+		<text>勇士，沙怪的物理攻击很强，你要小心哦。</text>
+		<color></color>
+		<options>
+			 <option text="谢谢你的提醒" command="" />
+			 <option text="买东西" command="buy" />
+		</options>
+	</youxia3-doing>
+	<youxia3-completed>
+		<text>调查如何了，勇士？</text>
+		<color></color>
+		<options>
+			 <option text="他们被黑暗的力量控制了" command="goto:next2" />
+		</options>
+	</youxia3-completed>
+	<next2>
+		<text>难道那传闻是真得？。。。这是我们从怪物身上收集到的“神秘卷轴”，也许对你有收帮助!</text>
+		<color></color>
+		<options>
+			 <option text="什么传闻？" command="goto:next20" />
+		</options>
+	</next2>
+	<next20>
+		<text>这是你的报酬，还有“神秘卷轴”，你把“神秘卷轴”交给梵奇城的智慧老人，他会告诉你那个传闻得！！</text>
+		<color></color>
+		<options>
+			 <option text="领取报酬和“神秘卷轴”" command="completeTask:20000013" />
+			 <option text="我来买书" command="buy" />
+		</options>
+	</next20>
+</root>

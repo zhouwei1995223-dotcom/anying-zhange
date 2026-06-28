@@ -1,0 +1,61 @@
+<root>
+	<taskEntries>
+		<task id="10003030" completed="pk" />		
+		<task id="10003033" doing="dm-doing" completed="dm-completed" />
+		<task id="10003031" completed="sw" onceDone="cs" />
+		<task id="10003032" onceDone="cs" />
+		<task id="10003030" onceDone="cs" />		
+		<task id="10003033" onceDone="cs" />
+	</taskEntries>
+	<start>
+		<text>不要急嘛，你先去找“介绍员”了解副本相关信息后,再来找我。</text>
+		<color></color>
+		<options>
+			 <option text="我这就去" command="" />
+		</options>
+	</start>
+    <pk>
+		<text>在游戏中有两种PK模式，一是普通PK，二是公会PK。使用“普通PK”把白名角色杀死后(竞技场除外)，自已会增加一点PK值(杀红名或紫名不会增加)。角色PK值超过1，就会变成红名，到时我那些小弟就会攻击你哦。另外红名被人杀死，就会掉很多的物品哦。</text>
+		<color></color>
+		<options>
+			<option text="怎么消除PK值？" command="goto:pk1" />
+		</options>
+	</pk>
+	<pk1>
+		<text>每在线30分钟，就会减少一点PK值，所以红名的时候，在安全区站着最安全。也可以买赎罪药水,使用之后PK值直接降1。对了，你去旁边试着杀3个多目怪，就可以再领到一个礼物哦。</text>
+		<color></color>
+		<options>
+			<option text="接受任务" command="completeTask:10003030" />
+			<option text="离开" command="" />
+		</options>
+	</pk1>
+	<sw>
+		<text>找“珠宝商”聊聊,了解道具相关信息，他的宝贝很多，送你的东西也不会差哦。</text>
+		<color></color>
+		<options>
+			<option text="我这就去" command="" />
+		</options>
+	</sw>
+	<cs>
+		<text>PK值超过1后，角色就会变成红名.红名的玩家被杀后，就会掉一些东西哦。</text>
+		<color></color>
+		<options>
+			 <option text="这些我早知道了" command="" />
+		</options>
+	</cs>
+	<dm-doing>
+		<text>往上面走，有个出口，在附近找找你就可以发现一些多目怪，消灭3只后，再回来找我要礼品吧!</text>
+		<color></color>
+		<options>
+			 <option text="我会得" command="" />
+		</options>
+	</dm-doing>
+	<dm-completed>
+		<text>干得不错，这是复活药水，如果你被杀死，可以使用它来复活。</text>
+		<color></color>
+		<options>
+			 <option text="领取奖励" command="completeTask:10003033" />
+			 <option text="离开" command="" />
+		</options>
+	</dm-completed>
+</root>
