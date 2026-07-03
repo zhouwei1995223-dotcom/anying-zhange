@@ -26,6 +26,26 @@
     - fixed foot anchor in image pixels: `x=75`, `y=96`
     - output path: `assets/resources/heroes/humanoid_00`
   - Runtime can switch the active player art with `HERO_RESOURCE` in `HeroIdlePlayer.ts`.
+- Foldered external humanoid sprite set, such as `D:\anyingzhange\xinrenwu`
+  - Action folders: idle folder has 32 frames, walk has 48 frames, attack has 64 frames, death has one frame.
+  - Direction order is already full eight directions: back, right-up, right, right-down, front, left-down, left, left-up.
+  - File numbering:
+    - idle: base `00000`, `4` frames per direction, direction stride `10`.
+    - walk: base `00080`, `6` frames per direction, direction stride `10`.
+    - attack: base `00160`, `8` frames per direction, direction stride `10`.
+    - death: use the first PNG in the death folder as `death_00`.
+  - Source frame canvases may differ, so normalize rather than importing directly. Keep the full source PNG canvas when drawing into the normalized frame; this source canvas carries action offsets.
+  - Use `tools/import-foldered-humanoid-sprites.ps1`:
+    - output canvas: `320x320`
+    - default scale: `0.38`
+    - preferred anchor mode: if `Placements/<frameId>.txt` exists, treat the two numbers as the old client top-left placement offset from the actor anchor. Draw the scaled source image at `Anchor + Placement * Scale`.
+    - default placement anchor in normalized image pixels: `x=160`, `y=180`.
+    - fallback anchor mode: if a placement file is missing, preserve the source PNG canvas, scale the whole image, and align the source canvas bottom-center to the fixed foot point `x=160`, `y=240`.
+    - Do not crop to visible bounds and do not compute a new foot anchor per frame; wings, attack effects, and moving feet will pull the body around and cause jitter.
+    - default output path: `assets/resources/heroes/hero_00/appearance_8`
+  - If `Placements` files are present, do not run `tools/stabilize-humanoid-idle-walk.ps1` after import. The stabilizer is only a fallback for sources without old-client placement offsets.
+    - It does not touch attack frames.
+    - It groups frames by action and direction, finds the median visible center/foot point, and shifts only idle/walk frames so the actor no longer bobs because of drifting source canvases.
 - Hero `client/pak/hero/00/0.zip`
   - `0.img`: idle, `600x1200`, `4 x 8`, cell `150x150`.
   - `1.img`: walk, `900x1200`, `6 x 8`, cell `150x150`.

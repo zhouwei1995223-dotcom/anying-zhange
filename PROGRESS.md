@@ -1,5 +1,10 @@
 # Progress
 
+## Latest Snapshot
+
+The current up-to-date status is maintained in `docs/CURRENT_PROGRESS.md`.
+This file below is kept as historical implementation notes and may contain older experiments or obsolete wording.
+
 ## Goal
 
 Build the first playable web prototype for the Cocos remake path:

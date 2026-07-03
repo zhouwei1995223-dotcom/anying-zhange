@@ -1,0 +1,22 @@
+Summary for tools\client_bag96_tmp.jar
+Decompiled with CFR 0.152
+
+
+a.a.k
+----------------------------
+
+byte()
+  Unable to fully structure code
+a(int )
+  Unable to fully structure code
+
+
+a.a.q
+----------------------------
+
+a(java.lang.Object java.lang.Object )
+  Unable to fully structure code
+a()
+  Unable to fully structure code
+a(java.lang.Object )
+  Unable to fully structure code

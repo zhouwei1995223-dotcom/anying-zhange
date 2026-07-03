@@ -12,6 +12,16 @@ _tmp*/
 tmp*
 _tmp*
 *.log
+tools/*_tmp.jar
+tools/jdk-*.zip
+tools/jdk/
+
+# Root-level generated preview images
+/HERO_CATALOG.png
+/*_import_preview.png
+/*_source_preview.png
+/foldered_hero_*_preview.png
+/damage_text_import_preview.png
 
 # Editor/system noise
 .vscode/

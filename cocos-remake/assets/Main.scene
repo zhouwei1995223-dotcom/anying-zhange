@@ -52,7 +52,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 17
+      "__id__": 18
     },
     "_id": "0e7e8003-0125-4228-93a5-1bf3237c1066"
   },
@@ -78,10 +78,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 15
+        "__id__": 16
       },
       {
-        "__id__": 16
+        "__id__": 17
       }
     ],
     "_prefab": null,
@@ -173,7 +173,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 654.169741697417,
+    "_orthoHeight": 495.84466019417476,
     "_near": 0,
     "_far": 2000,
     "_color": {
@@ -462,31 +462,53 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "mapId": 4,
+    "mapId": 10,
     "mapMonsters": [
       {
         "__id__": 13
       },
       {
         "__id__": 14
+      },
+      {
+        "__id__": 15
       }
     ],
+    "equipmentConfigs": [],
+    "starterEquipmentIds": "",
+    "heroRoleId": "00",
+    "heroAppearanceId": 8,
     "_id": "MainHeroIdlePlayer"
   },
   {
     "__type__": "MapMonsterConfig",
-    "monsterId": 3,
-    "maxHp": 150,
-    "attack": 8,
+    "monsterId": 7,
+    "rewardId": 0,
+    "monsterLevel": 12,
+    "maxHp": 500,
+    "attack": 80,
     "defense": 0,
     "expMin": 20,
     "expMax": 30
   },
   {
     "__type__": "MapMonsterConfig",
-    "monsterId": 3,
-    "maxHp": 150,
-    "attack": 8,
+    "monsterId": 8,
+    "rewardId": 0,
+    "monsterLevel": 12,
+    "maxHp": 500,
+    "attack": 80,
+    "defense": 0,
+    "expMin": 20,
+    "expMax": 30
+  },
+  {
+    "__type__": "MapMonsterConfig",
+    "monsterId": 6,
+    "rewardId": 0,
+    "monsterLevel": 12,
+    "maxHp": 500,
+    "attack": 80,
     "defense": 0,
     "expMin": 20,
     "expMax": 30
@@ -532,28 +554,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 18
-    },
-    "shadows": {
       "__id__": 19
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 20
     },
-    "fog": {
+    "_skybox": {
       "__id__": 21
     },
-    "octree": {
+    "fog": {
       "__id__": 22
     },
-    "skin": {
+    "octree": {
       "__id__": 23
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 24
     },
-    "postSettings": {
+    "lightProbeInfo": {
       "__id__": 25
+    },
+    "postSettings": {
+      "__id__": 26
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false

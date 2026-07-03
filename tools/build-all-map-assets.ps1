@@ -7,6 +7,12 @@ param(
   [double]$MapNodeScale = 1.5,
   [int]$ThumbWidth = 240,
   [int]$OcclusionMinLayer = 3,
+  [int[]]$LowPropTileIds = @(
+    55, 56, 57, 58, 59, 60, 61, 62, 63, 64,
+    252, 253, 254, 255, 256, 257,
+    279, 280, 281, 282, 283, 284, 285, 286,
+    309, 310, 311, 312, 313, 314
+  ),
   [switch]$Force
 )
 
@@ -26,10 +32,13 @@ if (-not $ConverterDir) {
     Where-Object { Test-Path -LiteralPath (Join-Path $_ 'ImgPngTool.class') } |
     Select-Object -First 1
 }
-if (-not $ConverterDir) { throw 'ImgPngTool.class not found under D:\*\img_png_tool' }
 
-$java = 'C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08\bin\java.exe'
-if (-not (Test-Path -LiteralPath $java)) { throw "Java not found: $java" }
+$javaCandidates = @(
+  'C:\Program Files\Android\jdk\jdk-8.0.302.8-hotspot\jdk8u302-b08\bin\java.exe',
+  (Join-Path $Root 'tools\jdk\jdk8u492-b09\bin\java.exe'),
+  (Join-Path $Root 'tools\jdk\jdk8u492-b09\jre\bin\java.exe')
+)
+$java = $javaCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
 
 $mapDir = Join-Path $OldClient 'data\map'
 $pakDir = Join-Path $OldClient 'pak\mapimg'
@@ -37,7 +46,7 @@ $outDir = Join-Path $Root 'cocos-remake\assets\resources\maps'
 $thumbDir = Join-Path $Root 'MAP_CATALOG'
 $cacheDir = Join-Path $Root 'tmp_map_tiles\shared_png'
 $rawDir = Join-Path $Root 'tmp_map_tiles\shared_img'
-$converterCp = "$ConverterDir;$ConverterDir\client.zip"
+$converterCp = if ($ConverterDir) { "$ConverterDir;$ConverterDir\client.zip" } else { '' }
 
 New-Item -ItemType Directory -Force -Path $outDir, $thumbDir, $cacheDir, $rawDir | Out-Null
 
@@ -104,6 +113,93 @@ function U16([byte[]]$Bytes, [int]$Index) {
   [int]$Bytes[$Index] -bor ([int]$Bytes[$Index + 1] -shl 8)
 }
 
+function I16([byte[]]$Bytes, [int]$Index) {
+  $v = U16 $Bytes $Index
+  if (($v -band 0x8000) -ne 0) { return ($v - 0x10000) }
+  return $v
+}
+
+function ColorFromRgb555([int]$Value) {
+  $v = $Value -band 0x7fff
+  $r = [int]([Math]::Round((($v -shr 10) -band 31) * 255 / 31))
+  $g = [int]([Math]::Round((($v -shr 5) -band 31) * 255 / 31))
+  $b = [int]([Math]::Round(($v -band 31) * 255 / 31))
+  [Drawing.Color]::FromArgb(255, $r, $g, $b)
+}
+
+function Convert-ImgToPng([string]$ImgPath, [string]$PngPath) {
+  $bytes = [IO.File]::ReadAllBytes($ImgPath)
+  if ($bytes.Length -lt 9) { throw "Invalid .img file: $ImgPath" }
+
+  $typeRaw = [int]$bytes[4]
+  $type = if ($typeRaw -gt 3) { $typeRaw -shr 4 } else { $typeRaw }
+  $width = U16 $bytes 5
+  $height = U16 $bytes 7
+  if ($width -le 0 -or $height -le 0 -or $width -gt 4096 -or $height -gt 4096) {
+    throw "Invalid .img size ${width}x${height}: $ImgPath"
+  }
+
+  $bmp = New-Object Drawing.Bitmap $width, $height, ([Drawing.Imaging.PixelFormat]::Format32bppArgb)
+  try {
+    $pos = 9
+    if ($type -eq 1) {
+      for ($y = 0; $y -lt $height; $y++) {
+        for ($x = 0; $x -lt $width; $x++) {
+          if ($pos + 1 -ge $bytes.Length) { break }
+          $bmp.SetPixel($x, $y, (ColorFromRgb555 (U16 $bytes $pos)))
+          $pos += 2
+        }
+      }
+    } else {
+      $y = 0
+      while ($y -lt $height -and $pos + 1 -lt $bytes.Length) {
+        $count = I16 $bytes $pos
+        $pos += 2
+        $row = New-Object int[] ([Math]::Max(0, $count))
+        for ($i = 0; $i -lt $row.Length -and $pos + 1 -lt $bytes.Length; $i++) {
+          $row[$i] = U16 $bytes $pos
+          $pos += 2
+        }
+
+        $x = 0
+        $n = 0
+        while ($n -lt $row.Length) {
+          $op = $row[$n]
+          $n++
+          $kind = $op -band 0xf000
+          $len = $op -band 0x0fff
+
+          if ($kind -eq 0x3000) {
+            $y += $len
+            break
+          } elseif ($kind -eq 0x2000) {
+            $x += $len
+          } elseif ($kind -eq 0x1000) {
+            for ($i = 0; $i -lt $len -and $x -lt $width -and $n -lt $row.Length; $i++) {
+              $bmp.SetPixel($x, $y, (ColorFromRgb555 $row[$n]))
+              $x++
+              $n++
+            }
+          } elseif ($kind -eq 0x4000) {
+            for ($i = 0; $i -lt $len -and $x -lt $width -and ($n + 1) -lt $row.Length; $i++) {
+              $n++
+              $bmp.SetPixel($x, $y, (ColorFromRgb555 $row[$n]))
+              $x++
+              $n++
+            }
+          }
+        }
+
+        $y++
+      }
+    }
+
+    $bmp.Save($PngPath, [Drawing.Imaging.ImageFormat]::Png)
+  } finally {
+    $bmp.Dispose()
+  }
+}
+
 $ranges = Get-ChildItem -LiteralPath $pakDir -Filter '*.zip' | ForEach-Object {
   if ($_.BaseName -match '^(\d+)-(\d+)$') {
     [pscustomobject]@{ Start = [int]$matches[1]; End = [int]$matches[2]; Path = $_.FullName }
@@ -129,7 +225,11 @@ function Get-TilePng([int]$Id) {
     }
   }
 
-  & $java -cp $converterCp ImgPngTool img2png $img $png | Out-Null
+  if ($ConverterDir -and $java) {
+    & $java -cp $converterCp ImgPngTool img2png $img $png | Out-Null
+  } else {
+    Convert-ImgToPng $img $png
+  }
   if (Test-Path -LiteralPath $png) { return $png }
   return $null
 }
@@ -174,11 +274,48 @@ function Read-Map([string]$MapFile) {
   [pscustomobject]@{ Width = $w; Height = $h; Base = $base; Needed = $needed; Objects = $objects }
 }
 
+function Clear-OcclusionShadowPixels([Drawing.Bitmap]$Image) {
+  $rect = New-Object Drawing.Rectangle 0, 0, $Image.Width, $Image.Height
+  $format = [Drawing.Imaging.PixelFormat]::Format32bppArgb
+  $data = $Image.LockBits($rect, [Drawing.Imaging.ImageLockMode]::ReadWrite, $format)
+  try {
+    $stride = $data.Stride
+    $absStride = [Math]::Abs($stride)
+    $bytes = New-Object byte[] ($absStride * $Image.Height)
+    [Runtime.InteropServices.Marshal]::Copy($data.Scan0, $bytes, 0, $bytes.Length)
+
+    for ($y = 0; $y -lt $Image.Height; $y++) {
+      $row = if ($stride -gt 0) { $y * $stride } else { ($Image.Height - 1 - $y) * $absStride }
+      for ($x = 0; $x -lt $Image.Width; $x++) {
+        $i = $row + ($x * 4)
+        $a = [int]$bytes[$i + 3]
+        if ($a -eq 0) { continue }
+
+        $b = [int]$bytes[$i]
+        $g = [int]$bytes[$i + 1]
+        $r = [int]$bytes[$i + 2]
+        $max = [Math]::Max($r, [Math]::Max($g, $b))
+        $min = [Math]::Min($r, [Math]::Min($g, $b))
+        if (($max -le 70 -and ($max - $min) -le 28) -or ($max -le 50)) {
+          $bytes[$i] = 0
+          $bytes[$i + 1] = 0
+          $bytes[$i + 2] = 0
+          $bytes[$i + 3] = 0
+        }
+      }
+    }
+
+    [Runtime.InteropServices.Marshal]::Copy($bytes, 0, $data.Scan0, $bytes.Length)
+  } finally {
+    $Image.UnlockBits($data)
+  }
+}
+
 function Render-Map([object]$Map, [string]$PreviewPath, [string]$OcclusionPath) {
   $outW = [int]($Map.Width * 60 * $Scale)
   $outH = [int]($Map.Height * 60 * $Scale)
-  $preview = New-Object Drawing.Bitmap $outW, $outH
-  $occlusion = New-Object Drawing.Bitmap $outW, $outH
+  $preview = New-Object Drawing.Bitmap $outW, $outH, ([Drawing.Imaging.PixelFormat]::Format32bppArgb)
+  $occlusion = New-Object Drawing.Bitmap $outW, $outH, ([Drawing.Imaging.PixelFormat]::Format32bppArgb)
   $g = [Drawing.Graphics]::FromImage($preview)
   $og = [Drawing.Graphics]::FromImage($occlusion)
   $g.Clear([Drawing.Color]::Black)
@@ -215,7 +352,7 @@ function Render-Map([object]$Map, [string]$PreviewPath, [string]$OcclusionPath) 
         $w = [int]($img.Width * $Scale)
         $h = [int]($img.Height * $Scale)
         $g.DrawImage($img, $x, $y, $w, $h)
-        if ($obj.Layer -ge $OcclusionMinLayer) {
+        if ($obj.Layer -ge $OcclusionMinLayer -and $LowPropTileIds -notcontains $obj.ImgId) {
           $og.DrawImage($img, $x, $y, $w, $h)
         }
       } finally {
@@ -227,6 +364,7 @@ function Render-Map([object]$Map, [string]$PreviewPath, [string]$OcclusionPath) 
     $og.Dispose()
   }
 
+  Clear-OcclusionShadowPixels $occlusion
   $preview.Save($PreviewPath, [Drawing.Imaging.ImageFormat]::Png)
   $occlusion.Save($OcclusionPath, [Drawing.Imaging.ImageFormat]::Png)
   $preview.Dispose()
@@ -242,7 +380,7 @@ function Write-BlockJson([string]$BlkFile, [string]$OutPath, [int]$MapImageWidth
   $chars = New-Object char[] ($w * $h)
   for ($i = 0; $i -lt $chars.Length; $i++) {
     $v = if (($i + 4) -lt $bytes.Length) { [int]$bytes[$i + 4] } else { 0 }
-    $chars[$i] = if ($v -eq 127) { '1' } else { '0' }
+    $chars[$i] = if (($v -band 1) -ne 0) { '1' } else { '0' }
   }
   $obj = [ordered]@{
     width = $w
@@ -326,7 +464,7 @@ foreach ($id in $MapIds) {
     height = $rendered.Height
     tileWidth = $map.Width
     tileHeight = $map.Height
-    objects = $map.Objects.Count
+    objectCount = $map.Objects.Count
     hasBlock = $hasBlock
     preview = "maps/map_${id}_preview"
     occlusion = "maps/map_${id}_occlusion"
@@ -343,7 +481,7 @@ Write-JsonMeta "$catalogJson.meta"
 $md = @("# Map Catalog", "", "Generated from old client maps.", "", "| id | size | tiles | objects | block | thumbnail |", "| --- | --- | --- | --- | --- | --- |")
 foreach ($item in $catalog) {
   $block = if ($item.hasBlock) { 'yes' } else { 'missing' }
-  $md += "| $($item.id) | $($item.width)x$($item.height) | $($item.tileWidth)x$($item.tileHeight) | $($item.objects) | $block | $($item.thumbnail) |"
+  $md += "| $($item.id) | $($item.width)x$($item.height) | $($item.tileWidth)x$($item.tileHeight) | $($item.objectCount) | $block | $($item.thumbnail) |"
 }
 if ($missingBlock.Count) {
   $md += ""

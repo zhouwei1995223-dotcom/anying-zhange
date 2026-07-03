@@ -1,0 +1,1714 @@
+{
+    "source":  "legacy-client/client/pak/hero",
+    "cellSize":  150,
+    "directionOrder":  [
+                           "back",
+                           "rightUp",
+                           "right",
+                           "rightDown",
+                           "front",
+                           "leftDown",
+                           "left",
+                           "leftUp"
+                       ],
+    "actionFiles":  {
+                        "0.img":  "idle",
+                        "1.img":  "walk",
+                        "2.img":  "attack",
+                        "4.img":  "death"
+                    },
+    "roles":  [
+                  {
+                      "id":  "00",
+                      "profession":  0,
+                      "professionName":  "ranger",
+                      "sex":  0,
+                      "sexName":  "male",
+                      "resource":  "heroes/hero_00",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_00/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_00/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_00/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_00/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_00/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_00/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_00/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_00/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  },
+                  {
+                      "id":  "01",
+                      "profession":  0,
+                      "professionName":  "ranger",
+                      "sex":  1,
+                      "sexName":  "female",
+                      "resource":  "heroes/hero_01",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_01/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_01/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_01/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_01/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_01/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_01/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_01/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_01/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  8,
+                                              "suggestedArmorLevel":  288,
+                                              "zip":  "8.zip",
+                                              "path":  "heroes/hero_01/appearance_8",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  },
+                  {
+                      "id":  "10",
+                      "profession":  1,
+                      "professionName":  "mage",
+                      "sex":  0,
+                      "sexName":  "male",
+                      "resource":  "heroes/hero_10",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_10/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_10/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_10/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_10/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_10/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_10/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_10/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_10/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  },
+                  {
+                      "id":  "11",
+                      "profession":  1,
+                      "professionName":  "mage",
+                      "sex":  1,
+                      "sexName":  "female",
+                      "resource":  "heroes/hero_11",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_11/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_11/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_11/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_11/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_11/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_11/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_11/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_11/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  8,
+                                              "suggestedArmorLevel":  288,
+                                              "zip":  "8.zip",
+                                              "path":  "heroes/hero_11/appearance_8",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  },
+                  {
+                      "id":  "20",
+                      "profession":  2,
+                      "professionName":  "warrior",
+                      "sex":  0,
+                      "sexName":  "male",
+                      "resource":  "heroes/hero_20",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_20/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_20/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_20/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_20/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_20/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_20/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_20/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_20/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  },
+                  {
+                      "id":  "21",
+                      "profession":  2,
+                      "professionName":  "warrior",
+                      "sex":  1,
+                      "sexName":  "female",
+                      "resource":  "heroes/hero_21",
+                      "appearances":  [
+                                          {
+                                              "id":  0,
+                                              "suggestedArmorLevel":  0,
+                                              "zip":  "0.zip",
+                                              "path":  "heroes/hero_21/appearance_0",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  1,
+                                              "suggestedArmorLevel":  36,
+                                              "zip":  "1.zip",
+                                              "path":  "heroes/hero_21/appearance_1",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  2,
+                                              "suggestedArmorLevel":  72,
+                                              "zip":  "2.zip",
+                                              "path":  "heroes/hero_21/appearance_2",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  3,
+                                              "suggestedArmorLevel":  108,
+                                              "zip":  "3.zip",
+                                              "path":  "heroes/hero_21/appearance_3",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  4,
+                                              "suggestedArmorLevel":  144,
+                                              "zip":  "4.zip",
+                                              "path":  "heroes/hero_21/appearance_4",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  5,
+                                              "suggestedArmorLevel":  180,
+                                              "zip":  "5.zip",
+                                              "path":  "heroes/hero_21/appearance_5",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  6,
+                                              "suggestedArmorLevel":  216,
+                                              "zip":  "6.zip",
+                                              "path":  "heroes/hero_21/appearance_6",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  7,
+                                              "suggestedArmorLevel":  252,
+                                              "zip":  "7.zip",
+                                              "path":  "heroes/hero_21/appearance_7",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          },
+                                          {
+                                              "id":  8,
+                                              "suggestedArmorLevel":  288,
+                                              "zip":  "8.zip",
+                                              "path":  "heroes/hero_21/appearance_8",
+                                              "actions":  {
+                                                              "idle":  {
+                                                                           "frameCount":  4,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  600,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "walk":  {
+                                                                           "frameCount":  6,
+                                                                           "directionCount":  8,
+                                                                           "sourceWidth":  900,
+                                                                           "sourceHeight":  1200
+                                                                       },
+                                                              "attack":  {
+                                                                             "frameCount":  8,
+                                                                             "directionCount":  8,
+                                                                             "sourceWidth":  1200,
+                                                                             "sourceHeight":  1200
+                                                                         },
+                                                              "death":  {
+                                                                            "frameCount":  1,
+                                                                            "directionCount":  1,
+                                                                            "sourceWidth":  150,
+                                                                            "sourceHeight":  150
+                                                                        }
+                                                          }
+                                          }
+                                      ]
+                  }
+              ]
+}
